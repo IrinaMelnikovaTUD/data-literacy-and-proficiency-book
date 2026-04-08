@@ -14,7 +14,8 @@ library(exams2forms)
 exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
 exm <- list(
   file.path(exercise_directory, "swisscapital.Rmd"),
-  file.path(exercise_directory, "deriv.Rmd")
+  file.path(exercise_directory, "deriv.Rmd"),
+  file.path(exercise_directory, "chinstrap.Rmd")
 )
 ```
 
