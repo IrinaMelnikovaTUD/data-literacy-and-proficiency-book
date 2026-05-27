@@ -1,0 +1,52 @@
+# 1 Data Life Cycle and Data Management
+1.1	Data Lifecycle
+
+Data management is the term used to describe the collective tasks to insure the long term archiving of and continuing access to data, including backups, contingency planning, process resumption planning, hardware and network redundancy, automatic failover, and site mirroring [21].
+
+Today, data is collected from many different sources, and is used to improve understanding of emerging situations across different fields [38]. Properly developed data lifecycle helps to study past events, explain current situations, and successfully predict future outcomes. Models that describe data objects through a set of time-ordered stages are called lifecycle models [38]. Many of these models exist for different industries and research areas [39], but they all have a similar goal. Their very purpose is to help organizations manage data properly by creating a framework for documenting, protecting, and providing access to important data.
+
+
+1.2 *Data Lifecycle Model*
+
+ 
+ 
+One of the most widely used data lifecycle models was developed by Digital Curation Centre (DCC) [40]. The DCC Curation Lifecycle Model explains how data is managed, preserved, and reused over time. This model primarily targets employees of various organizations – from research institutes to private business and governmental companies, but we are sure its main concepts can be as useful for professionals regardless of their field, including those working individually. Its proposed stages are described below.
+
+All data-related actions included into the DCC Digital Asset Lifecycle Model can be separated into three main categories: full lifecycle actions, used to create and preserve new data, sequential actions, aimed at its maintenance and storage, and occasional actions, required for some only. 
+
+Full Lifecycle Actions
+
+Description and Representation Information. Metadata and corresponding representation information should be timely added to describe all digital materials (read more about metadata in chapter).
+Preservation Planning. As context, relevancy and other properties associated with data are changing throughout the curation lifecycle, it’s important to develop plans for all curation lifecycle actions.
+Community Watch and Participation. When working in a team or organization, development of shared standards, tools and suitable software for data curation can be vital. Data should stay accessible, understandable, and usable over time.
+Curate and Preserve. The structure, meaning, and context of the data should not only be clearly documented, but as well preserved at each stage of the cycle, so future users can understand it correctly.
+
+Sequential Actions
+
+Conceptualise. Before creating or gathering data, a clear plan should be developed: what kind of data is required and in what quantities? How to capture it, and how it should be stored? The answer to one question can directly affect others, as described in the previous chapters.
+Create or Receive. When creating data, administrative, descriptive, structural, technical, and preservation metadata can all be of great use. Always mind collecting policies (usually documented) and other ethical restrictions when choosing data capturing methods and sources.
+Appraise and Select. Evaluate data, to define which information requires long-term preservation. Therefore, always follow documented guidance and other relevant instructions.
+Ingest. Never overlook this step, as timely transferring data to an archive, repository, or a responsible colleague at appropriate steps of the lifecycle often becomes a make-or-break point of it. At this stage, one must again consider the organization’s policies and/or legal requirements.
+Preservation Actions. So, what are the possible actions to ensure long-term preservation and retention of data? These are any measures to keep the data authentic, reliable, usable, and complete. It is important to plan such measures not only for today, but also for the future. One of the good examples of future risks would be outdated file formats: before storing valuable information in a particular format, one should first ask themselves, how long this data should be available? Who will be using it next, and will those people have necessary hard- and software to read the format properly? When not, what could be done, and when, to adjust the old data to the new technical requirements? Other crucial steps might include data cleaning, evaluation, assigning preservation metadata, and many more, depending on the nature of information being preserved.
+Store. It is important to familiarize yourself with up-to-date standards of data storage and try to adhere to them when storing data. Possible negative scenarios and appropriate solutions should, as always, be considered ahead: damaged paper or digital archives, forgotten passwords, and even fire at a data center are more common obstacles than most people can imagine, and preventing them costs less effort and money than trying to solve those problems.
+Access, Use and Reuse. Before making decisions, one should regularly consider the needs of the future users – and re-users of data. On one hand, it is critically important to protect information from any inappropriate usage by unauthorized persons and third parties: authentication procedures and other methods of access control can be truly useful here. On the other hand, as anyone is expected to reuse the data, the solution must be found to provide those people with sufficient access to the required files – for instance, as publicly available information.  
+Transform. As explained above, sometimes migration of data into a different format is necessary with time – a complex, but vital task for an organization. This would mean, in fact, creating new data from the original, or transforming it. Another example would be creating a subset of original datasets, by selection or query, to create newly derived results, perhaps for publication : a valid method, that can sometimes can tricky (more about it in the Chapter ).
+
+Occasional Actions
+
+Dispose. Rely on documented policies, legal requirements, and other pre-made instructions that exist in the organization and, if necessary, the country, to determine how long every data object is supposed to be stored. Data that is no longer useful can be destroyed, sometimes this should be done securely – there are strict legal requirements regarding the destruction of certain data types, explained in detail in chapter X. In large organizations, data may be transferred to another archive, repository, data centre, or a custodian instead. 
+Reappraise. When data fails validation procedures, it should be returned for further appraisal and reselection.
+Migrate. As previously described above, transferring data into a new format might sometimes be necessary to match the storage environment, or to ensure that the information is still available for the future users possessing the latest technical capabilities.
+
+                In-Chapter (Self-Study) Questions 
+
+1.	How relevant is the model to various data professionals: data creators, archivists, or simply those who would like to re-use others’ data? How could you apply the model to your own tasks?
+2.	What are the types of actions the model discloses, and what is the difference between them? Which of these actions you think might be useful for your current projects?
+3.	What problems could occur if digital data is stored without consideration of file formats? Can you think of an example where data collected today could still be useful many years later? 
+4.	What documented instructions or guidelines are used in your organizations for data curation and maintenance? What do you know about the legal requirements of the country / the EU?
+5.	Reflect on the problems you have previously faced when working with data. Could some of the actions proposed in the model help to overcome any of these obstacles?
+
+
+
+
+
