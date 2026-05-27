@@ -13,9 +13,11 @@ book:
     - 05_data_management.qmd
     - 06_statistics.qmd
     - 07_ml.qmd
-    - intro.qmd
-    - visualization.qmd
-    - summary.qmd
+    - 08_visualization.qmd
+    - 09_geodata.qmd
+    # - intro.qmd
+    # - visualization.qmd
+    # - summary.qmd
     - references.qmd
 
 bibliography: references.bib

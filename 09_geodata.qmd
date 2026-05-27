@@ -1,0 +1,242 @@
+# Geodata
+
+## Introduction
+- motivation: spatial data in digital society, transport economics relevance
+- link to previous chapter: general data types → spatial extension
+- distinction: spatial vs non-spatial data
+- overview: vector, raster, CRS, interactions
+- spatial dependence is often interesting and informative in data analysis
+
+**Scope of this chapter:**
+
+- no statistical modeling, forecasting, or econometrics
+- no machine learning (e.g., classification, clustering, neural networks)
+- no causal inference or structural/optimization models
+- no advanced spatial statistics or inference methods
+- instead focus:
+    - how spatial data is structured and represented
+    - how to read, transform, and combine geodata
+    - how to produce correct inputs for later analysis
+- benefit of this chapter:
+    - immediate: ability to load, visualize, and manipulate real spatial datasets
+    - foundational: prepares for GIS, transport modeling, econometrics, and ML courses
+    - practical: reduces errors in spatial data handling in any applied work
+
+## Spatial phenomena in the real world
+
+### Continuous spatial phenomena
+- spatially smooth variation across space
+- defined at every location
+- examples:
+  - temperature
+  - precipitation
+  - elevation
+  - air pollution
+- cannot be naturally split into discrete objects
+- typically represented via raster data (reference raster data section)
+
+**Interactive question**
+
+- Which of the following are continuous?
+
+  - population count
+  - temperature
+  - land use category
+  - elevation
+
+- which ones approximate continuous fields at coarse scale?
+
+### Discrete spatial phenomena
+- clearly separated spatial objects
+- finite boundaries
+- examples:
+  - buildings
+  - roads
+  - administrative regions
+  - POIs
+- can form networks or partitions of space
+- can also approximate continuous processes (e.g., traffic aggregated into segments)
+- typically represented via vector data 
+
+**Interactive question**
+
+- Identify discrete phenomena in transport:
+  - road network
+  - bus stops
+  - traffic density surface
+
+
+Oftentimes, scale decides what is considered continuous or discrete, and which digital representation is more appropriate (next sections).
+
+## What is geodata?
+
+- data with a geospatial reference (explicit or implicit) that allows linking observations to locations in space (in brief: spatial data = things + where they are + how space is measured)
+- location as analytical attribute (not just descriptive metadata)
+- geospatial reference can be direct (e.g., by means of coordinates) or indirect (e.g., by address, region ID, ...)
+- link to measurement systems (GPS, sensors, surveys)
+- importance in transportation and planning contexts
+- geometry alone is not enough (refer to coordinate reference section)
+
+**Interactive question:**
+
+- Perhaps you are not working with transportation-related data. What are examples of geodata in your context?
+
+## Data sources and their role in this chapter
+
+- elevation data (Germany DGM200, raster)
+- precipitation data (HYRAS / DWD, multi-layer raster)
+- Dresden administrative boundaries (vector polygons)
+- Dresden points of interest (vector points)
+- population data (district-level census)
+- data plotted on map, but code is folded. 
+
+## Coordinate reference systems (CRS)
+- why CRS is needed (geometry alone is meaningless)
+- CRS is a model of the earth + a measurement convention:
+    - geographic coordinates (latitude/longitude)
+    - datums (WGS84, etc.)
+- projected coordinate systems
+  - UTM, Lambert
+- distortions: area, distance, shape
+- CRS notation
+  - EPSG codes
+  - WKT
+  - PROJ strings (brief mention)
+- CRS mismatch between two datasets is one of unnoticed spatial errors 
+
+**Interactive question**
+
+Why do we project spatial data?
+
+- to increase accuracy of GPS
+- to represent curved Earth on a plane
+- to compress data size
+- to make coordinates interpretable for humans
+
+## Types of geodata
+
+- vector data
+  - points, lines, polygons
+  - discrete representation of space
+  - topology and relationships (adjacency, connectivity)
+
+- raster data
+  - grid-based representation of continuous surfaces
+  - resolution, representation, raster shapes, ...
+
+- comparison
+  - precision vs efficiency
+  - flexibility vs structure
+
+- interpretation pitfalls:
+  - raster resolution bias
+  - vector aggregation bias
+  - modifiable areal unit problem (MAUP)
+  - scale dependency of conclusions
+
+**Interactive question**
+
+Which statement is correct?
+
+- raster is always more precise than vector
+- vector is always better for continuous data
+- choice depends on phenomenon and scale
+- CRS does not matter for representation
+
+## Vector data in R
+::: {.data-proficiency}
+- reading vector data (sf)
+- inspecting geometry types
+- CRS handling in sf
+- attribute joins (spatial + non-spatial)
+- spatial filtering and subsetting
+- simple plotting (geom_sf)
+- CRS transformations (st_transform)
+- vector aggregation (dissolve, union)
+- common pitfalls:
+  - invalid geometries
+  - CRS mismatch
+  - silent geometry loss
+
+
+**Coding exercises**
+
+1. compute population density by Dresden city disctric and create map choropleth
+2. join POIs by district and add POIS to the map
+
+**Interactive question**
+
+What is stored in an sf object?
+
+- only geometry
+- only attributes
+- geometry + attributes + CRS
+- raster grids
+:::
+
+## Raster data in R
+::: {.data-proficiency}
+- introduction to terra::SpatRaster
+    - reading raster files (GeoTIFF, NetCDF)
+    - multi-layer rasters
+    - raster indexing and subsetting
+    - resolution and extent
+    - CRS handling in raster context
+    - plotting raster data
+    - summary statistics over rasters
+    - resampling and aggregation concepts
+    - memory and performance considerations
+    - lazy loading
+
+- introduction to stars::stars
+    - similar story
+
+
+**Interactive question**
+
+...
+:::
+
+
+## Vector-raster interactions
+::: {.data-proficiency}
+- spatial overlay concepts
+- cropping raster by vector boundary 
+- masking raster values
+- extracting raster values to points
+- extracting summary statistics to polygons
+- rasterization of vector data
+- zonal statistics
+- Pitfalls:
+    - alignment issues (CRS, resolution mismatch)
+    - interpolation vs extraction
+    - performance considerations (terra vs exactextractr)
+
+
+
+**Interactive question**
+
+Cropping vs. masking
+...
+:::
+
+## Exercises
+### Exploring the Dresden Open Data Portal
+Many cities and governments offer data in so-called open data portals, e.g., the Dresden Open Data Portal. 
+
+1. Explore the Dresden Open Data portal, or a different open data portal of your choice. 
+2. Choose one dataset that you find interesting (e.g., mobility, health, environment, education ...)
+3. Describe:
+    - What is the unit of observation?
+    - What is the geospatial reference (if any)?
+    - Does the data describe a continuous or discrete spatial phenomenon?
+    - Is the data vector or raster?
+    - How has the data been obtained? (if available)
+4. Explain in a few sentences:
+    - What wouuld be lost if the spatial information were removed? Would the dataset still be useful?
+    - How could the dataset be used meaningfully? Think of 3 interesting ways.
+    - What limits the dataset's usability?
+
+::: {.data-proficiency}
+- 2 data proficiency exercises (should involve all steps of the process, starting with data acquisition)
+:::
