@@ -1,0 +1,605 @@
+# Lifecycle References
+
+bibtex
+@article{Ige2024,
+  author = {Ige, A. and Chukwurah, N. and Adebayo, V. and Idemudia, C.},
+  title = {Managing data lifecycle effectively: Best practices for data retention and archival processes},
+  journal = {International Journal of Engineering Research and Development},
+  year = {2024},
+  issn = {2278-067X},
+  note = {e-ISSN 2278-067X, p-ISSN 2278-800X},
+  url = {https://www.ijerd.com}
+}
+
+@article{Taherdoost2021,
+  author = {Taherdoost, H.},
+  title = {Data collection methods and tools for research: A step-by-step guide to choose data collection technique for academic and business research projects},
+  journal = {International Journal of Academic Research in Management},
+  year = {2021},
+  issn = {2296-1747}
+}
+
+@incollection{Kabir2016,
+  author = {Kabir, S. M. S.},
+  title = {Methods of data collection},
+  booktitle = {Basic Guidelines for Research: An Introductory Approach for All Disciplines},
+  edition = {1},
+  pages = {201--275},
+  year = {2016}
+}
+
+@misc{TulaneDataTypes,
+  title = {Data Types and Formats - Data Literacy - Library Guides at Tulane University},
+  institution = {Tulane University}
+}
+
+@incollection{PerezSindin2017,
+  author = {Perez Sindin, X.},
+  title = {Secondary data},
+  booktitle = {The SAGE Encyclopedia of Communication Research Methods},
+  editor = {Allen, M.},
+  pages = {1578--1579},
+  publisher = {SAGE Publications},
+  year = {2017},
+  doi = {10.4135/9781483381411.n557}
+}
+
+@article{Goyal2024,
+  author = {Goyal, M. and Mahmoud, Q. H.},
+  title = {A systematic review of synthetic data generation techniques using generative AI},
+  journal = {Electronics},
+  volume = {13},
+  number = {17},
+  pages = {3509},
+  year = {2024},
+  doi = {10.3390/electronics13173509}
+}
+
+@inproceedings{Jadon2023,
+  author = {Jadon, A. and Kumar, S.},
+  title = {Leveraging generative AI models for synthetic data generation in healthcare: Balancing research and privacy},
+  booktitle = {Proceedings of the 2023 International Conference on Smart Applications, Communications and Networking (SmartNets)},
+  pages = {1--4},
+  address = {Istanbul, Türkiye},
+  year = {2023}
+}
+
+@incollection{Blumzon2019,
+  author = {Blumzon, C. F. I. and Pănescu, A.-T.},
+  title = {Data storage},
+  booktitle = {Good Research Practice in Non-clinical Pharmacology and Biomedicine},
+  series = {Handbook of Experimental Pharmacology},
+  volume = {257},
+  publisher = {Springer},
+  year = {2019},
+  doi = {10.1007/164_2019_288}
+}
+
+@article{Qiu2025,
+  author = {Qiu, Y. and Hu, Z.},
+  title = {Progress and recommendations in data ethics governance: A transnational analysis based on data ethics frameworks},
+  journal = {Humanities and Social Sciences Communications},
+  volume = {12},
+  pages = {1354},
+  year = {2025},
+  doi = {10.1057/s41599-025-05664-4}
+}
+
+@misc{GermanDataStrategy2021,
+  author = {{Federal German Government}},
+  title = {Data Strategy of the Federal German Government},
+  year = {2021}
+}
+
+@misc{BDSG2021,
+  author = {{Federal Government}},
+  title = {Federal Data Protection Act},
+  year = {2021},
+  url = {https://www.gesetze-im-internet.de/englisch_bdsg/}
+}
+
+@article{Li2020,
+  author = {Li, Y. and Saxunová, D.},
+  title = {A perspective on categorizing personal and sensitive data and the analysis of practical protection regulations},
+  journal = {Procedia Computer Science},
+  volume = {170},
+  pages = {1110--1115},
+  year = {2020},
+  doi = {10.1016/j.procs.2020.03.060}
+}
+
+@article{Gauthier2017,
+  author = {Gauthier, C.},
+  title = {The impact of the EU General Data Protection Regulation on scientific research},
+  journal = {Ecancermedicalscience},
+  volume = {11},
+  year = {2017}
+}
+
+@article{Sariyar2017,
+  author = {Sariyar, M. and Suhr, S. and Schlünder, I.},
+  title = {How sensitive is genetic data?},
+  journal = {Biopreservation and Biobanking},
+  volume = {15},
+  number = {6},
+  pages = {494--501},
+  year = {2017},
+  doi = {10.1089/bio.2017.0033}
+}
+
+@article{Karcher2023,
+  author = {Karcher, S. and Secen, S. and Weber, N.},
+  title = {Protecting sensitive data early in the research data lifecycle},
+  journal = {Journal of Privacy and Confidentiality},
+  volume = {13},
+  year = {2023},
+  doi = {10.29012/jpc.846}
+}
+
+@article{VandeVusse2022,
+  author = {VandeVusse, A. and Mueller, J. and Karcher, S.},
+  title = {Qualitative data sharing: Participant understanding, motivation, and consent},
+  journal = {Qualitative Health Research},
+  volume = {32},
+  number = {2},
+  pages = {182--191},
+  year = {2022},
+  doi = {10.1177/10497323211054058}
+}
+
+@article{Templ2022,
+  author = {Templ, M. and Sariyar, M.},
+  title = {A systematic overview on methods to protect sensitive data provided for various analyses},
+  journal = {International Journal of Information Security},
+  volume = {21},
+  pages = {1233--1246},
+  year = {2022},
+  doi = {10.1007/s10207-022-00607-5}
+}
+
+@book{Savelev2018,
+  author = {Савельев, Владимир},
+  title = {Статистика и котики},
+  publisher = {ООО «Издательство АСТ»},
+  year = {2018},
+  url = {https://www.litres.ru/book/vladimir-savelev-10569666/statistika-i-kotiki-28731109/chitat-onlayn}
+}
+
+@article{Stefan2023,
+  author = {Stefan, A. M. and Schönbrodt, F. D.},
+  title = {Big little lies: A compendium and simulation of p-hacking strategies},
+  journal = {Royal Society Open Science},
+  volume = {10},
+  pages = {220346},
+  year = {2023},
+  doi = {10.1098/rsos.220346}
+}
+
+@article{Simonsohn2013,
+  author = {Simonsohn, U. and Nelson, L. D. and Simmons, J. P.},
+  title = {P-curve: A key to the file drawer},
+  journal = {Journal of Experimental Psychology: General},
+  year = {2013},
+  url = {https://ssrn.com/abstract=2256237}
+}
+
+@article{Kowalczyk2018,
+  author = {Kowalczyk, S. T.},
+  title = {Modelling the digital research data lifecycle},
+  journal = {International Journal of Digital Curation},
+  volume = {12},
+  number = {2},
+  pages = {331--361},
+  year = {2018},
+  doi = {10.2218/ijdc.v12i2.429}
+}
+
+@misc{DFGGuidelines,
+  author = {{Deutsche Forschungsgemeinschaft}},
+  title = {DFG Guidelines on the Handling of Research Data}
+}
+
+@incollection{Bhattarai2025,
+  author = {Bhattarai, O. and Chaudhary, R. and Kumar, R. and Abidi, A. I.},
+  title = {A systematic analysis of diverse large language models and their operational paradigm},
+  booktitle = {Lecture Notes in Networks and Systems},
+  volume = {1039},
+  pages = {577--592},
+  year = {2025},
+  doi = {10.1007/978-981-97-4152-6_43}
+}
+
+@misc{Businessolution2023,
+  author = {{Businessolution.org}},
+  title = {AI in education statistics 2023 [Adoption, benefits, challenges]},
+  year = {2023},
+  url = {https://businessolution.org/statistics/2023}
+}
+
+@article{Amoah2025,
+  author = {Amoah, A. and Asiama, R. K. and Kwablah, E.},
+  title = {ChatGPT early usage among students: A global evidence of determinants},
+  journal = {Development and Sustainability in Economics and Finance},
+  volume = {7},
+  pages = {100065},
+  year = {2025},
+  doi = {10.1016/j.dsef.2025.100065}
+}
+
+@article{CantwellChavez2025,
+  author = {Cantwell-Chavez, D. and Davis, J.},
+  title = {Navigating generative AI tools in the classroom through a lens of equity and accessibility},
+  journal = {Teaching and Learning Inquiry},
+  year = {2025},
+  doi = {10.1080/15512169.2024.2426153}
+}
+
+@incollection{Bundgaard2025,
+  author = {Bundgaard, K. and Møller, A. K.},
+  title = {Generative AI in foreign language education: Student use and perspectives},
+  booktitle = {Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering},
+  volume = {604},
+  pages = {104--119},
+  publisher = {Springer},
+  year = {2025},
+  doi = {10.1007/978-3-031-85663-1_8}
+}
+
+@misc{Tyton2024,
+  author = {Bharadwaj, R. and Shaw, C. L. and Brennan, D. and Martin, S. and Janson, N. and Bryant, G.},
+  title = {Time for class 2024},
+  institution = {Tyton Partners},
+  year = {2024},
+  url = {https://tytonpartners.com/time-for-class-2024}
+}
+
+@article{Jairoun2024,
+  author = {Jairoun, A. A. and El-Dahiyat, F. and ElRefae, G. A. and Al-Hemyari, S. S. and Shahwan, M. and Zyoud, S. H. and Hammour, K. A. and Babar, Z. U.},
+  title = {Detecting manuscripts written by generative AI and AI-assisted technologies in the field of pharmacy practice},
+  journal = {Journal of Pharmaceutical Policy and Practice},
+  volume = {17},
+  number = {1},
+  pages = {2303759},
+  year = {2024},
+  doi = {10.1080/20523211.2024.2303759}
+}
+
+@article{MerinoCampos2025,
+  author = {Merino-Campos, C.},
+  title = {The impact of artificial intelligence on personalized learning in higher education: A systematic review},
+  journal = {Trends in Higher Education},
+  volume = {4},
+  number = {2},
+  pages = {17},
+  year = {2025},
+  doi = {10.3390/higheredu4020017}
+}
+
+@article{Qazi2024,
+  author = {Qazi, S. and Kadri, M. B. and Naveed, M. and Khawaja, B. A. and Khan, S. Z. and Alam, M. M. and Su’ud, M. M.},
+  title = {AI-driven learning management systems: Modern developments, challenges and future trends during the age of ChatGPT},
+  journal = {Computers, Materials \& Continua},
+  volume = {80},
+  number = {2},
+  pages = {3289--3314},
+  year = {2024},
+  doi = {10.32604/cmc.2024.048893}
+}
+
+@article{Kasneci2023,
+  author = {Kasneci, E. and Sessler, K. and Küchemann, S. and Bannert, M. and Dementieva, D. and Fischer, F. and others},
+  title = {ChatGPT for good? On opportunities and challenges of large language models for education},
+  journal = {Learning and Individual Differences},
+  volume = {103},
+  pages = {102274},
+  year = {2023},
+  doi = {10.1016/j.lindif.2023.102274}
+}
+
+@article{Zhai2024,
+  author = {Zhai, C. and Wibowo, S. and Li, L. D.},
+  title = {The effects of over-reliance on AI dialogue systems on students’ cognitive abilities: A systematic review},
+  journal = {Smart Learning Environments},
+  volume = {11},
+  pages = {28},
+  year = {2024},
+  doi = {10.1186/s40561-024-00316-7}
+}
+
+@article{Herman2022,
+  author = {Herman, D.},
+  title = {The end of high-school English: I’ve been teaching English for 12 years, and I’m astounded by what ChatGPT can produce},
+  journal = {The Atlantic},
+  year = {2022},
+  url = {https://www.theatlantic.com/technology/archive/2022/12/chatgpt-high-school-english-teacher/672412/}
+}
+
+@article{Dunnigan2023,
+  author = {Dunnigan, J. and Henriksen, D. and Mishra, P. and others},
+  title = {“Can we just please slow it all down?” School leaders take on ChatGPT},
+  journal = {TechTrends},
+  volume = {67},
+  pages = {878--884},
+  year = {2023},
+  doi = {10.1007/s11528-023-00914-1}
+}
+
+@article{Balalle2025,
+  author = {Balalle, H. and Pannilage, S.},
+  title = {Reassessing academic integrity in the age of AI: A systematic literature review on AI and academic integrity},
+  journal = {Social Sciences \& Humanities Open},
+  volume = {11},
+  pages = {101299},
+  year = {2025},
+  doi = {10.1016/j.ssaho.2025.101299}
+}
+
+@incollection{Blumzon2019,
+  author    = {Blumzon, C. F. I. and Pănescu, A.-T.},
+  title     = {Data storage},
+  booktitle = {Good Research Practice in Non-clinical Pharmacology and Biomedicine},
+  series    = {Handbook of Experimental Pharmacology},
+  volume    = {257},
+  pages     = {494--501},
+  publisher = {Springer},
+  year      = {2019},
+  doi       = {10.1007/164_2019_288}
+}
+
+@incollection{Plale2017,
+  author    = {Plale, B. and Kouper, I.},
+  title     = {The centrality of data: Data lifecycle and data pipelines},
+  booktitle = {Data Analytics for Intelligent Transportation Systems},
+  editor    = {Chowdry, M. and Apon, A. and Dey, K.},
+  chapter   = {4},
+  publisher = {Elsevier},
+  year      = {2017},
+  doi       = {10.1016/B978-0-12-809715-1.00004-3}
+}
+
+@book{Corti2014,
+  author    = {Corti, L. and Van den Eynden, V. and Bishop, L. and Woollard, M.},
+  title     = {Managing and Sharing Research Data: A Guide to Good Practice},
+  publisher = {SAGE},
+  year      = {2014}
+}
+
+@misc{DCCDMP,
+  author       = {{Digital Curation Centre}},
+  title        = {How to Develop a Data Management and Sharing Plan},
+  institution  = {Digital Curation Centre}
+}
+
+@misc{EC2016FAIR,
+  author       = {{European Commission}},
+  title        = {Guidelines on FAIR Data Management in Horizon 2020},
+  year         = {2016}
+}
+
+@misc{NSFSharing,
+  author       = {{National Science Foundation}},
+  title        = {Dissemination and Sharing of Research Results Policy}
+}
+
+@article{Wilkinson2016,
+  author    = {Wilkinson, M. D. and others},
+  title     = {The FAIR Guiding Principles for Scientific Data Management and Stewardship},
+  journal   = {Scientific Data},
+  year      = {2016}
+}
+
+@book{Whyte2011,
+  author    = {Whyte, A. and Tedds, J.},
+  title     = {Making the Case for Research Data Management},
+  publisher = {Digital Curation Centre},
+  year      = {2011}
+}
+
+@book{Kitchin2014,
+  author    = {Kitchin, R.},
+  title     = {The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences},
+  publisher = {SAGE},
+  year      = {2014}
+}
+
+@article{Wang1996,
+  author    = {Wang, R. Y. and Strong, D. M.},
+  title     = {Beyond Accuracy: What Data Quality Means to Data Consumers},
+  journal   = {Journal of Management Information Systems},
+  year      = {1996}
+}
+
+@book{DAMA2017,
+  author    = {{DAMA International}},
+  title     = {DAMA-DMBOK: Data Management Body of Knowledge},
+  year      = {2017}
+}
+
+@article{Armbrust2021,
+  author    = {Armbrust, M. and others},
+  title     = {Lakehouse: A New Generation of Open Platforms},
+  year      = {2021}
+}
+
+@article{Jagadish2014,
+  author    = {Jagadish, H. V. and others},
+  title     = {Big Data and Its Technical Challenges},
+  journal   = {Communications of the ACM},
+  year      = {2014}
+}
+
+@book{Borgman2015,
+  author    = {Borgman, C.},
+  title     = {Big Data, Little Data, No Data},
+  publisher = {MIT Press},
+  year      = {2015}
+}
+
+@misc{ISO2382,
+  author    = {{ISO/IEC}},
+  title     = {2382 IT Vocabulary}
+}
+
+@book{Creswell2014,
+  author    = {Creswell, J.},
+  title     = {Research Design},
+  year      = {2014}
+}
+
+@book{Saunders2019,
+  author    = {Saunders, M. and others},
+  title     = {Research Methods for Business Students},
+  year      = {2019}
+}
+
+@misc{OECD2007,
+  author    = {{OECD}},
+  title     = {Principles for Access to Research Data},
+  year      = {2007}
+}
+
+@misc{NISO2004,
+  author    = {{NISO}},
+  title     = {Understanding Metadata},
+  year      = {2004}
+}
+
+@misc{LibraryCongressDP,
+  author    = {{Library of Congress}},
+  title     = {Digital Preservation Guidelines}
+}
+
+@misc{ECOpenScience,
+  author    = {{European Commission}},
+  title     = {Open Science Policy}
+}
+
+@misc{GermanAlliance2010,
+  author    = {{German Alliance of Science Organisations}},
+  title     = {Principles for the Handling of Research Data},
+  year      = {2010}
+}
+
+@misc{NIST2014,
+  author    = {{NIST}},
+  title     = {Guidelines for Media Sanitization},
+  year      = {2014}
+}
+
+@article{Codd1970,
+  author    = {Codd, E. F.},
+  title     = {A Relational Model of Data for Large Shared Data Banks},
+  journal   = {Communications of the ACM},
+  year      = {1970}
+}
+
+@book{Elmasri2016,
+  author    = {Elmasri, R. and Navathe, S.},
+  title     = {Fundamentals of Database Systems},
+  year      = {2016}
+}
+
+@book{Silberschatz2019,
+  author    = {Silberschatz, A. and Korth, H. and Sudarshan, S.},
+  title     = {Database System Concepts},
+  year      = {2019}
+}
+
+@book{Date2004,
+  author    = {Date, C. J.},
+  title     = {An Introduction to Database Systems},
+  year      = {2004}
+}
+
+@book{Few2013,
+  author    = {Few, S.},
+  title     = {Information Dashboard Design},
+  year      = {2013}
+}
+
+@misc{Turnitin2020,
+  author    = {{Turnitin}},
+  title     = {The Plagiarism Spectrum 2.0},
+  year      = {2020}
+}
+
+@book{Pecorari2008,
+  author    = {Pecorari, D.},
+  title     = {Academic Writing and Plagiarism},
+  year      = {2008}
+}
+
+@book{Bretag2013,
+  author    = {Bretag, T.},
+  title     = {Teaching Academic Integrity in Higher Education},
+  year      = {2013}
+}
+
+@book{AgrestiFinlay,
+  author    = {Agresti, A. and Finlay, B.},
+  title     = {Statistical Methods for the Social Sciences}
+}
+
+@book{JamesISL,
+  author    = {James, G. and others},
+  title     = {An Introduction to Statistical Learning}
+}
+
+@misc{ASA2016,
+  author    = {{American Statistical Association}},
+  title     = {Statement on p-values},
+  year      = {2016}
+}
+
+@article{Simmons2011,
+  author    = {Simmons, J. P. and Nelson, L. D. and Simonsohn, U.},
+  title     = {False-Positive Psychology},
+  year      = {2011}
+}
+
+@article{OpenScience2015,
+  author    = {{Open Science Collaboration}},
+  title     = {Replication Crisis literature},
+  year      = {2015}
+}
+
+@book{Cairo2016,
+  author    = {Cairo, A.},
+  title     = {The Truthful Art: Data, Charts, and Maps for Communication},
+  year      = {2016}
+}
+
+@book{Booth2016,
+  author    = {Booth, W. C. and Colomb, G. G. and Williams, J. M.},
+  title     = {The Craft of Research},
+  year      = {2016}
+}
+
+@misc{PurdueOWL,
+  author    = {{Purdue Online Writing Lab}},
+  title     = {Evaluating Sources}
+}
+
+@book{Machi2016,
+  author    = {Machi, L. A. and McEvoy, B. T.},
+  title     = {The Literature Review},
+  year      = {2016}
+}
+
+@misc{RetractionWatch,
+  author    = {{Retraction Watch}},
+  title     = {Retraction Watch Database \& guidelines}
+}
+
+@misc{SCImago,
+  author    = {{SCImago}},
+  title     = {SCImago Journal Rank methodology}
+}
+
+@misc{IBMdmp,
+  author    = {{IBM}},
+  title     = {What is a DMP?},
+  url       = {https://www.ibm.com/think/topics/data-management-plan}
+}
+
+
