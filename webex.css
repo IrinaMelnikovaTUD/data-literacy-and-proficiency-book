@@ -298,5 +298,12 @@ ul.webex-button-list > li:last-child > .webex-button {
   background-color: transparent;
 }
 
-
+.data-proficiency {
+  background-color: #e6f7ff;
+  border-left: 6px solid #3399cc;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
 
