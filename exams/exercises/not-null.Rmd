@@ -1,0 +1,30 @@
+Question
+========
+Which constraint ensures no null values?
+
+Answerlist
+----------
+* NO NAS
+* NOT NULL
+* NON ZERO
+* FOREIGN KEY
+
+
+Solution
+========
+The NOT NULL constraint ensures no null values.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: not-null
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

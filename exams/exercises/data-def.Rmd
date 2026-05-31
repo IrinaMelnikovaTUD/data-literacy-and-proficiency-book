@@ -1,0 +1,30 @@
+Question
+========
+Which of the following is an example of data definitions in a DMP?
+
+Answerlist
+----------
+* Specifying file formats and types of collected data
+* Advertising research results
+* Listing personal information of all participants
+* Writing software manuals for the project
+
+
+Solution
+========
+Data definitions include specifying file formats and types of collected data.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: data-def
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

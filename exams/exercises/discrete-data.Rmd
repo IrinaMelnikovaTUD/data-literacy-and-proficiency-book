@@ -1,0 +1,31 @@
+Question
+========
+Which of the following is discrete data?
+
+Answerlist
+----------
+* number of students
+* height
+* temperature
+* time
+
+
+Solution
+========
+
+The number of students is discrete data because it can only take countable integer values.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: discrete-values
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

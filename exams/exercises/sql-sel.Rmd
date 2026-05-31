@@ -1,0 +1,30 @@
+Question
+========
+What does SQL SELECT do?
+
+Answerlist
+----------
+* transforms data
+* retrieves data
+* encrypts data
+* compresses data
+
+
+Solution
+========
+SQL SELECT retrieves data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: sql-sel
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

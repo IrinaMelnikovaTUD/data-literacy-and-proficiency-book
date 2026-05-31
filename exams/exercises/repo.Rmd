@@ -1,0 +1,30 @@
+Question
+========
+What is a repository?
+
+Answerlist
+----------
+* data storage and management platform
+* encryption software
+* compression algorithm
+* programming language
+
+
+Solution
+========
+A repository is a data storage and management platform.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: repo
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What is the main purpose of data cleaning?
+
+Answerlist
+----------
+* Deleting data that is no longer useful
+* Identifying and correcting problems in datasets
+* Improving data quality and accuracy
+* Deleting data that appears contravercial
+
+
+Solution
+========
+The main purpose of data cleaning is identifying and correcting problems in datasets.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: clean-purp
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

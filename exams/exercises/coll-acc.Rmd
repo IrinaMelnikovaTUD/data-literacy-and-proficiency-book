@@ -1,0 +1,30 @@
+Question
+========
+What topic is addressed in the data collection and access section of a DMP?
+
+Answerlist
+----------
+* How data will be collected and who can access it
+* How to improve accessibility and reproducibility of collected data
+* What qualifications and education level are required to collect data
+* What authorities have the legal right to demand data from the organization
+
+
+Solution
+========
+The data collection and access section explains how data will be collected and who can access it.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: coll-acc
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

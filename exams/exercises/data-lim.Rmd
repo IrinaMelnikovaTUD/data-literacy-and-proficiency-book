@@ -1,0 +1,30 @@
+Question
+========
+What is the purpose of describing research data limitations in a DMP?
+
+Answerlist
+----------
+* To justify incomplete datasets and/or missing values
+* To escape legal responsibility in case of a lawsuit
+* To clarify factors that may affect data reuse
+* To prevent data from being used by competitors
+
+
+Solution
+========
+Research data limitations are described to clarify factors that may affect data reuse.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: data-lim
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

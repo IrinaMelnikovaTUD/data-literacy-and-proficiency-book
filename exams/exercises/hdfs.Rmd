@@ -1,0 +1,30 @@
+Question
+========
+Which technology is commonly used in data lakes?
+
+Answerlist
+----------
+* HDFS
+* HTML
+* PDF
+* SMTP
+
+
+Solution
+========
+HDFS is commonly used in data lakes.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: hdfs
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

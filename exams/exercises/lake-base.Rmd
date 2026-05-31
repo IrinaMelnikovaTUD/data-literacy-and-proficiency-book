@@ -1,0 +1,30 @@
+Question
+========
+What is a data lake?
+
+Answerlist
+----------
+* structured database
+* repository storing raw data in various formats
+* data visualization tool
+* backup system
+
+
+Solution
+========
+A data lake is a repository storing raw data in various formats.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: lake-base
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

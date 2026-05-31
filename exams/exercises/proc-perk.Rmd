@@ -1,0 +1,30 @@
+Question
+========
+What is a benefit of a well-processed dataset?
+
+Answerlist
+----------
+* It guarantees reproducibility of results
+* It supports accurate and reliable analysis
+* It can then be analysed even by less expeirienced specialists
+* It can compensate for a smaller sample
+
+
+Solution
+========
+A well-processed dataset supports accurate and reliable analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: proc-perk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

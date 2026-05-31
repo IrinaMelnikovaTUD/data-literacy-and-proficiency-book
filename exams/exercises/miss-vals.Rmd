@@ -1,0 +1,30 @@
+Question
+========
+How may missing values in a dataset be handled?
+
+Answerlist
+----------
+* By removing or replacing them with estimated values
+* By replacing them with NAs
+* By excluding such values from the analysis
+* Missing values are valid and should not be modified
+
+
+Solution
+========
+Missing values may be handled by removing or replacing them with estimated values.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: miss-vals
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

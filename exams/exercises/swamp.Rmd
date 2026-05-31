@@ -1,0 +1,30 @@
+Question
+========
+What is a data swamp?
+
+Answerlist
+----------
+* clean data repository
+* poorly managed data lake
+* collection of data lakes
+* hybrid of a database and a data lake
+
+
+Solution
+========
+A data swamp is a poorly managed data lake.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: swamp
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

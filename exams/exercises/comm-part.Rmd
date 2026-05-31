@@ -1,0 +1,30 @@
+Question
+========
+What is the benefit of community participation in data management?
+
+Answerlist
+----------
+* It helps to create a universal framework applicable to any data management pipeline
+* It allows sharing of tools, standards, and best practices
+* It contributes to development of international standards of data safety
+* It prevents industrial espionage
+
+
+Solution
+========
+Community participation allows sharing of tools, standards, and best practices.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: comm-part
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

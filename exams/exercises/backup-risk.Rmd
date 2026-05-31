@@ -1,0 +1,30 @@
+Question
+========
+What risk occurs without backups?
+
+Answerlist
+----------
+* data loss
+* data leakage
+* reduced quality of analysis
+* anauthorized access to data
+
+
+Solution
+========
+Without backups, the risk of data loss occurs.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: backup-risk
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

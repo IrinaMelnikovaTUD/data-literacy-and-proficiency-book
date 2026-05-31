@@ -1,0 +1,30 @@
+Question
+========
+Which component helps understand dataset context?
+
+Answerlist
+----------
+* metadata
+* DMP
+* only direct communication with the authors
+* only collecting data from primary sources
+
+
+Solution
+========
+Metadata helps understand dataset context.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: dataset-context
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

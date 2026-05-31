@@ -1,0 +1,30 @@
+Question
+========
+What is metadata?
+
+Answerlist
+----------
+* data describing other data
+* encrypted data
+* data summarizing the main insights from other data
+* compressed data
+
+
+Solution
+========
+Metadata is data describing other data.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: meta-basics
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

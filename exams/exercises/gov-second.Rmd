@@ -1,0 +1,30 @@
+Question
+========
+Government statistics are usually:
+
+Answerlist
+----------
+* primary data
+* synthetic data
+* secondary data
+* qualitative data
+
+
+Solution
+========
+Government statistics are usually secondary data because they were collected by another organization.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: gov-second
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

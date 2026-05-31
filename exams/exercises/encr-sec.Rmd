@@ -1,0 +1,30 @@
+Question
+========
+What does encryption provide?
+
+Answerlist
+----------
+* faster processing
+* security and confidentiality
+* smaller datasets
+* reduced dimensionality
+
+
+Solution
+========
+Encryption provides security and confidentiality.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: encr-sec
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

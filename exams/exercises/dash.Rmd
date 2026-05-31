@@ -1,0 +1,29 @@
+Question
+========
+Why are dashboards useful?
+
+Answerlist
+----------
+* they are suitable for non-insiders
+* they present insights visually
+* they help to navigate within databases
+* they are proven to be 27% more engaging than the same data presented in textual form
+
+
+Solution
+========
+Dashboards are useful because they present insights visually.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+exname: dash
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

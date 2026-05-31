@@ -1,0 +1,30 @@
+Question
+========
+What is Apache Spark used for?
+
+Answerlist
+----------
+* project management
+* big data processing
+* database storage and archiving
+* data encryption
+
+
+Solution
+========
+Apache Spark is used for big data processing.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: apache
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

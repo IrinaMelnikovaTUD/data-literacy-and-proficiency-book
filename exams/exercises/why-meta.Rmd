@@ -1,0 +1,30 @@
+Question
+========
+What is metadata primarily used for?
+
+Answerlist
+----------
+* Compressing data files
+* Describing and explaining data
+* Deleting unnecessary files
+* Increasing storage capacity
+
+
+Solution
+========
+Metadata is primarily used for describing and explaining data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: why-meta
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+
+What does the statement of purpose in a DMP clarify?
+
+Answerlist
+----------
+* Whether there is a conflict of interests involved
+* The budget of the project
+* The research question or business goal
+* The authors and the participants of the project
+
+
+Solution
+========
+The statement of purpose clarifies the research question or business goal.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname:state-purp-dmp
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

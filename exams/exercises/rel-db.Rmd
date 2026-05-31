@@ -1,0 +1,30 @@
+Question
+========
+What is a relational database?
+
+Answerlist
+----------
+* long-term archiving solution
+* system organizing data into tables
+* data visualization tool
+* backup system
+
+
+Solution
+========
+A relational database is a system organizing data into tables.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: rel-db
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

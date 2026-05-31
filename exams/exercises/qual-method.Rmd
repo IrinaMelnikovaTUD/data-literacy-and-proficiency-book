@@ -1,0 +1,30 @@
+Question
+========
+Which method collects qualitative data?
+
+Answerlist
+----------
+* interviews
+* counting objects
+* measuring temperature
+* calculating averages
+
+
+Solution
+========
+Interviews are commonly used to collect qualitative data.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: qual-method
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What does data processing mainly involve?
+
+Answerlist
+----------
+* Deleting all otliers and missing values
+* Transforming raw data into a structured and usable format
+* Reducing dimensionality of data
+* Using machine learning algorithms for automated anaylsis 
+
+
+Solution
+========
+Data processing involves transforming raw data into a structured and usable format.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-proc
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

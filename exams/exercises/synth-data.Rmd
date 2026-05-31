@@ -1,0 +1,30 @@
+Question
+========
+Synthetic data are often used to:
+
+Answerlist
+----------
+* get data easily when the time for its collection is limited
+* reduce privacy risks
+* conceal misconduct
+* encrypt data
+
+
+Solution
+========
+Synthetic data are often used to reduce privacy risks.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: synth-data
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

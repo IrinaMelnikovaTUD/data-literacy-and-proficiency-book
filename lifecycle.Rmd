@@ -49,13 +49,35 @@ Ingest. Never overlook this step, as timely transferring data to an archive, rep
 
 - *Migrate*. As previously described above, transferring data into a new format might sometimes be necessary to match the storage environment, or to ensure that the information is still available for the future users possessing the latest technical capabilities.
 
-Self-Study Questions
+**Self-Study Questions**
 
-1.	How relevant is the model to various data professionals: data creators, archivists, or simply those who would like to re-use others’ data? How could you apply the model to your own tasks?
-2.	What are the types of actions the model discloses, and what is the difference between them? Which of these actions you think might be useful for your current projects?
-3.	What problems could occur if digital data is stored without consideration of file formats? Can you think of an example where data collected today could still be useful many years later? 
-4.	What documented instructions or guidelines are used in your organizations for data curation and maintenance? What do you know about the legal requirements of the country / the EU?
-5.	Reflect on the problems you have previously faced when working with data. Could some of the actions proposed in the model help to overcome any of these obstacles?
+1.	*How relevant is the model to various data professionals: data creators, archivists, or simply those who would like to re-use others’ data? How could you apply the model to your own tasks?*
+2.	*What are the types of actions the model discloses, and what is the difference between them? Which of these actions you think might be useful for your current projects?*
+3.	*What problems could occur if digital data is stored without consideration of file formats? Can you think of an example where data collected today could still be useful many years later?* 
+4.	*What documented instructions or guidelines are used in your organizations for data curation and maintenance? What do you know about the legal requirements of the country / the EU?*
+5.	*Reflect on the problems you have previously faced when working with data. Could some of the actions proposed in the model help to overcome any of these obstacles?*
+
+**Exercises**
+```{r quiz1-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "model-purp.Rmd"),
+  file.path(exercise_directory, "why-meta.Rmd"),
+  file.path(exercise_directory, "preserve-stage.Rmd"),
+  file.path(exercise_directory, "format-outdate.Rmd"),
+  file.path(exercise_directory, "docu-data.Rmd"),
+  file.path(exercise_directory, "usable-data.Rmd"),
+  file.path(exercise_directory, "descr-repr.Rmd"),
+  file.path(exercise_directory, "comm-part.Rmd"),
+  file.path(exercise_directory, "migration.Rmd"),
+  file.path(exercise_directory, "delete.Rmd")
+)
+```
+```{r quiz1, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 
 
 ## Data Management Plans {#lifecycle3}
@@ -84,6 +106,27 @@ Several tools have been developed to assist researchers in creating data managem
 
 Developing a DMP early in the research process not only helps satisfy funder requirements but also promotes better data organization, increased reproducibility, and greater opportunities for future data reuse – oftentimes regardless of the nature of the project [43].
 
+**Exercises**
+```{r quiz2-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "dmp-goal.Rmd"),
+  file.path(exercise_directory, "dmp-research.Rmd"),
+  file.path(exercise_directory, "state-purp-dmp.Rmd"),
+  file.path(exercise_directory, "data-def.Rmd"),
+  file.path(exercise_directory, "metadata-perk.Rmd"),
+  file.path(exercise_directory, "coll-acc.Rmd"),
+  file.path(exercise_directory, "dmp-sens.Rmd"),
+  file.path(exercise_directory, "dmp-faq.Rmd"),
+  file.path(exercise_directory, "data-lim.Rmd"),
+  file.path(exercise_directory, "dmp-sw.Rmd")
+)
+```
+```{r quiz2, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 ## Data Lifecycle Actions {#lifecycle4}
 
 As has been mentioned in the previous chapter, there is a plethora of data lifecycle models developed by various organizations for different fields.  
@@ -102,12 +145,36 @@ Data creation is not limited to its collection, but can also include actual gene
  
 Performance of data generation techniques over various dimensions (based on systematic literature review by [6])
 
-Reflection Questions
-1.	Why is the planning stage sometimes comes before the data creation stage in data lifecycle models? What should one decide on before collecting the data?
-2.	What advantages do primary data have compared to secondary data? Which type do you normally use in your work? Which methods have you personally used to collect it?
-3.	What limitations might occur when relying on secondary datasets?
-4.	In what situations might synthetic data be preferable to real-world data, and how to generate it?
-5.  Go to (<https://www.researchgate.net/>) or (<https://www.scopus.com/>) and find there five most cited papers in your field of study. Name the methods used for each research. Why do you think the authors opted for them?
+**Reflection Questions**
+
+1.	*Why is the planning stage sometimes comes before the data creation stage in data lifecycle models? What should one decide on before collecting the data?*
+2.	*What advantages do primary data have compared to secondary data? Which type do you normally use in your work? Which methods have you personally used to collect it?*
+3.	*What limitations might occur when relying on secondary datasets?*
+4.	*In what situations might synthetic data be preferable to real-world data, and how to generate it?*
+5.  *Go to (<https://www.researchgate.net/>) or (<https://www.scopus.com/>) and find there five most cited papers in your field of study. Name the methods used for each research. Why do you think the authors opted for them?*
+
+**Exercises**
+```{r quiz3-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "ex1-lc.Rmd"),
+  file.path(exercise_directory, "quali-data.Rmd"),
+  file.path(exercise_directory, "ordinal-data.Rmd"),
+  file.path(exercise_directory, "discrete-data.Rmd"),
+  file.path(exercise_directory, "primary-data.Rmd"),
+  file.path(exercise_directory, "gov-second.Rmd"),
+  file.path(exercise_directory, "contin-range.Rmd"),
+  file.path(exercise_directory, "qual-method.Rmd"),
+  file.path(exercise_directory, "synth-data.Rmd"),
+  file.path(exercise_directory, "collect-relevance.Rmd")
+)
+```
+```{r quiz3, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
+
 
 ### Data Processing and Cleaning {#lifecycle42}
 
@@ -125,13 +192,35 @@ In many professional and research environments, these tasks are implemented thro
 
 Despite this stage often being time-consuming and tiresome, it is also one of the most rewarding. A well-processed dataset is the cornerstone of any accurate analysis, which makes final conclusions truly reliable, and results more suitable for re-use in future studies [45][46]. Any problematic entries, on the other hand, often tend to propagate further, and make one return to the cleaning stage once again.
 
-Reflection Questions
+**Reflection Questions**
 
-1.	Why do you think raw data collected during research projects are often not suitable for immediate analysis? Is it possible to gather data that is already “clean” enough to skip cleaning stage?
-2.	Have you ever had to cleanse data on your own? What methods did you use for each problem?
-3.	In what situations might removing missing values be problematic?
-4.	Why is it important to standardize formats (e.g., dates, units of measurement) before analyzing data?
-5.	How would you spot a secondary dataset, where a cleansing stage was skipped?
+1.	*Why do you think raw data collected during research projects are often not suitable for immediate analysis? Is it possible to gather data that is already “clean” enough to skip cleaning stage?*
+2.	*Have you ever had to cleanse data on your own? What methods did you use for each problem?*
+3.	*In what situations might removing missing values be problematic?*
+4.	*Why is it important to standardize formats (e.g., dates, units of measurement) before analyzing data?*
+5.	*How would you spot a secondary dataset, where a cleansing stage was skipped?*
+
+**Exercises**
+```{r quiz4-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "preproc.Rmd"),
+  file.path(exercise_directory, "raw-data.Rmd"),
+  file.path(exercise_directory, "data-proc.Rmd"),
+  file.path(exercise_directory, "clean-purp.Rmd"),
+  file.path(exercise_directory, "miss-vals.Rmd"),
+  file.path(exercise_directory, "data-transform.Rmd"),
+  file.path(exercise_directory, "normal.Rmd"),
+  file.path(exercise_directory, "dat-integrat.Rmd"),
+  file.path(exercise_directory, "etl.Rmd"),
+  file.path(exercise_directory, "proc-perk.Rmd")
+)
+```
+```{r quiz4, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 
 ### Data Storage and Maintenance {#lifecycle43}
 
@@ -162,11 +251,34 @@ Central to any preservation infrastructure is a physical repository, be it a sim
 Data management, contextual metadata, formats, and preservation technologies can also be barriers that prevent preservation. For example, data management is expensive in terms of both personnel and equipment, and many scientist avoid honing their skills in this domain to focus on their studies instead, which complicates their research in the end.
 
 
+**Exercises**
+```{r quiz5-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "meta-basic.Rmd"),
+  file.path(exercise_directory, "meta-help.Rmd"),
+  file.path(exercise_directory, "maint.Rmd"),
+  file.path(exercise_directory, "encr-sec.Rmd"),
+  file.path(exercise_directory, "repo.Rmd"),
+  file.path(exercise_directory, "dataset-context.Rmd"),
+  file.path(exercise_directory, "backup-risk.Rmd"),
+  file.path(exercise_directory, "local-control.Rmd"),
+  file.path(exercise_directory, "integrity.Rmd"),
+  file.path(exercise_directory, "stor-monitor.Rmd")
+)
+```
+```{r quiz5, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
+
+
 #### Relational Databases {#lifecycle432}
 
 A **relational database** is a tool that organizes data into structured tables, where each table consists of rows and columns. This model is based on the relational (describing not only the objects, but also relations between them at the same time) model, first proposed by Edgar F. Codd in 1970. Nowadays, this relational database model remains one of the most widely used approaches for storing and managing data in both research and industry [61].
  
-In a relational database, each table represents a specific entity (e.g., students, courses, experiments), and each row (tuple) represents a single record. Columns (attributes) define the properties of that entity, such as name, age, or ID. A key feature of relational databases is the use of keys to uniquely identify and link data across tables – this is how relations are precisely described in this system. A **primary key** uniquely identifies each record within a table, while a **foreign key** establishes relationships between tables by referencing a primary key in another table [62].
+In a relational database, each table represents a specific entity (e.g., students, courses, experiments), and each row (tuple) represents a single record. Columns (attributes) define the properties of that entity, such as name, age, or ID. A key feature of relational databases is the use of keys to uniquely identify and link data across tables – this is how relations are precisely described in this system. A **primary key** uniquely identifies each record within a table, while a **foreign key** establishes relationships between tables by referencing a unique key in another table [62]. The difference between primary key and unique key is that the latter just has the property of uniqueness, and primary key, while being unique as well, won't take null values.
 
 Relational databases rely on *Structured Query Language (SQL)* for data manipulation and retrieval. SQL allows users to perform operations such as querying data, inserting new records, updating existing entries, and deleting data. It also supports complex operations such as joins, which combine data from multiple tables based on their relationships [63].
 
@@ -177,21 +289,42 @@ A central concept in relational databases is **data integrity,** which ensures t
     domain constraints (valid data types and ranges)
 -   NOT NULL constraints (mandatory values)
 
-These mechanisms help prevent errors such as duplicate records or invalid references, which helps to prevent errors such as duplicate records, invalid references, and missing mandatory values. This significantly improves overall data quality and reduces the need for data cleansing a crucial step in data lifecycle describe previously in detail [62][64].
+These mechanisms help to prevent errors such as duplicate records, invalid references, and missing mandatory values. This significantly improves overall data quality and reduces the need for data cleansing a crucial step in data lifecycle describe previously in detail [62][64].
 
 Another important principle is **normalization,** which is the process of organizing data to reduce redundancy and improve consistency. Normalization divides data into multiple related tables, minimizing duplication and ensuring that updates are applied consistently. Common normal forms (e.g., First Normal Form, Second Normal Form, Third Normal Form) define rules for structuring data effectively [64].
 
 Relational databases are widely used because they provide strong consistency, structured organization, and powerful querying capabilities. They are particularly suitable for situations when data relationships are well-defined (structured data) and data integrity is critical, such as financial systems, administrative databases, and scientific research datasets [61][63].
 However, relational databases may face limitations when dealing with very large volumes of unstructured data or highly flexible data models. In such cases, alternative systems such as NoSQL databases or data lakes may be more appropriate. Despite these limitations, relational databases are widely used for data management systems for a reason: compared to other existing solutions, they provide a highly reliable and structured data storage [63][64].
 
-Reflection Questions
-1.	Why are relational databases structured into tables instead of storing all data in one place?
-2.	What advantages do primary and foreign keys provide?
-3.	Why is normalization important for data consistency?
-4.	In what situations might relational databases not be the best choice?
-5.	How does SQL make working with relational databases easier?
+**Reflection Questions**
 
+1.	*Why are relational databases structured into tables instead of storing all data in one place?*
+2.	*What advantages do primary and foreign keys provide?*
+3.	*Why is normalization important for data consistency?*
+4.	*In what situations might relational databases not be the best choice?*
+5.	*How does SQL make working with relational databases easier?*
 
+**Exercises**
+```{r quiz6-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "rel-db.Rmd"),
+  file.path(exercise_directory, "rel-mod.Rmd"),
+  file.path(exercise_directory, "prim-key.Rmd"),
+  file.path(exercise_directory, "for-key.Rmd"),
+  file.path(exercise_directory, "sql-db.Rmd"),
+  file.path(exercise_directory, "sql-sel.Rmd"),
+  file.path(exercise_directory, "norm-db.Rmd"),
+  file.path(exercise_directory, "not-null.Rmd"),
+  file.path(exercise_directory, "row-db.Rmd"),
+  file.path(exercise_directory, "db-use.Rmd")
+)
+```
+```{r quiz6, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 #### Data Lakes {#lifecycle433}
 
 A **data lake** is a type of storage system that allows organizations to keep large amounts of data in one place. One important difference compared to traditional databases or data warehouses is that *data lakes do not always require the data to have a fixed structure before storing it:* instead, data stored in a data lake can be more or less structured, or even have no traditional structure at all (also called natural, or raw format) [47]. Here, under structured data we assume tabular form data, like a relational database (fully structured) or, for instance, in a csv file (semi-structured) (more about structure and dimensionality of data in the Introduction chapter). Binary data, like images or audio files, can also be safely stored in a data lake. Because of this, data lakes can be truly useful in modern environments where data can come from many different sources, for example sensors, social media platforms, multimedia files, etc. [49][47].
@@ -206,14 +339,35 @@ At the same time, data lakes also have some disadvantages. If they are not manag
 
 Security is also an important issue. Since data lakes may contain sometimes large volumes of raw and sensitive data, using suitable protection mechanisms would be crucial to prevent unauthorized access and potential abuse of the data [47].
 
-Reflection Questions
+**Reflection Questions**
 
-1. What are the main differences between a data lake and a data warehouse?
-2. Why can storing data in raw format be useful for future analysis?
-3. What problems may appear if a data lake is not managed properly?
-4. How does schema-on-read influence data analysis workflows?
-5. In which situations would a data lake be more suitable than a relational database or data warehouse?
+1. *What are the main differences between a data lake and a data warehouse?*
+2. *Why can storing data in raw format be useful for future analysis?*
+3. *What problems may appear if a data lake is not managed properly?*
+4. *How does schema-on-read influence data analysis workflows?*
+5. *In which situations would a data lake be more suitable than a relational database or data warehouse?*
 
+**Exercises**
+```{r quiz7-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "lake-base.Rmd"),
+  file.path(exercise_directory, "lake-types.Rmd"),
+  file.path(exercise_directory, "sch-read.Rmd"),
+  file.path(exercise_directory, "sch-write.Rmd"),
+  file.path(exercise_directory, "hdfs.Rmd"),
+  file.path(exercise_directory, "swamp.Rmd"),
+  file.path(exercise_directory, "lakes-ml.Rmd"),
+  file.path(exercise_directory, "lakes-prob.Rmd"),
+  file.path(exercise_directory, "lakehouse.Rmd"),
+  file.path(exercise_directory, "lake-meta.Rmd")
+)
+```
+```{r quiz7, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 
 #### Associated Challenges {#lifecycle434}
 
@@ -273,12 +427,33 @@ Besides, many organizations use data integration and previously mentioned **ETL 
 
 Overall, all of the above mentioned options have their own advantages, which make them suitable for different kinds of data management tasks. choosing the right combination of tools depends on factors such as data volume, complexity, required analytics capabilities, and user expertise [49][65], but most of the solutions mentioned in this category are confidently and successfully used also among professionals who do not have a solid background in data science.
 
-Reflection Questions
-1.	What are the main differences between BI tools and database systems?
-2.	Why are visualization tools important for decision-making?
-3.	What advantages do cloud-based data platforms offer compared to local systems?
-4.	In what situations would you use a big data platform instead of a traditional database?
-5.	How do ETL tools improve data quality?
+**Reflection Questions**
 
+1.	*What are the main differences between BI tools and database systems?*
+2.	*Why are visualization tools important for decision-making?*
+3.	*What advantages do cloud-based data platforms offer compared to local systems?*
+4.	*In what situations would you use a big data platform instead of a traditional database?*
+5.	*How do ETL tools improve data quality?*
 
+**Exercises**
+```{r quiz8-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "bi-purp.Rmd"),
+  file.path(exercise_directory, "bi-tool.Rmd"),
+  file.path(exercise_directory, "dbms.Rmd"),
+  file.path(exercise_directory, "pg-sql.Rmd"),
+  file.path(exercise_directory, "apache.Rmd"),
+  file.path(exercise_directory, "etl-sw.Rmd"),
+  file.path(exercise_directory, "talend.Rmd"),
+  file.path(exercise_directory, "cloud-perk.Rmd"),
+  file.path(exercise_directory, "big-cl.Rmd"),
+  file.path(exercise_directory, "dash.Rmd")
+)
+```
+```{r quiz8, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(exm, n = 10)
+```
 

@@ -1,0 +1,30 @@
+Question
+========
+What is a table row called?
+
+Answerlist
+----------
+* attribute
+* tuple
+* entity
+* set
+
+
+Solution
+========
+A table row is called a tuple.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: row-db
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

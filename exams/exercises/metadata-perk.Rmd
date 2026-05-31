@@ -1,0 +1,30 @@
+Question
+========
+What is one benefit of adding metadata to datasets?
+
+Answerlist
+----------
+* It decreases storage requirements
+* It improves future interpretability of the data
+* It helps to adjust data for disabled users
+* It summarized lengthy pieces of data into shorter abstracts
+
+
+Solution
+========
+Adding metadata improves the future interpretability of the data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: metadata-perk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

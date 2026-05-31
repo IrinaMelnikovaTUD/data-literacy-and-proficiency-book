@@ -1,0 +1,30 @@
+Question
+========
+What does a primary key do?
+
+Answerlist
+----------
+* encrypts data within a database
+* uniquely identifies records
+* connects data from multiple tables 
+* shows every relation between data
+
+
+Solution
+========
+A primary key uniquely identifies records.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: prim-key
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

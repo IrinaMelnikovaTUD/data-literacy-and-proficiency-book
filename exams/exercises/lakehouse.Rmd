@@ -1,0 +1,30 @@
+Question
+========
+What does a data lakehouse combine?
+
+Answerlist
+----------
+* databases and networks
+* data lakes and data warehouses
+* local and remote storage solutions
+* multiple datalakes together
+
+
+Solution
+========
+A data lakehouse combines data lakes and data warehouses.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: lakehouse
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

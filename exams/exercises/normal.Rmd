@@ -1,0 +1,30 @@
+Question
+========
+What does data normalization involve in statistics and machine learning?
+
+Answerlist
+----------
+* Scaling numerical values to a common range
+* Reducing variance
+* Removing all duplicate records
+* Replacing all missing values with the mean values
+
+
+Solution
+========
+Data normalization in statistics and machine learning involves scaling numerical values to a common range.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: normal
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

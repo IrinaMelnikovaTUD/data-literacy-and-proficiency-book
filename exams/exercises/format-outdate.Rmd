@@ -1,0 +1,28 @@
+Question
+========
+What problem may occur if digital file formats become outdated?
+
+Answerlist
+----------
+* Increased storage space
+* Data may become irrelevant
+* Data may become unreadable
+* Risk of data breaches increases
+
+Solution
+========
+If digital file formats become outdated, data may become unreadable.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+Meta-information
+================
+exname: format-outdate
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

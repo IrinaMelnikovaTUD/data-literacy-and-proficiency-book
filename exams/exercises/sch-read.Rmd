@@ -1,0 +1,30 @@
+Question
+========
+What is schema-on-read?
+
+Answerlist
+----------
+* defining structure before storing data
+* structuring data only when accessed
+* creating a relational hierarchy (scheme) of all stored data
+* decoding data
+
+
+Solution
+========
+Schema-on-read means structuring data only when accessed.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: sch-read
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

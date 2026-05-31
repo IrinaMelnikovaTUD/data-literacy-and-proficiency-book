@@ -1,0 +1,30 @@
+Question
+========
+Which platform is cloud-based?
+
+Answerlist
+----------
+* MySQL
+* Google BigQuery
+* Excel
+* Notepad
+
+
+Solution
+========
+Google BigQuery is a cloud-based platform.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: big-cl
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

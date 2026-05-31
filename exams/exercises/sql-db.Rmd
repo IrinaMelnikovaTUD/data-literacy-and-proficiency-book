@@ -1,0 +1,30 @@
+Question
+========
+What language is typically used in relational databases?
+
+Answerlist
+----------
+* Python
+* SQL
+* HTML
+* Java
+
+
+Solution
+========
+SQL is used in relational databases.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: sql-db
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

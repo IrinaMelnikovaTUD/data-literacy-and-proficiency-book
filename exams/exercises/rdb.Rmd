@@ -1,0 +1,35 @@
+```{r data generation, echo = FALSE, results = "hide"}
+dat <- matrix(c(
+  "STUDENT_ID", "Primary Key of STUDENT table",
+  "COURSE_ID", "Primary Key of COURSE table",
+  "PROFESSOR_ID", "Primary Key of PROFESSOR table",
+  "ENROLLMENT_ID", "Primary Key of ENROLLMENT table",
+  "STUDENT.NAME", "Attribute of STUDENT entity",
+  "COURSE.TITLE", "Attribute of COURSE entity",
+  "PROFESSOR.EMAIL", "Attribute of PROFESSOR entity",
+  "ENROLLMENT.STUDENT_ID", "Foreign Key referencing STUDENT",
+  "ENROLLMENT.COURSE_ID", "Foreign Key referencing COURSE",
+  "COURSE.PROFESSOR_ID", "Foreign Key referencing PROFESSOR",
+  "STUDENT", "Entity representing university students",
+  "COURSE", "Entity representing university courses",
+  "PROFESSOR", "Entity representing instructors",
+  "ENROLLMENT", "Associative entity connecting students and courses"), 
+  nrow = 2)
+i <- sample(1:ncol(dat), 1)
+iso <- dat[1, i]
+ctr <- dat[2, i]
+```
+
+Question
+========
+There are several tables in the university's database: STUDENT, COURSE, PROFESSOR and ENROLMENT. In this relational database, what `r ctr` stands for?
+
+Solution
+========
+`r ctr` is `r iso`.
+
+Meta-information
+================
+extype: string
+exsolution: `r iso`
+exname: rdb

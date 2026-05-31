@@ -1,0 +1,30 @@
+Question
+========
+Which data source is collected directly by the researcher?
+
+Answerlist
+----------
+* secondary data
+* primary data
+* sensitive data
+* metadata
+
+
+Solution
+========
+Primary data is collected directly by the researcher.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: primary-data
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

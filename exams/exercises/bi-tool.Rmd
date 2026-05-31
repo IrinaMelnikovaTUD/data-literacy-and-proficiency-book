@@ -1,0 +1,30 @@
+Question
+========
+Which of the following is a BI tool?
+
+Answerlist
+----------
+* MySQL
+* Hadoop
+* Microsoft Power BI
+* Google BI
+
+
+Solution
+========
+Microsoft Power BI is a BI tool.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: bi-tool
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

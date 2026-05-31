@@ -1,0 +1,30 @@
+Question
+========
+Why is documentation important in the data lifecycle?
+
+Answerlist
+----------
+* It increases the longevity of the stored data
+* It ensures future users can understand and interpret the data
+* It enables free data circulation
+* It prevents excessive data collection
+
+
+Solution
+========
+Documentation is important because it ensures future users can understand and interpret the data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: docu-data
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

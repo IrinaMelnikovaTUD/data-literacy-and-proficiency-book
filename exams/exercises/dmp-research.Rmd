@@ -1,0 +1,30 @@
+Question
+========
+Why do many funding organizations require researchers to submit a DMP?
+
+Answerlist
+----------
+* To reduce the number of research projects
+* To ensure transparency and responsible data stewardship
+* To combat scientific misconduct early on
+* To ensure reusability and long-term preservation of research data
+
+
+Solution
+========
+Many funding organizations require a DMP to ensure transparency and responsible data stewardship.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dmp-research
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

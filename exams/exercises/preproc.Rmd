@@ -1,0 +1,30 @@
+Question
+========
+Why is data processing an important stage of the data lifecycle?
+
+Answerlist
+----------
+* It guarantees faster processing of data
+* It ensures data is reliable and suitable for analysis
+* It eliminates the need for further statistical analysis
+* It ensures the valdity and accuracy of data
+
+
+Solution
+========
+Data processing is important because it ensures data is reliable and suitable for analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: preproc
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

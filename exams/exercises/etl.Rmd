@@ -1,0 +1,30 @@
+Question
+========
+What does ETL stand for in data processing?
+
+Answerlist
+----------
+* Extract, Transform, Load
+* Evaluate, Transfer, Link
+* Enter, Track, Label
+* Encode, Test, Learn
+
+
+Solution
+========
+ETL stands for Extract, Transform, Load.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: etl
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

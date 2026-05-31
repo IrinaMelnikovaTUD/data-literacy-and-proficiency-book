@@ -1,0 +1,30 @@
+Question
+========
+Why should sensitive data requirements be planned beforehand?
+
+Answerlist
+----------
+* Because sensitive data are never stored
+* Because legal restrictions may apply
+* Because metadata cannot be used
+* Because anonymized participants should have designated time slot to demand their personal data back
+
+
+Solution
+========
+Sensitive data requirements should be planned beforehand because legal restrictions may apply.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dmp-sens
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

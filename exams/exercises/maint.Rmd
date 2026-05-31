@@ -1,0 +1,30 @@
+Question
+========
+Data maintenance includes:
+
+Answerlist
+----------
+* duplicating important files and transferring to the project manager
+* regular updates and integrity checks
+* comparing data for potential contradictions and errors
+* copying every file and storing them separately
+
+
+Solution
+========
+Data maintenance includes regular updates and integrity checks.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: maint
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

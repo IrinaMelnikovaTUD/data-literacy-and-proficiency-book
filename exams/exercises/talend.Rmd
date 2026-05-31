@@ -1,0 +1,30 @@
+Question
+========
+Which tool is used for ETL processes?
+
+Answerlist
+----------
+* Excel
+* Talend
+* Power BI
+* MySQL
+
+
+Solution
+========
+Talend is used for ETL processes.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: talend
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Why is data integration important?
+
+Answerlist
+----------
+* It combines data from different sources into a unified dataset
+* It's the last step on the way to data integrity
+* It ensures the data is properly encoded
+* It relies on careful harmonization of formats, units, and metadata 
+
+
+Solution
+========
+Data integration is important because it combines data from different sources into a unified dataset.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: dat-integrat
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

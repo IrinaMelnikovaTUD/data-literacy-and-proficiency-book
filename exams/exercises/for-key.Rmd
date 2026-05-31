@@ -1,0 +1,30 @@
+Question
+========
+What is a foreign key?
+
+Answerlist
+----------
+* unique identifier
+* link between tables
+* versatile tool that can be both a unique identifier and reference such key in another table
+* a password protecting database
+
+
+Solution
+========
+A foreign key is a link between tables.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: for-key
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

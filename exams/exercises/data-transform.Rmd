@@ -1,0 +1,30 @@
+Question
+========
+What is one purpose of data transformation?
+
+Answerlist
+----------
+* Migrating to a database
+* Converting data into a consistent structure or format
+* Ensuring that data is not only readable for humans, but also for machines
+* Improving quality of the content
+
+
+Solution
+========
+One purpose of data transformation is converting data into a consistent structure or format.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-transform
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

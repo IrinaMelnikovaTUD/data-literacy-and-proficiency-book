@@ -1,0 +1,30 @@
+Question
+========
+Continuous data can:
+
+Answerlist
+----------
+* take only integer values
+* only represent categories
+* take any value within a range
+* not be measured
+
+
+Solution
+========
+Continuous data can take any value within a range.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: contin-range
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE
