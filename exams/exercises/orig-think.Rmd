@@ -1,0 +1,31 @@
+Question
+========
+What is original thinking?
+
+Answerlist
+----------
+* keeping number of used sources to a minimum
+* original thinking can only be present in arts (e.g. poetry), while science and industry must rely on credible sources
+* producing completely unique ideas and prioritizing novelty and relevance to the study field
+* producing authentic work based on one’s own ideas, properly supported by sources
+
+
+Solution
+========
+Original thinking means producing authentic work based on one’s own ideas, properly supported by sources
+
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: orig-think
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

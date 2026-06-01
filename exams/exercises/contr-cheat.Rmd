@@ -1,0 +1,30 @@
+Question
+========
+What is contract cheating?
+
+Answerlist
+----------
+* earning money by tutoring someone in their field of expertise
+* hiring someone to do your work
+* lying on one's CV, in case it eventually leads to signing a working contract
+* using AI tools to do the work employee was meant to do themselves
+
+
+Solution
+========
+Contract cheating is hiring someone to do your work.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: contr-cheat
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

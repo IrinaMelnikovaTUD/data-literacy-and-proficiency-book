@@ -1,0 +1,30 @@
+Question
+========
+What is source-based plagiarism?
+
+Answerlist
+----------
+* missing references
+* using incorrect or fake sources
+* copying someone else's work without citing
+* using someone else's data and/or experiment design to draw different conclusions or refute their theories and claims
+
+
+Solution
+========
+Source-based plagiarism involves incorrect or fake sources.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: source-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

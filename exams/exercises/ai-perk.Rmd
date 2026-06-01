@@ -1,0 +1,30 @@
+Question
+========
+What is one benefit of AI tools in education?
+
+Answerlist
+----------
+* increase in literacy of the texts
+* reducing repetitive tasks
+* generating big chunks of synthetic data for research purposes
+* fuelling new ideas
+
+
+Solution
+========
+One benefit of AI tools in education is reducing repetitive tasks.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-perk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

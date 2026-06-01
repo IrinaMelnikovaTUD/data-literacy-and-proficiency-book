@@ -1,0 +1,30 @@
+Question
+========
+What is an AI hallucination?
+
+Answerlist
+----------
+* poor models
+* biased opinions
+* false information generated confidently
+* data from unreliable sources 
+
+
+Solution
+========
+An AI hallucination is false information generated confidently.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: ai-hallu
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

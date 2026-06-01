@@ -1,0 +1,30 @@
+Question
+========
+What is mosaic plagiarism?
+
+Answerlist
+----------
+* writing original text based on another author's idea
+* combining sources without citing each one of them
+* citing more than one source per statement
+* using source that has been proven to contain plagiarism
+
+
+Solution
+========
+Mosaic plagiarism is combining sources without citing each one of them.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: mosa-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

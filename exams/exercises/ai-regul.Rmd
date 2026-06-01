@@ -1,0 +1,30 @@
+Question
+========
+Why might instructors prefer regulation over banning AI?
+
+Answerlist
+----------
+* to perform a social experiment
+* as for detecting AI tools usage by students other AI tools are required
+* integration into learning is beneficial
+* some of the educators’ tasks can be fully delegated to AI
+
+
+Solution
+========
+Instructors might prefer regulation over banning AI because integration into learning is beneficial.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: ai-regul
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

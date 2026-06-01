@@ -1,0 +1,30 @@
+Question
+========
+What is word-for-word plagiarism?
+
+Answerlist
+----------
+* summarizing
+* copying text exactly without citation
+* translating text
+* paraphrasing
+
+
+Solution
+========
+Word-for-word plagiarism is copying text exactly without citation.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: word-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
