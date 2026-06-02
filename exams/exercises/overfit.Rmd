@@ -1,0 +1,30 @@
+Question
+========
+What is overfitting?
+
+Answerlist
+----------
+* model too complex
+* model fits noise instead of real patterns
+* model so general that it fits any data
+* model that perfectly fits the data
+
+
+Solution
+========
+Overfitting means a model fits noise instead of real patterns.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: overfit
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

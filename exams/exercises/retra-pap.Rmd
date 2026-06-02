@@ -1,0 +1,30 @@
+Question
+========
+Why should retracted papers be avoided?
+
+Answerlist
+----------
+* they are outdated
+* they contain serious errors or misconduct
+* the access is limited
+* they have low number of citations
+
+
+Solution
+========
+Retracted papers should be avoided because they contain serious errors or misconduct.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: retra-pap
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

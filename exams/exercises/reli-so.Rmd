@@ -1,0 +1,30 @@
+Question
+========
+What is the most reliable type of source?
+
+Answerlist
+----------
+* book chapter
+* peer-reviewed journal article
+* conference paper
+* news article
+
+
+Solution
+========
+A peer-reviewed journal article is the most reliable type of source.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: reli-so
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

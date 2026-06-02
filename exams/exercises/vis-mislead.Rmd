@@ -1,0 +1,30 @@
+Question
+========
+What is misleading in visualization?
+
+Answerlist
+----------
+* colour schemes too bright
+* legend provided in the caption instead of figure itself
+* manipulated scales
+* multiple visualization techniques for one dataset
+
+
+Solution
+========
+Manipulated scales are misleading in visualization.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: vis-mislead
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

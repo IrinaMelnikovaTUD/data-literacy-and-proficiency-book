@@ -1,0 +1,30 @@
+Question
+========
+What is a Type I error?
+
+Answerlist
+----------
+* true negative result instead of desired positive one
+* false positive result
+* false negative result
+* bias
+
+
+Solution
+========
+A Type I error is a false positive result.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: type1-err
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

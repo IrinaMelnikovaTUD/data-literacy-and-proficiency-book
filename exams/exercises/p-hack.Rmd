@@ -1,0 +1,30 @@
+Question
+========
+What is *p*-hacking?
+
+Answerlist
+----------
+* manipulating audience with misleading abstract
+* manipulating analysis to obtain significant results
+* choosing higher *p*-value as a threshold 
+* using confidence intervals instead of *p*-value for NHST
+
+
+Solution
+========
+*p*-hacking is manipulating analysis to obtain significant results.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: p-hack
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

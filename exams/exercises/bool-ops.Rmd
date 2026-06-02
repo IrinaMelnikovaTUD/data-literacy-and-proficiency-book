@@ -1,0 +1,30 @@
+Question
+========
+What is the purpose of Boolean operators for sources finding through platforms?
+
+Answerlist
+----------
+* they indicate the quality of sources
+* to refine search queries
+* they make search faster
+* to simplify analysis of the search results
+
+
+Solution
+========
+Boolean operators are used to refine search queries.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: bool-ops
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

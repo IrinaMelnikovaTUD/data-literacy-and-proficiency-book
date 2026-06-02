@@ -1,0 +1,30 @@
+Question
+========
+What is a preprint?
+
+Answerlist
+----------
+* reviewed paper
+* unpublished non-reviewed paper
+* manuscript of a conference paper
+* draft of a thesis
+
+
+Solution
+========
+A preprint is an unpublished non-reviewed paper.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: prepr-paper
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What does citation count indicate?
+
+Answerlist
+----------
+* authors’ fame
+* influence and usage
+* data quality
+* publication year
+
+
+Solution
+========
+Citation count indicates influence and usage.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: cita-count
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

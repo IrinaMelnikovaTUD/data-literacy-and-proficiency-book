@@ -1,0 +1,30 @@
+Question
+========
+Why are **p*-values criticized?
+
+Answerlist
+----------
+* usually selected too low
+* often misinterpreted and misused
+* not all data can be valued this way
+* require further tests afterwards
+
+
+Solution
+========
+*p*-values are criticized because they are often misinterpreted and misused.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: p-crit
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

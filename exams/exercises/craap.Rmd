@@ -1,0 +1,30 @@
+Question
+========
+What does the CRAAP test evaluate?
+
+Answerlist
+----------
+* author's credentials
+* source reliability
+* journal ranking
+* statistical significance of results
+
+
+Solution
+========
+The CRAAP test evaluates source reliability.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: craap
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

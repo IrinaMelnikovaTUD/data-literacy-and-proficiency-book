@@ -1,0 +1,30 @@
+Question
+========
+What improves research transparency?
+
+Answerlist
+----------
+* disclosing all data sources
+* preregistration and sharing data
+* publishing only in high-ranked journals
+* publishing governmental receords internationally
+
+
+Solution
+========
+Preregistration and sharing data improve research transparency.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: res-trans
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

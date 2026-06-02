@@ -1,0 +1,30 @@
+Question
+========
+What is data peeking?
+
+Answerlist
+----------
+* analyzing after collection
+* stopping data collection when significance appears
+* removing too many outliers
+* changing hypothesis
+
+
+Solution
+========
+Data peeking is stopping data collection when significance appears.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-peek
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

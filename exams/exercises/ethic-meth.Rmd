@@ -1,0 +1,30 @@
+Question
+========
+What is the best way to avoid unethical practices?
+
+Answerlist
+----------
+* maximize significance
+* follow transparent and predefined methods
+* assign the third party monitors to control research process
+* perform same tests on the same data multiple times
+
+
+Solution
+========
+The best way to avoid unethical practices is to follow transparent and predefined methods.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ethic-meth
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
