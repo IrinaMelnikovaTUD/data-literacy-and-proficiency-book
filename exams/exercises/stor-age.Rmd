@@ -1,0 +1,30 @@
+Question
+========
+For how long may personal data be stored in identifiable form?
+
+Answerlist
+----------
+* Indefinitely
+* Only until the person’s decease
+* No longer than necessary for the purposes of processing
+* At least 10 years
+
+
+Solution
+========
+Personal data may be stored in identifiable form no longer than necessary for the purposes of processing.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: stor-age
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

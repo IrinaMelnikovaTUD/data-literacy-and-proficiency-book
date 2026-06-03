@@ -1,0 +1,30 @@
+Question
+========
+Why should quality checks be integrated throughout the data lifecycle?
+
+Answerlist
+----------
+* when automated, it helps saving money
+* early attention to data quality is more efficient
+* to avoid using automated tools, as it reduces the risk of errors
+* to train new employees to handle company's data
+
+
+Solution
+========
+Quality checks should be integrated throughout the data lifecycle because early attention to data quality is more efficient.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: q-checks
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

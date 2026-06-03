@@ -1,0 +1,30 @@
+Question
+========
+What does completeness refer to?
+
+Answerlist
+----------
+* absence of duplicate values
+* whether all required data values are present
+* whether metadata is present
+* whether datasets have certain number of rows and columns
+
+
+Solution
+========
+Completeness refers to whether all required data values are present.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-comp
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

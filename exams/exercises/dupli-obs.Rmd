@@ -1,0 +1,30 @@
+Question
+========
+What problem can duplicate observations cause?
+
+Answerlist
+----------
+* too much time needed to process them
+* distorted statistical analysis
+* too much computational power exhausted
+* reduced storage space
+
+
+Solution
+========
+Duplicate observations can cause distorted statistical analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dupli-obs
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Codes of conduct may be used particularly to ensure lawful processing when:
+
+Answerlist
+----------
+* Data are transferred or processed for other purposes
+* Data are accidently deleted
+* Data are demanded by governmental authorities
+* Data are collected manually
+
+
+Solution
+========
+Codes of conduct may be used particularly to ensure lawful processing when data are transferred or processed for other purposes.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: codes-of-kodak
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Personal data are defined as:
+
+Answerlist
+----------
+* Only biometric information
+* Explicit individual information recognized directly or indirectly
+* Data which can only be obtained from the person themselves
+* Information that can provoke discrimination against the subject
+
+
+Solution
+========
+Personal data are defined as explicit individual information recognized directly or indirectly.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: pers-dat
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

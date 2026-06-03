@@ -1,0 +1,30 @@
+Question
+========
+“Special categories of personal data” include:
+
+Answerlist
+----------
+* Email addresses and phone numbers
+* Shopping preferences
+* Data revealing political opinions
+* IP addresses
+
+
+Solution
+========
+Special categories of personal data include data revealing political opinions.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: spezi-cat
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

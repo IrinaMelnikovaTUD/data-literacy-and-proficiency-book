@@ -1,0 +1,30 @@
+Question
+========
+What does the Data Strategy of the Federal German Government mainly contain?
+
+Answerlist
+----------
+* Criminal penalties for data misuse
+* Technical standards for AI programming
+* Information on future policies to be implemented
+* Court decisions on privacy cases
+
+
+Solution
+========
+The Data Strategy of the Federal German Government mainly contains information on future policies to be implemented.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: dat-strat
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What does validity mean in data quality?
+
+Answerlist
+----------
+* data are reflect the reality accurately
+* data follow defined formats and rules
+* data are no older than 10 years
+* data are no older than 1 year
+
+
+Solution
+========
+Validity means that data follow defined formats and rules.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-valid
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

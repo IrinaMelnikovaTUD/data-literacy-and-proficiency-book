@@ -1,0 +1,30 @@
+Question
+========
+What is the main focus of quality assurance (QA)?
+
+Answerlist
+----------
+* correcting errors after data collection
+* preventive measures during data handling
+* timely adding metadata
+* preparing data for long-term archiving
+
+
+Solution
+========
+The main focus of quality assurance is preventive measures during data handling.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: quali-ass
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
