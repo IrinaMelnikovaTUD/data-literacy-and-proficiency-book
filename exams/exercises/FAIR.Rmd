@@ -1,0 +1,27 @@
+Question
+========
+
+Would you like to see a solution example?
+
+Answerlist
+----------
+* Yes
+* No
+
+
+Solution
+========
+![](figures/bad-table.png)
+
+Answerlist
+----------
+* True
+* False
+
+
+Meta-information
+================
+exname: FAIR
+extype: schoice
+exsolution: 10
+exshuffle: FALSE

@@ -1,0 +1,34 @@
+---
+title: "Plagiarism Exercise"
+format: html
+exlayout: vertical
+execute:
+  freeze: auto
+
+---
+
+# Practical Exercise
+
+*You’ve retrieved the following paragraph from an academic source and would like to use this information in your own research paper / student report. Which of the three provided versions will be acceptable? Explain why.*
+
+
+**Original Text:**
+
+> Plagiarism is not limited to copying text word for word. It also includes paraphrasing ideas without proper attribution, reusing one’s own previous work without disclosure, and manipulating sources so that they cannot be traced. Even unintentional mistakes can undermine academic integrity and damage trust in scholarly communication.
+
+```{r test-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+
+exm <- list(
+  "prac-plag-11.Rmd",
+  "prac-plag-22.Rmd",
+  "prac-plag-33.Rmd"
+)
+
+```
+
+```{r test, echo = FALSE, message = FALSE, results = "asis"} 
+#exams2forms(exm, n = 3)
+exams2forms(list("prac-plag-11.Rmd", "prac-plag-22.Rmd", "prac-plag-33.Rmd"), solution = FALSE)
+```

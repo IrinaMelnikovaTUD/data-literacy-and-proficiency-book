@@ -1,0 +1,43 @@
+---
+title: "Practical Exercise"
+format: html
+exlayout: vertical
+execute:
+  freeze: auto
+
+---
+
+# FAIR Principles: application
+
+*Consider the fragment of a file below. Can you tell what the data is about? Could someone else understand it?*
+
+![](figures/bad-table.png)
+
+*Suggest improvements:*
+
+The name should be `r forms_schoice(c("shorter", "more comprehensible", "never IN CAPS", "in different format"), c(FALSE, TRUE, FALSE, FALSE), display = "dropdown")`.
+
+`r forms_schoice(c("ID", "Transportation mode", "Metadata", "Column names"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")` could be less ambiguous.
+
+How would you standardize the values?  `r forms_schoice(c("no missing values", "time in hours", "3,00 instead of 300", "sunny instead of sun"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")`.
+
+Question marks ? must be replaced with  `r forms_schoice(c("NAs", "NANs", "proper missing values", "they should all be deleted"), c(FALSE, FALSE, TRUE, FALSE), display = "dropdown")`.
+
+`r forms_schoice(c("Qualitative descriptions", "Vague abbreviations", "Underscores", "Non-SI units"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")` should be avoided.
+
+
+
+```{r test-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+
+exm <- list(
+  "FAIR.Rmd"
+)
+
+```
+
+```{r test, echo = FALSE, message = FALSE, results = "asis"} 
+#exams2forms(exm, n = 3)
+exams2forms(list("FAIR.Rmd"), solution = FALSE)
+```

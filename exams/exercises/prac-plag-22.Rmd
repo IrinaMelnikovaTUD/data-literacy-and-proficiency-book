@@ -1,0 +1,27 @@
+Question
+========
+
+2) Plagiarism covers a wide range of practices beyond direct copying. Using someone else’s ideas without acknowledging the source, submitting previous work as new, or obscuring references all violate academic standards. Such actions, even when accidental, can compromise the credibility of academic work.
+
+Answerlist
+----------
+* Decent
+* Problematic
+
+
+Solution
+========
+**Why this passage is problematic:** This text might sound truly original, as its wording is genuinely different from the source, and the whole passage doesn't fail to represent the main ideas accurately. But the original author is not acknowledged, which might be unintentional (the so-called *inadvertent plagiarism*), but falls under plagiarism umbrella nonetheless.
+
+Answerlist
+----------
+* False
+* True
+
+
+Meta-information
+================
+exname: prac-plag-2
+extype: schoice
+exsolution: 01
+exshuffle: FALSE

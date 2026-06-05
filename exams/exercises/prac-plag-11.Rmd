@@ -1,0 +1,27 @@
+Question
+========
+
+1) Plagiarism is not only about copying text word by word. It also involves paraphrasing ideas without proper attribution, reusing one’s own earlier work without disclosure, and changing sources so they cannot be traced. Even unintended errors can weaken academic integrity and harm trust in academic communication.
+
+Answerlist
+----------
+* Decent
+* Problematic
+
+
+Solution
+========
+**Why this passage is problematic:** Sentence structure in the modified text closely mirrors the original - it's obvious that many phrases have been changed ever so slightly. On tiop of that, lack of any citation suggests that this text is an example of a *Paraphrase plagiarism*.
+
+Answerlist
+----------
+* False
+* True
+
+
+Meta-information
+================
+exname: prac-plag-1
+extype: schoice
+exsolution: 01
+exshuffle: FALSE

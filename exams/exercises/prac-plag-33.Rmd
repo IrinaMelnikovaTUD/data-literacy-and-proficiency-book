@@ -1,0 +1,27 @@
+Question
+========
+
+3) Plagiarism includes more than verbatim copying; it also involves unacknowledged use of others’ ideas, undisclosed reuse of one’s own prior work, and the manipulation of sources to make them untraceable. These practices, whether intentional or not, threaten academic integrity and scholarly trust (Smith, 2021).
+
+Answerlist
+----------
+* Decent
+* Problematic
+
+
+Solution
+========
+**Why this passage is acceptable:** Unlike previous passages, this text both captures the meaning of the original and keeps language truly authentic, all the while providing accurate citation. This can be considered as *original thinking*.
+
+Answerlist
+----------
+* True
+* False
+
+
+Meta-information
+================
+exname: prac-plag-3
+extype: schoice
+exsolution: 10
+exshuffle: FALSE
