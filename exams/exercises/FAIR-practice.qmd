@@ -1,7 +1,6 @@
 ---
 title: "Practical Exercise"
 format: html
-exlayout: vertical
 execute:
   freeze: auto
 
