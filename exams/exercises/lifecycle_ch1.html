@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Lifecycle chapter</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="lifecycle_ch1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="lifecycle_ch1_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="lifecycle_ch1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="lifecycle_ch1_files/libs/quarto-html/popper.min.js"></script>
+<script src="lifecycle_ch1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="lifecycle_ch1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="lifecycle_ch1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="lifecycle_ch1_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="lifecycle_ch1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="lifecycle_ch1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="lifecycle_ch1_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Lifecycle chapter</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="lifecycle" class="level1">
+<h1>Data Life Cycle and Data Management</h1>
+<section id="lifecycle1" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle1">Data Lifecycle</h2>
+<p><br>
+<strong>Data management</strong> is the term used to describe the collective tasks to insure the long term archiving of and continuing access to data, including backups, contingency planning, process resumption planning, hardware and network redundancy, automatic failover, and site mirroring [21].</p>
+<p>Today, data is collected from many different sources, and is used to improve understanding of emerging situations across different fields [38]. Properly developed data lifecycle helps to study past events, explain current situations, and successfully predict future outcomes. Models that describe data objects through a set of time-ordered stages are called <strong>lifecycle models</strong> [38]. Many of these models exist for different industries and research areas [39], but they all have a similar goal. Their very purpose is to help organizations manage data properly by creating a framework for documenting, protecting, and providing access to important data.</p>
+</section>
+<section id="lifecycle2" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle2">Data Lifecycle Model</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/dcc-lc-model.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>One of the most widely used data lifecycle models was developed by Digital Curation Centre (DCC) <span class="citation" data-cites="misc">[@misc{DCCDMP]</span>. The <strong>DCC Curation Lifecycle Model</strong> explains how data is managed, preserved, and reused over time. This model primarily targets employees of various organizations – from research institutes to private business and governmental companies, but we are sure its main concepts can be as useful for professionals regardless of their field, including those working individually. Its proposed stages are described below.</p>
+<p>All data-related actions included into the DCC Digital Asset Lifecycle Model can be separated into three main categories: full lifecycle actions, used to create and preserve new data, sequential actions, aimed at its maintenance and storage, and occasional actions, required for some only.</p>
+<section id="lifecycle21" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle21">Full Lifecycle Actions</h3>
+<ul>
+<li><p><em>Description and Representation Information.</em> Metadata and corresponding representation information should be timely added to describe all digital materials (read more about metadata see <span class="citation" data-cites="lifecycle431">@lifecycle431</span>)</p></li>
+<li><p><em>Preservation Planning.</em> As context, relevancy and other properties associated with data are changing throughout the curation lifecycle, it’s important to develop plans for all curation lifecycle actions.</p></li>
+<li><p><em>Community Watch and Participation.</em> When working in a team or organization, development of shared standards, tools and suitable software for data curation can be vital. Data should stay accessible, understandable, and usable over time.</p></li>
+<li><p><em>Curate and Preserve.</em> The structure, meaning, and context of the data should not only be clearly documented, but as well preserved at each stage of the cycle, so future users can understand it correctly.</p></li>
+</ul>
+</section>
+<section id="lifecycle22" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle22">Sequential Actions</h3>
+<ul>
+<li><p><em>Conceptualize.</em> Before creating or gathering data, a clear plan should be developed: what kind of data is required and in what quantities? How to capture it, and how it should be stored? The answer to one question can directly affect others, as described in the previous chapters. Create or Receive. When creating data, administrative, descriptive, structural, technical, and preservation metadata can all be of great use. Always mind collecting policies (usually documented) and other ethical restrictions when choosing data capturing methods and sources.</p></li>
+<li><p><em>Appraise and Select.</em> Evaluate data, to define which information requires long-term preservation. Therefore, always follow documented guidance and other relevant instructions. Ingest. Never overlook this step, as timely transferring data to an archive, repository, or a responsible colleague at appropriate steps of the lifecycle often becomes a make-or-break point of it. At this stage, one must again consider the organization’s policies and/or legal requirements.</p></li>
+<li><p><em>Preservation Actions.</em> So, what are the possible actions to ensure long-term preservation and retention of data? These are any measures to keep the data authentic, reliable, usable, and complete. It is important to plan such measures not only for today, but also for the future. One of the good examples of future risks would be outdated file formats: before storing valuable information in a particular format, one should first ask themselves, how long this data should be available? Who will be using it next, and will those people have necessary hard- and software to read the format properly? When not, what could be done, and when, to adjust the old data to the new technical requirements? Other crucial steps might include data cleaning, evaluation, assigning preservation metadata, and many more, depending on the nature of information being preserved.</p></li>
+<li><p><em>Store.</em> It is important to familiarize yourself with up-to-date standards of data storage and try to adhere to them when storing data. Possible negative scenarios and appropriate solutions should, as always, be considered ahead: damaged paper or digital archives, forgotten passwords, and even fire at a data center are more common obstacles than most people can imagine, and preventing them costs less effort and money than trying to solve those problems.</p></li>
+<li><p><em>Access, Use and Reuse.</em> Before making decisions, one should regularly consider the needs of the future users – and re-users of data. On one hand, it is critically important to protect information from any inappropriate usage by unauthorized persons and third parties: authentication procedures and other methods of access control can be truly useful here. On the other hand, as anyone is expected to reuse the data, the solution must be found to provide those people with sufficient access to the required files – for instance, as publicly available information.</p></li>
+<li><p><em>Transform.</em> As explained above, sometimes migration of data into a different format is necessary with time – a complex, but vital task for an organization. This would mean, in fact, creating new data from the original, or transforming it. Another example would be creating a subset of original datasets, by selection or query, to create newly derived results, perhaps for publication : a valid method, that can sometimes can tricky (more about it in the Chapter ).</p></li>
+</ul>
+</section>
+<section id="lifecycle2" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle2">Occasional Actions</h3>
+<ul>
+<li><p><em>Dispose</em>. Rely on documented policies, legal requirements, and other pre-made instructions that exist in the organization and, if necessary, the country, to determine how long every data object is supposed to be stored. Data that is no longer useful can be destroyed, sometimes this should be done securely – there are strict legal requirements regarding the destruction of certain data types, explained in detail in chapter X. In large organizations, data may be transferred to another archive, repository, data centre, or a custodian instead.</p></li>
+<li><p><em>Reappraise.</em> When data fails validation procedures, it should be returned for further appraisal and reselection.</p></li>
+<li><p><em>Migrate</em>. As previously described above, transferring data into a new format might sometimes be necessary to match the storage environment, or to ensure that the information is still available for the future users possessing the latest technical capabilities.</p></li>
+</ul>
+<p><strong>Self-Study Questions</strong></p>
+<ol type="1">
+<li><em>How relevant is the model to various data professionals: data creators, archivists, or simply those who would like to re-use others’ data? How could you apply the model to your own tasks?</em></li>
+<li><em>What are the types of actions the model discloses, and what is the difference between them? Which of these actions you think might be useful for your current projects?</em></li>
+<li><em>What problems could occur if digital data is stored without consideration of file formats? Can you think of an example where data collected today could still be useful many years later?</em></li>
+<li><em>What documented instructions or guidelines are used in your organizations for data curation and maintenance? What do you know about the legal requirements of the country / the EU?</em></li>
+<li><em>Reflect on the problems you have previously faced when working with data. Could some of the actions proposed in the model help to overcome any of these obstacles?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the main purpose of the data lifecycle model?</p>
+<div id="webex-7ac797eaf7fedc5ed33902ae4c3d903f" class="webex-radiogroup" data-answer="bFFPBxUGSVE7">
+<label><input type="radio" autocomplete="off" name="7ac797eaf7fedc5ed33902ae4c3d903f"><span>To replace data analysis software</span></label><label><input type="radio" autocomplete="off" name="7ac797eaf7fedc5ed33902ae4c3d903f"><span>To manage data storage devices</span></label><label><input type="radio" autocomplete="off" name="7ac797eaf7fedc5ed33902ae4c3d903f"><span>To provide a framework for managing data efficiently</span></label><label><input type="radio" autocomplete="off" name="7ac797eaf7fedc5ed33902ae4c3d903f"><span>To reduce data-related bureaucracy</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is metadata primarily used for?</p>
+<div id="webex-fc8e3559041d7f082a2861301b19949c" class="webex-radiogroup" data-answer="PVMUVR8EGQlt">
+<label><input type="radio" autocomplete="off" name="fc8e3559041d7f082a2861301b19949c"><span>Compressing data files</span></label><label><input type="radio" autocomplete="off" name="fc8e3559041d7f082a2861301b19949c"><span>Increasing storage capacity</span></label><label><input type="radio" autocomplete="off" name="fc8e3559041d7f082a2861301b19949c"><span>Describing and explaining data</span></label><label><input type="radio" autocomplete="off" name="fc8e3559041d7f082a2861301b19949c"><span>Deleting unnecessary files</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which stage of data lifecycle focuses on creating strategies for long-term data management?</p>
+<div id="webex-0ac22b18b29a475f2d897454194485ca" class="webex-radiogroup" data-answer="a1FPAx5SHQg/">
+<label><input type="radio" autocomplete="off" name="0ac22b18b29a475f2d897454194485ca"><span>Data Analysis</span></label><label><input type="radio" autocomplete="off" name="0ac22b18b29a475f2d897454194485ca"><span>Preservation Planning</span></label><label><input type="radio" autocomplete="off" name="0ac22b18b29a475f2d897454194485ca"><span>Description and Representation</span></label><label><input type="radio" autocomplete="off" name="0ac22b18b29a475f2d897454194485ca"><span>Reappraisal</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What problem may occur if digital file formats become outdated?</p>
+<div id="webex-cc94885ff9f12fb8f96c96205623bceb" class="webex-radiogroup" data-answer="OFIVBBQIGVY7">
+<label><input type="radio" autocomplete="off" name="cc94885ff9f12fb8f96c96205623bceb"><span>Data may become unreadable</span></label><label><input type="radio" autocomplete="off" name="cc94885ff9f12fb8f96c96205623bceb"><span>Increased storage space</span></label><label><input type="radio" autocomplete="off" name="cc94885ff9f12fb8f96c96205623bceb"><span>Risk of data breaches increases</span></label><label><input type="radio" autocomplete="off" name="cc94885ff9f12fb8f96c96205623bceb"><span>Data may become irrelevant</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why is documentation important in the data lifecycle?</p>
+<div id="webex-e3eb55133860a24f1b6049349eb7abd1" class="webex-radiogroup" data-answer="PgNJUhkFHQJu">
+<label><input type="radio" autocomplete="off" name="e3eb55133860a24f1b6049349eb7abd1"><span>It increases the longevity of the stored data</span></label><label><input type="radio" autocomplete="off" name="e3eb55133860a24f1b6049349eb7abd1"><span>It enables free data circulation</span></label><label><input type="radio" autocomplete="off" name="e3eb55133860a24f1b6049349eb7abd1"><span>It prevents excessive data collection</span></label><label><input type="radio" autocomplete="off" name="e3eb55133860a24f1b6049349eb7abd1"><span>It ensures future users can understand and interpret the data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which stage ensures digital objects remain usable over time?</p>
+<div id="webex-dcb2fffd9b1a4b3ad061cd971c1e0f5e" class="webex-radiogroup" data-answer="P1JOAkpWSlRk">
+<label><input type="radio" autocomplete="off" name="dcb2fffd9b1a4b3ad061cd971c1e0f5e"><span>Curation and Preservation</span></label><label><input type="radio" autocomplete="off" name="dcb2fffd9b1a4b3ad061cd971c1e0f5e"><span>Protection and Maintenance</span></label><label><input type="radio" autocomplete="off" name="dcb2fffd9b1a4b3ad061cd971c1e0f5e"><span>Data Processing</span></label><label><input type="radio" autocomplete="off" name="dcb2fffd9b1a4b3ad061cd971c1e0f5e"><span>Archiving and Disposal</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is one key task in Description and Representation?</p>
+<div id="webex-44b3162c5b99bd0d6863b6c239187efa" class="webex-radiogroup" data-answer="bwROAh0GHlNo">
+<label><input type="radio" autocomplete="off" name="44b3162c5b99bd0d6863b6c239187efa"><span>Submitting reports on proper data usage</span></label><label><input type="radio" autocomplete="off" name="44b3162c5b99bd0d6863b6c239187efa"><span>Timely creating metadata</span></label><label><input type="radio" autocomplete="off" name="44b3162c5b99bd0d6863b6c239187efa"><span>Deleting unused files</span></label><label><input type="radio" autocomplete="off" name="44b3162c5b99bd0d6863b6c239187efa"><span>Cataloguing all archived data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the benefit of community participation in data management?</p>
+<div id="webex-7ce81093ccf529f9954baa5669f2afdc" class="webex-radiogroup" data-answer="bFNJCB0AFQI+">
+<label><input type="radio" autocomplete="off" name="7ce81093ccf529f9954baa5669f2afdc"><span>It prevents industrial espionage</span></label><label><input type="radio" autocomplete="off" name="7ce81093ccf529f9954baa5669f2afdc"><span>It helps to create a universal framework applicable to any data management pipeline</span></label><label><input type="radio" autocomplete="off" name="7ce81093ccf529f9954baa5669f2afdc"><span>It contributes to development of international standards of data safety</span></label><label><input type="radio" autocomplete="off" name="7ce81093ccf529f9954baa5669f2afdc"><span>It allows sharing of tools, standards, and best practices</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why may <em>data migration</em> be necessary?</p>
+<div id="webex-94b6e04fe15be9a1eb73aa6be2f7e72a" class="webex-radiogroup" data-answer="YgROBkkBGFY4">
+<label><input type="radio" autocomplete="off" name="94b6e04fe15be9a1eb73aa6be2f7e72a"><span>when the police or the government ask to provide certain data</span></label><label><input type="radio" autocomplete="off" name="94b6e04fe15be9a1eb73aa6be2f7e72a"><span>to move less used data to the archive</span></label><label><input type="radio" autocomplete="off" name="94b6e04fe15be9a1eb73aa6be2f7e72a"><span>to match the storage environment</span></label><label><input type="radio" autocomplete="off" name="94b6e04fe15be9a1eb73aa6be2f7e72a"><span>to protect data from unauthorized access</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Should one delete data that is no longer useful?</p>
+<div id="webex-4d278818b12424e2deec2ed586d2d446" class="webex-radiogroup" data-answer="b1UeBxQIHQg/">
+<label><input type="radio" autocomplete="off" name="4d278818b12424e2deec2ed586d2d446"><span>data should never be deleted, only archived</span></label><label><input type="radio" autocomplete="off" name="4d278818b12424e2deec2ed586d2d446"><span>all data should be stored for 10 years after the last usage</span></label><label><input type="radio" autocomplete="off" name="4d278818b12424e2deec2ed586d2d446"><span>yes, but only by proper physical destruction of the media</span></label><label><input type="radio" autocomplete="off" name="4d278818b12424e2deec2ed586d2d446"><span>one should rely on the organization’s protocol and legal requirements</span></label>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="lifecycle3" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle3">Data Management Plans</h2>
+<p>A **Data Management Plan (DMP*)** is a structured document that describes how research data will be handled throughout the entire data lifecycle - from the moment data are created or collected until they are archived, shared, or destroyed. This term is closely related to the concept of data lifecycle, since the purpose of a DMP is to ensure that data are properly organized, documented, stored, preserved, and made accessible in accordance with scientific, legal, and ethical standards – or, in other words, that the data is appropriately used at each stage of its lifecycle [39][80].</p>
+<p>In recent years, DMPs have become a standard requirement for many research funders and institutions. Funding organizations such as the European Commission and the National Science Foundation require researchers to submit a DMP when applying for grants [41][42][40]. These policies are meant to ensure transparency, reproducibility, and responsible data stewardship in modern research. A well-prepared DMP helps researchers foresee potential issues related to every stage of the data lifecycle before the project begins [40].</p>
+<p>Although the exact format may vary between institutions or funding programs, most DMPs address several common aspects of data management. Most of these components, as well as the implementation of a DMP in general, can also be truly helpful not only for young scientists, but for all working professionals from various fields, as well as students at any stage of their education paths [80].</p>
+<p>The main components of a data management plan include [80]:</p>
+<ul>
+<li><p><em>Statement of purpose</em> clarifies the aim of a data gathering: what is the research question (or a business goal), that can be answered with the help of the certain dataset?</p></li>
+<li><p><em>Data definitions:</em> users should precisely describe what kinds of data will be collected (e.g., numerical datasets, images, interviews) and specify the file formats that will be used.</p></li>
+<li><p><em>Choosing right formats,</em> as been properly explained in the previous section, can significantly increase usability of the data, while adding metadata can also assist the interpretability of information in the future.</p></li>
+<li><p><em>Data collection and access</em>: This section of a DMP highlights how data will be collected, stored, and accessed from a data repository. It will likely address the data sources, the methods used to collect it, as well as how long it will be stored and who will have access to it. Many legal restrictions surround the topic of so-called sensitive data that may be required for a project, and the measures to meet those requirements should be planned beforehand (more about it in the “Ethics” section).</p></li>
+<li><p><em>Frequently Asked Questions:</em> Any other considerations regarding data management fall into this category. These might include citation preferences, data backup methods, DOIs used in the database, and so on.</p></li>
+<li><p><em>Research data limitations:</em> The last component refers to the limitations of the data itself. For instance, if the dataset consists of information on only one demographic group, it should be clearly highlighted in this last section, as such frames can seriously affect the re-use of the gathered data.</p></li>
+</ul>
+<p>Several tools have been developed to assist researchers in creating data management plans. Two widely used platforms are DMPonline and DMPTool, which provide templates, guidance, and funder-specific requirements to help researchers prepare their plans efficiently [40].</p>
+<p>Developing a DMP early in the research process not only helps satisfy funder requirements but also promotes better data organization, increased reproducibility, and greater opportunities for future data reuse – oftentimes regardless of the nature of the project [43].</p>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the primary purpose of a Data Management Plan (DMP)?</p>
+<div id="webex-fe11c8a3a879a3a579e404bdb784e9db" class="webex-radiogroup" data-answer="PVUdAE8ITQM8">
+<label><input type="radio" autocomplete="off" name="fe11c8a3a879a3a579e404bdb784e9db"><span>To submit with one’s research proposal</span></label><label><input type="radio" autocomplete="off" name="fe11c8a3a879a3a579e404bdb784e9db"><span>To describe how data will be handled throughout its lifecycle</span></label><label><input type="radio" autocomplete="off" name="fe11c8a3a879a3a579e404bdb784e9db"><span>To eliminate bureaucracy within the organization</span></label><label><input type="radio" autocomplete="off" name="fe11c8a3a879a3a579e404bdb784e9db"><span>To describe how data should contribute to the organization’s goals</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why do many funding organizations require researchers to submit a DMP?</p>
+<div id="webex-a017507cd713e95ff05bc6afbb4fb084" class="webex-radiogroup" data-answer="OgAdBhkAG1M5">
+<label><input type="radio" autocomplete="off" name="a017507cd713e95ff05bc6afbb4fb084"><span>To reduce the number of research projects</span></label><label><input type="radio" autocomplete="off" name="a017507cd713e95ff05bc6afbb4fb084"><span>To ensure transparency and responsible data stewardship</span></label><label><input type="radio" autocomplete="off" name="a017507cd713e95ff05bc6afbb4fb084"><span>To ensure reusability and long-term preservation of research data</span></label><label><input type="radio" autocomplete="off" name="a017507cd713e95ff05bc6afbb4fb084"><span>To combat scientific misconduct early on</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does the statement of purpose in a DMP clarify?</p>
+<div id="webex-6d9c809f7c0245bbcf84dc473e65a02b" class="webex-radiogroup" data-answer="bVQVUhQAFVZq">
+<label><input type="radio" autocomplete="off" name="6d9c809f7c0245bbcf84dc473e65a02b"><span>The authors and the participants of the project</span></label><label><input type="radio" autocomplete="off" name="6d9c809f7c0245bbcf84dc473e65a02b"><span>The research question or business goal</span></label><label><input type="radio" autocomplete="off" name="6d9c809f7c0245bbcf84dc473e65a02b"><span>The budget of the project</span></label><label><input type="radio" autocomplete="off" name="6d9c809f7c0245bbcf84dc473e65a02b"><span>Whether there is a conflict of interests involved</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following is an example of data definitions in a DMP?</p>
+<div id="webex-f2e6d40f7a05dc6a433798e7bed99edd" class="webex-radiogroup" data-answer="PQJJBkgFHFZq">
+<label><input type="radio" autocomplete="off" name="f2e6d40f7a05dc6a433798e7bed99edd"><span>Writing software manuals for the project</span></label><label><input type="radio" autocomplete="off" name="f2e6d40f7a05dc6a433798e7bed99edd"><span>Advertising research results</span></label><label><input type="radio" autocomplete="off" name="f2e6d40f7a05dc6a433798e7bed99edd"><span>Specifying file formats and types of collected data</span></label><label><input type="radio" autocomplete="off" name="f2e6d40f7a05dc6a433798e7bed99edd"><span>Listing personal information of all participants</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is one benefit of adding metadata to datasets?</p>
+<div id="webex-c9fe10d130d683baadc743a42b9707cf" class="webex-radiogroup" data-answer="OAlKVB0ASAFu">
+<label><input type="radio" autocomplete="off" name="c9fe10d130d683baadc743a42b9707cf"><span>It summarized lengthy pieces of data into shorter abstracts</span></label><label><input type="radio" autocomplete="off" name="c9fe10d130d683baadc743a42b9707cf"><span>It improves future interpretability of the data</span></label><label><input type="radio" autocomplete="off" name="c9fe10d130d683baadc743a42b9707cf"><span>It decreases storage requirements</span></label><label><input type="radio" autocomplete="off" name="c9fe10d130d683baadc743a42b9707cf"><span>It helps to adjust data for disabled users</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What topic is addressed in the data collection and access section of a DMP?</p>
+<div id="webex-e7b637fd2a77f4256fcd1420d2d1c9dd" class="webex-radiogroup" data-answer="PgdOBh8GSlRv">
+<label><input type="radio" autocomplete="off" name="e7b637fd2a77f4256fcd1420d2d1c9dd"><span>How to improve accessibility and reproducibility of collected data</span></label><label><input type="radio" autocomplete="off" name="e7b637fd2a77f4256fcd1420d2d1c9dd"><span>What qualifications and education level are required to collect data</span></label><label><input type="radio" autocomplete="off" name="e7b637fd2a77f4256fcd1420d2d1c9dd"><span>How data will be collected and who can access it</span></label><label><input type="radio" autocomplete="off" name="e7b637fd2a77f4256fcd1420d2d1c9dd"><span>What authorities have the legal right to demand data from the organization</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why should sensitive data requirements be planned beforehand?</p>
+<div id="webex-0c1f9365819393d080f9068edf4c537e" class="webex-radiogroup" data-answer="a1IdVhUDGgVl">
+<label><input type="radio" autocomplete="off" name="0c1f9365819393d080f9068edf4c537e"><span>Because legal restrictions may apply</span></label><label><input type="radio" autocomplete="off" name="0c1f9365819393d080f9068edf4c537e"><span>Because metadata cannot be used</span></label><label><input type="radio" autocomplete="off" name="0c1f9365819393d080f9068edf4c537e"><span>Because sensitive data are never stored</span></label><label><input type="radio" autocomplete="off" name="0c1f9365819393d080f9068edf4c537e"><span>Because participants should have designated time slot to demand their personal data back</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What kind of information may appear in the Frequently Asked Questions section of a DMP?</p>
+<div id="webex-a874d54efd389a0ccf7364eb23658a8b" class="webex-radiogroup" data-answer="OggbBUgFGFU7">
+<label><input type="radio" autocomplete="off" name="a874d54efd389a0ccf7364eb23658a8b"><span>code of conduct of data usage</span></label><label><input type="radio" autocomplete="off" name="a874d54efd389a0ccf7364eb23658a8b"><span>Citation preferences</span></label><label><input type="radio" autocomplete="off" name="a874d54efd389a0ccf7364eb23658a8b"><span>Methods of data gathering</span></label><label><input type="radio" autocomplete="off" name="a874d54efd389a0ccf7364eb23658a8b"><span>Expected revenue of the project</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the purpose of describing research data limitations in a DMP?</p>
+<div id="webex-3e4a5621b7dc08b22eb412d579fae39a" class="webex-radiogroup" data-answer="aFUYURkGHgA/">
+<label><input type="radio" autocomplete="off" name="3e4a5621b7dc08b22eb412d579fae39a"><span>To justify incomplete datasets and/or missing values</span></label><label><input type="radio" autocomplete="off" name="3e4a5621b7dc08b22eb412d579fae39a"><span>To escape legal responsibility in case of a lawsuit</span></label><label><input type="radio" autocomplete="off" name="3e4a5621b7dc08b22eb412d579fae39a"><span>To prevent data from being used by competitors</span></label><label><input type="radio" autocomplete="off" name="3e4a5621b7dc08b22eb412d579fae39a"><span>To clarify factors that may affect data reuse</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which platforms are commonly used to help researchers create DMPs?</p>
+<div id="webex-92b71c61beb5b43c8a2ad1e52119d5e3" class="webex-radiogroup" data-answer="YgJOBx1SGgE/">
+<label><input type="radio" autocomplete="off" name="92b71c61beb5b43c8a2ad1e52119d5e3"><span>B2B DMP</span></label><label><input type="radio" autocomplete="off" name="92b71c61beb5b43c8a2ad1e52119d5e3"><span>Google Cloud</span></label><label><input type="radio" autocomplete="off" name="92b71c61beb5b43c8a2ad1e52119d5e3"><span>DMPonline</span></label><label><input type="radio" autocomplete="off" name="92b71c61beb5b43c8a2ad1e52119d5e3"><span>PowerBI</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle4" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle4">Data Lifecycle Actions</h2>
+<p>As has been mentioned in the previous chapter, there is a plethora of data lifecycle models developed by various organizations for different fields.</p>
+<p>Instead of trying to name one universally good model that would be a ready-to-use blueprint for every business, field of study and research task, one should aim at developing a customized model that would suit their organization or project goals best, using any, or all of the described pipelines rather as a checklist for the measures to implement in their particular case. However, as many of the data-related actions are described consistently in most popular models, we are going to provide a more detailed clarification of these proposed processes, most of which will likely be useful for professionals working with data at some stage of their projects.</p>
+<section id="lifecycle41" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle41">Data Creation and Acquirement</h3>
+<p>Data creation, collection, or acquirement is normally the first stage of the data lifecycle, unless planning of this process is treated as a separate pre-stage in the model. At this step, information relevant to a research question or problem is obtained. Data can originate from first-hand sources (e.g.&nbsp;street interviews, experiments conducted by the user themselves, etc.) – in this case, it’s called <strong>primary data</strong>; and data collected and shared by other users (e.g.&nbsp;research literature), or <strong>secondary data</strong>[5]. Both types of data have their own perks and disadvantages, and in both cases the nature of the data determines the methods suitable for its creation.</p>
+<p>Primary data collection, when done right, can achieve high quality and reliability of data, as is normally more appropriate for the goals of certain research compared to secondary data, which is typically collected by other specialists, with different goals in mind. The drawbacks of primary data collection include high monetary and time costs, poor access to the data, and opportunities for only very niche research. The variety of methods used to collect such data includes questionnaires and surveys, individual and focus-group interviews (which can be free form, structured and semi-structured), observations, case studies, experiments, diaries and memo motion studies, activity sampling techniques, process and link analysis, as well as statistical method.[3]</p>
+<p>Secondary data collection, in its turn, can be used to generate new insights from previously collected data, contributing to the quality of other groups‘ research and expanding its scope. Secondary data comes with many other advantages, including low costs, time savings, good accessibility and, potentially, breadth of research, as it it useful to compare the data from different sources, gathered in different settings throughout the time. The drawbacks of this approach may include lack of control over data quality and, as previously described, lack of relevance to the goals of particular research (e.g.&nbsp;the data previously gathered for entire country may not reflect the patterns typical for one of its regions, or data gathered ten years ago might prove to be hopelessly dated, especially in emerging fields)[5]. Secondary data collection methods include, but not limited to, published printed sources, books, journals and periodicals, magazines and newspapers, e-sources of various kinds, general websites, weblogs, government records, census data and population statistics, public sector records. As we have seen, at the data collection stage, researchers must carefully define what type of data is required based on their goals and research question, as the capturing methods will highly depend on the nature of data itself [1][2].</p>
+<p>Data creation is not limited to its collection, but can also include actual generation of it. Such data is called <strong>synthetic data</strong>, and can be used as an alternative to the real-world data. The need for it is motivated by data scarcity, privacy concerns [7], and algorithmic biases. Synthetic data preserve all underlying trends of the original dataset, all the while providing new content, also in large quantities, when it’s necessary [6]. The methods used to generate synthetic data may include large language models (LLMs), generative adversarial networks (GANs) and variational autoencoders (VAEs). Since generating data synthetically is a complex skill on its own and honing it may go beyond the scope of your research, there are easier ways to obtain data for its purposes (e.g.&nbsp;using toy datasets, data stored in artificial benchmark models, etc.). Performance of data generation techniques over various dimensions (based on systematic literature review by [6])</p>
+<p>Performance of data generation techniques over various dimensions (based on systematic literature review by [6])</p>
+<p><strong>Reflection Questions</strong></p>
+<ol type="1">
+<li><em>Why is the planning stage sometimes comes before the data creation stage in data lifecycle models? What should one decide on before collecting the data?</em></li>
+<li><em>What advantages do primary data have compared to secondary data? Which type do you normally use in your work? Which methods have you personally used to collect it?</em></li>
+<li><em>What limitations might occur when relying on secondary datasets?</em></li>
+<li><em>In what situations might synthetic data be preferable to real-world data, and how to generate it?</em></li>
+<li><em>Go to (<a href="https://www.researchgate.net/" class="uri">https://www.researchgate.net/</a>) or (<a href="https://www.scopus.com/" class="uri">https://www.scopus.com/</a>) and find there five most cited papers in your field of study. Name the methods used for each research. Why do you think the authors opted for them?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the main goal of data acquisition?</p>
+<div id="webex-9466e6efafaab173f956a51449efb4c9" class="webex-radiogroup" data-answer="YgQaBkkGSVc8">
+<label><input type="radio" autocomplete="off" name="9466e6efafaab173f956a51449efb4c9"><span>improve interpretability of collected data</span></label><label><input type="radio" autocomplete="off" name="9466e6efafaab173f956a51449efb4c9"><span>filter only relevant and accurate data</span></label><label><input type="radio" autocomplete="off" name="9466e6efafaab173f956a51449efb4c9"><span>dispose outdated data</span></label><label><input type="radio" autocomplete="off" name="9466e6efafaab173f956a51449efb4c9"><span>collect relevant data for analysis</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following is qualitative data?</p>
+<div id="webex-e8ebba124b5d6afae58d212f39be9fa1" class="webex-radiogroup" data-answer="PglJUk5RHQJp">
+<label><input type="radio" autocomplete="off" name="e8ebba124b5d6afae58d212f39be9fa1"><span>nationality</span></label><label><input type="radio" autocomplete="off" name="e8ebba124b5d6afae58d212f39be9fa1"><span>temperature</span></label><label><input type="radio" autocomplete="off" name="e8ebba124b5d6afae58d212f39be9fa1"><span>weight</span></label><label><input type="radio" autocomplete="off" name="e8ebba124b5d6afae58d212f39be9fa1"><span>height</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which type of data has an inherent order?</p>
+<div id="webex-83d74ff4a2f50e7c6f29dad3b8cf1fcb" class="webex-radiogroup" data-answer="YwNIBxhXSgQ8">
+<label><input type="radio" autocomplete="off" name="83d74ff4a2f50e7c6f29dad3b8cf1fcb"><span>nominal</span></label><label><input type="radio" autocomplete="off" name="83d74ff4a2f50e7c6f29dad3b8cf1fcb"><span>discrete</span></label><label><input type="radio" autocomplete="off" name="83d74ff4a2f50e7c6f29dad3b8cf1fcb"><span>ordinal</span></label><label><input type="radio" autocomplete="off" name="83d74ff4a2f50e7c6f29dad3b8cf1fcb"><span>continuous</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following is discrete data?</p>
+<div id="webex-40603f6c45faeb28d9dc9ed35f1f3699" class="webex-radiogroup" data-answer="bwEaAB9WGlNp">
+<label><input type="radio" autocomplete="off" name="40603f6c45faeb28d9dc9ed35f1f3699"><span>number of students</span></label><label><input type="radio" autocomplete="off" name="40603f6c45faeb28d9dc9ed35f1f3699"><span>time</span></label><label><input type="radio" autocomplete="off" name="40603f6c45faeb28d9dc9ed35f1f3699"><span>temperature</span></label><label><input type="radio" autocomplete="off" name="40603f6c45faeb28d9dc9ed35f1f3699"><span>height</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which data source is collected directly by the researcher?</p>
+<div id="webex-e11920b35f1aa9157e99d118ebda542b" class="webex-radiogroup" data-answer="PgEdCR4ATgJo">
+<label><input type="radio" autocomplete="off" name="e11920b35f1aa9157e99d118ebda542b"><span>secondary data</span></label><label><input type="radio" autocomplete="off" name="e11920b35f1aa9157e99d118ebda542b"><span>metadata</span></label><label><input type="radio" autocomplete="off" name="e11920b35f1aa9157e99d118ebda542b"><span>sensitive data</span></label><label><input type="radio" autocomplete="off" name="e11920b35f1aa9157e99d118ebda542b"><span>primary data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Government statistics are usually:</p>
+<div id="webex-74d8b5d16f20940cf519d8c3c3efbae7" class="webex-radiogroup" data-answer="bARICE4FSABr">
+<label><input type="radio" autocomplete="off" name="74d8b5d16f20940cf519d8c3c3efbae7"><span>primary data</span></label><label><input type="radio" autocomplete="off" name="74d8b5d16f20940cf519d8c3c3efbae7"><span>synthetic data</span></label><label><input type="radio" autocomplete="off" name="74d8b5d16f20940cf519d8c3c3efbae7"><span>qualitative data</span></label><label><input type="radio" autocomplete="off" name="74d8b5d16f20940cf519d8c3c3efbae7"><span>secondary data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Continuous data can:</p>
+<div id="webex-f48697789404e18851ca7171666cc7e8" class="webex-radiogroup" data-answer="PQUUBhUHGwhk">
+<label><input type="radio" autocomplete="off" name="f48697789404e18851ca7171666cc7e8"><span>take any value within a range</span></label><label><input type="radio" autocomplete="off" name="f48697789404e18851ca7171666cc7e8"><span>only represent categories</span></label><label><input type="radio" autocomplete="off" name="f48697789404e18851ca7171666cc7e8"><span>take only integer values</span></label><label><input type="radio" autocomplete="off" name="f48697789404e18851ca7171666cc7e8"><span>not be measured</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which method collects qualitative data?</p>
+<div id="webex-50ccaf8f5b9e531b21b14713f4f5f712" class="webex-radiogroup" data-answer="bgBPU01WFFdo">
+<label><input type="radio" autocomplete="off" name="50ccaf8f5b9e531b21b14713f4f5f712"><span>counting objects</span></label><label><input type="radio" autocomplete="off" name="50ccaf8f5b9e531b21b14713f4f5f712"><span>measuring temperature</span></label><label><input type="radio" autocomplete="off" name="50ccaf8f5b9e531b21b14713f4f5f712"><span>calculating averages</span></label><label><input type="radio" autocomplete="off" name="50ccaf8f5b9e531b21b14713f4f5f712"><span>interviews</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Synthetic data are often used to:</p>
+<div id="webex-13d66cdc3ed2900550f18027ed7e8277" class="webex-radiogroup" data-answer="agNIBxpTSFNu">
+<label><input type="radio" autocomplete="off" name="13d66cdc3ed2900550f18027ed7e8277"><span>conceal misconduct</span></label><label><input type="radio" autocomplete="off" name="13d66cdc3ed2900550f18027ed7e8277"><span>reduce privacy risks</span></label><label><input type="radio" autocomplete="off" name="13d66cdc3ed2900550f18027ed7e8277"><span>get data easily when the time for its collection is limited</span></label><label><input type="radio" autocomplete="off" name="13d66cdc3ed2900550f18027ed7e8277"><span>encrypt data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which factor is most important when designing data collection?</p>
+<div id="webex-b665a0dc0ffd0658e26c3a9280b19a01" class="webex-radiogroup" data-answer="OQcaBU0ASFNt">
+<label><input type="radio" autocomplete="off" name="b665a0dc0ffd0658e26c3a9280b19a01"><span>relevance to research question</span></label><label><input type="radio" autocomplete="off" name="b665a0dc0ffd0658e26c3a9280b19a01"><span>accordance with research proposal</span></label><label><input type="radio" autocomplete="off" name="b665a0dc0ffd0658e26c3a9280b19a01"><span>dimensionality of data</span></label><label><input type="radio" autocomplete="off" name="b665a0dc0ffd0658e26c3a9280b19a01"><span>storage format</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle42" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle42">Data Processing and Cleaning</h3>
+<p>After data has been properly created, it is then to be processed. Unfortunately, data rarely exists in a form that makes it ready for analysis instantly. Raw datasets often contain inconsistencies, missing values, formatting issues, duplicate records, and other problematic entries that, when left unfixed, can result in serious distortion in the final analysis and, sometimes, lead one to completely false conclusions [45] (more practical attitude to the topic of data processing and cleaning is covered in Chapter 5). Data processing and cleaning therefore represent an essential stage of the data lifecycle, ensuring that data is <em>reliable, consistent, and suitable for further analysis and interpretation</em>.</p>
+<p><strong>Data processing</strong> refers to the set of activities that transform raw data into a structured and usable format. These activities can include organizing data, correcting errors, converting formats, and integrating information from multiple sources. One major component of data processing is data <strong>cleaning,</strong> which focuses on identifying and correcting problems in datasets. Common issues include missing values, duplicate entries, inconsistent labels, and incorrect measurements. Researchers must decide how to address these problems depending on the nature of the dataset and the research objectives. For example, missing values may be removed, replaced with estimated values, or analyzed separately if they carry meaningful information. Removing duplicates is also crucial when multiple records refer to the same observation, as duplicates can bias statistical results [45].</p>
+<p>Another important aspect of data processing is <strong>data transformation,</strong> which involves converting data into a consistent structure or format [46]. This may include standardizing measurement units, converting file formats, or restructuring datasets into tabular or database formats suitable for analysis tools. For example, textual responses from surveys may need to be categorized or coded before they can be analyzed statistically. Similarly, date and time formats often need to be standardized to ensure compatibility across systems.</p>
+<p>Closely related to transformation is <strong>data normalization,</strong> which refers to adjusting data values to a common scale or structure. In statistics and machine learning, normalization may involve scaling numerical values to a particular range (for example between 0 and 1), which allows algorithms to compare variables more effectively. In database systems, normalization also refers to structuring data in a way that reduces redundancy and improves integrity [47].</p>
+<p>Data processing frequently also involves <strong>data integration,</strong> which combines data from different sources into a single unified dataset. This process is common in interdisciplinary research, where datasets may originate from multiple laboratories, institutions, or measurement systems. Integrating such data requires careful harmonization of formats, units, and metadata to ensure that the combined dataset remains meaningful and consistent [46].</p>
+<p>In many professional and research environments, these tasks are implemented through ETL pipelines - <em>Extract, Transform, Load</em> workflows. In this process, data are first extracted from their original sources, then transformed through cleaning and processing steps, and finally loaded into a database or data warehouse where they can be analyzed or shared. ETL pipelines help automate repetitive tasks and ensure that data processing steps are reproducible and transparent [47]</p>
+<p>Despite this stage often being time-consuming and tiresome, it is also one of the most rewarding. A well-processed dataset is the cornerstone of any accurate analysis, which makes final conclusions truly reliable, and results more suitable for re-use in future studies [45][46]. Any problematic entries, on the other hand, often tend to propagate further, and make one return to the cleaning stage once again.</p>
+<p><strong>Reflection Questions</strong></p>
+<ol type="1">
+<li><em>Why do you think raw data collected during research projects are often not suitable for immediate analysis? Is it possible to gather data that is already “clean” enough to skip cleaning stage?</em></li>
+<li><em>Have you ever had to cleanse data on your own? What methods did you use for each problem?</em></li>
+<li><em>In what situations might removing missing values be problematic?</em></li>
+<li><em>Why is it important to standardize formats (e.g., dates, units of measurement) before analyzing data?</em></li>
+<li><em>How would you spot a secondary dataset, where a cleansing stage was skipped?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why is data processing an important stage of the data lifecycle?</p>
+<div id="webex-5cc0c478674c16892c2e870801bbc722" class="webex-radiogroup" data-answer="blNPAE8FGwhr">
+<label><input type="radio" autocomplete="off" name="5cc0c478674c16892c2e870801bbc722"><span>It ensures the valdity and accuracy of data</span></label><label><input type="radio" autocomplete="off" name="5cc0c478674c16892c2e870801bbc722"><span>It guarantees faster processing of data</span></label><label><input type="radio" autocomplete="off" name="5cc0c478674c16892c2e870801bbc722"><span>It ensures data is reliable and suitable for analysis</span></label><label><input type="radio" autocomplete="off" name="5cc0c478674c16892c2e870801bbc722"><span>It eliminates the need for further statistical analysis</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following is a common issue found in raw datasets?</p>
+<div id="webex-33c20645682663bfe01aefd07ca6f0c6" class="webex-radiogroup" data-answer="aANPAhwGGARr">
+<label><input type="radio" autocomplete="off" name="33c20645682663bfe01aefd07ca6f0c6"><span>Data irrelevant for research</span></label><label><input type="radio" autocomplete="off" name="33c20645682663bfe01aefd07ca6f0c6"><span>Missing metadata</span></label><label><input type="radio" autocomplete="off" name="33c20645682663bfe01aefd07ca6f0c6"><span>Spelling and punctuation mistakes</span></label><label><input type="radio" autocomplete="off" name="33c20645682663bfe01aefd07ca6f0c6"><span>Duplicate records</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does data processing mainly involve?</p>
+<div id="webex-074d739f0b92fc6269abcef1e80fe288" class="webex-radiogroup" data-answer="awcYVRsDFVZt">
+<label><input type="radio" autocomplete="off" name="074d739f0b92fc6269abcef1e80fe288"><span>Deleting all otliers and missing values</span></label><label><input type="radio" autocomplete="off" name="074d739f0b92fc6269abcef1e80fe288"><span>Transforming raw data into a structured and usable format</span></label><label><input type="radio" autocomplete="off" name="074d739f0b92fc6269abcef1e80fe288"><span>Reducing dimensionality of data</span></label><label><input type="radio" autocomplete="off" name="074d739f0b92fc6269abcef1e80fe288"><span>Using machine learning algorithms for automated anaylsis</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the main purpose of data cleaning?</p>
+<div id="webex-cba3cd5d3c629bbaec5112616d3752ac" class="webex-radiogroup" data-answer="OFJNA09VGVRu">
+<label><input type="radio" autocomplete="off" name="cba3cd5d3c629bbaec5112616d3752ac"><span>Improving data quality and accuracy</span></label><label><input type="radio" autocomplete="off" name="cba3cd5d3c629bbaec5112616d3752ac"><span>Deleting data that appears contravercial</span></label><label><input type="radio" autocomplete="off" name="cba3cd5d3c629bbaec5112616d3752ac"><span>Identifying and correcting problems in datasets</span></label><label><input type="radio" autocomplete="off" name="cba3cd5d3c629bbaec5112616d3752ac"><span>Deleting data that is no longer useful</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>How may missing values in a dataset be handled?</p>
+<div id="webex-f479a789380d86d5cb2f770166f2ee28" class="webex-radiogroup" data-answer="PQQbCU0GFAlu">
+<label><input type="radio" autocomplete="off" name="f479a789380d86d5cb2f770166f2ee28"><span>By replacing them with NAs</span></label><label><input type="radio" autocomplete="off" name="f479a789380d86d5cb2f770166f2ee28"><span>Missing values are valid and should not be modified</span></label><label><input type="radio" autocomplete="off" name="f479a789380d86d5cb2f770166f2ee28"><span>By removing or replacing them with estimated values</span></label><label><input type="radio" autocomplete="off" name="f479a789380d86d5cb2f770166f2ee28"><span>By excluding such values from the analysis</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is one purpose of data transformation?</p>
+<div id="webex-e5a6124195556261844acf601061ffda" class="webex-radiogroup" data-answer="PgVNBh0DGAFk">
+<label><input type="radio" autocomplete="off" name="e5a6124195556261844acf601061ffda"><span>Ensuring that data is not only readable for humans, but also for machines</span></label><label><input type="radio" autocomplete="off" name="e5a6124195556261844acf601061ffda"><span>Migrating to a database</span></label><label><input type="radio" autocomplete="off" name="e5a6124195556261844acf601061ffda"><span>Converting data into a consistent structure or format</span></label><label><input type="radio" autocomplete="off" name="e5a6124195556261844acf601061ffda"><span>Improving quality of the content</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does data normalization involve in statistics and machine learning?</p>
+<div id="webex-df6c72603ac80bf5afb75eaf049417f8" class="webex-radiogroup" data-answer="P1YaUxsCGgFu">
+<label><input type="radio" autocomplete="off" name="df6c72603ac80bf5afb75eaf049417f8"><span>Reducing variance</span></label><label><input type="radio" autocomplete="off" name="df6c72603ac80bf5afb75eaf049417f8"><span>Removing all duplicate records</span></label><label><input type="radio" autocomplete="off" name="df6c72603ac80bf5afb75eaf049417f8"><span>Replacing all missing values with the mean values</span></label><label><input type="radio" autocomplete="off" name="df6c72603ac80bf5afb75eaf049417f8"><span>Scaling numerical values to a common range</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why is data integration important?</p>
+<div id="webex-45d87c3120d8ff119230675498165ffe" class="webex-radiogroup" data-answer="bwVICBtTHwBv">
+<label><input type="radio" autocomplete="off" name="45d87c3120d8ff119230675498165ffe"><span>It ensures the data is properly encoded</span></label><label><input type="radio" autocomplete="off" name="45d87c3120d8ff119230675498165ffe"><span>It’s the last step on the way to data integrity</span></label><label><input type="radio" autocomplete="off" name="45d87c3120d8ff119230675498165ffe"><span>It relies on careful harmonization of formats, units, and metadata</span></label><label><input type="radio" autocomplete="off" name="45d87c3120d8ff119230675498165ffe"><span>It combines data from different sources into a unified dataset</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does ETL stand for in data processing?</p>
+<div id="webex-a94c184740f09949c8022f9d029968bb" class="webex-radiogroup" data-answer="OgkYUx0IGAZp">
+<label><input type="radio" autocomplete="off" name="a94c184740f09949c8022f9d029968bb"><span>Evaluate, Transfer, Link</span></label><label><input type="radio" autocomplete="off" name="a94c184740f09949c8022f9d029968bb"><span>Enter, Track, Label</span></label><label><input type="radio" autocomplete="off" name="a94c184740f09949c8022f9d029968bb"><span>Encode, Test, Learn</span></label><label><input type="radio" autocomplete="off" name="a94c184740f09949c8022f9d029968bb"><span>Extract, Transform, Load</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a benefit of a well-processed dataset?</p>
+<div id="webex-cd1f925c8bd6895176b592ced0fe31f4" class="webex-radiogroup" data-answer="OFQdVhUDGVNl">
+<label><input type="radio" autocomplete="off" name="cd1f925c8bd6895176b592ced0fe31f4"><span>It can then be analysed even by less expeirienced specialists</span></label><label><input type="radio" autocomplete="off" name="cd1f925c8bd6895176b592ced0fe31f4"><span>It guarantees reproducibility of results</span></label><label><input type="radio" autocomplete="off" name="cd1f925c8bd6895176b592ced0fe31f4"><span>It supports accurate and reliable analysis</span></label><label><input type="radio" autocomplete="off" name="cd1f925c8bd6895176b592ced0fe31f4"><span>It can compensate for a smaller sample</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle43" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle43">Data Storage and Maintenance</h3>
+<p>Once the data has been created and cleaned, it then has to be stored and maintained. Data can be stored in databases, data warehouses, or cloud storage systems. Choosing the right option for a particular case depends on balance performance, cost, and scalability [1]. Regular maintenance activities, such as data cleansing and updating, ensure that data remains accurate and relevant. Security measures, including encryption and access controls, are normally implemented to protect data from unauthorized access and breaches. Proper data storage starts with creating contextual metadata.</p>
+<section id="lifecycle431" class="level4">
+<h4 class="anchored" data-anchor-id="lifecycle431">Metadata</h4>
+<p>Metadata is a key factor for data preservation, for replicating results in the peer review process, for data reuse, and for creating knowledge from data. Well-managed data without metadata could be useless, but reating metadata is a demanding task that is both complex and time-consuming [26]. It can be crucial to decide on which attributes to document, that is what to capture in metadata, and this can be a complex task on its own.[26]</p>
+<p>Within the lifecycle, metadata can be created at virtually any point: prior to data creation, when files are saved, or when submitting to a repository. It is relatively easy to access, create and edit metadata (unless it has been protected by the author), but many data users still overlook this step. What is important to know is that not only careless usage or neglect of metadata can make data hardly comprehensible even for the same user in the future, but also is that anyone the user shares copies of the file with will be able to access all this hidden information. Therefore, one should always review (and adjust, when necessary) the metadata before giving access to the files to anybody. If necessary, some of the existing metadata should be timely deleted. This can be crucially important, as metadata may contain confidential information about the authors, the institution or company the authors are working for, etc., which should not be shared with the third parties. <em>Metadata that get into wrong hands can jeopardize both one’s business interests and personal security</em> – especially if Personally identifiable information (PII), which can be easily obtained from metadata, will be used in unethical ways (read more about sensitive information in <span class="citation" data-cites="ethics52">@ethics52</span> ). By abusing sensitive information from metadata, one can:</p>
+<ul>
+<li><p>create detailed digital profiles of individuals and gather information of their activities online (z.B. for marketing purposes);to trace users back to their social media profiles;</p></li>
+<li><p>access one’s social media channels, create fake profiles and secretly use them for criminal purposes;</p></li>
+<li><p>in business context, transmitting internal company metadata makes companies vulnerable to targeted attacks;</p></li>
+<li><p>in research field, loss of metadata can sometimes lead to the leak of participants’ sensitive data or the loss of valuable research results..</p></li>
+</ul>
+<p>At the same time, hidden data or outdated comments could mislead the recipient, or even the user themselves as time passes and the properties and details of the data, which seemed obvious back then, might be easily forgotten. Therefore, not using metadata properly and timely can significantly decrease the usability of the data and make access to it more complicated. Therefore, not only teams, but also professionals and students working on their own should be as mindful about using metadata for their projects: even if one is not going to share the data with anybody else, overtime their notes and comments will prove exceptionally helpful in any data-related work.</p>
+</section>
+<section id="lifecycle435" class="level4">
+<h4 class="anchored" data-anchor-id="lifecycle435">Formats</h4>
+<p>Any data, be it numeric, text-based, audio, video, or still images, is always represented in a certain format. In this context, a <strong>format</strong> is defined as “the internal structure and encoding of a digital object, which allows it to be processed, or to be rendered in a human-accessible form” [21] (for the other definition of formats, check subchapter 5 “Data Formats). As the representation of data, format becomes an antecedent to preservation by providing the knowledge of the data itself. Reading, rendering, and processing the data requires knowledge and understanding of the format. Changes to the format or the environment can make the underlying data unrecognizable and unusable. Effective data reuse, and ultimately the ability to preserve data, depends on standard data formats and tool sets to build, read and manage the data. <em>Preservation technologies</em> refers to all of the technical infrastructures to support data collections.</p>
+<p>Central to any preservation infrastructure is a physical repository, be it a simple data store for datasets, or a whole system designed as an archive for digital data with context, fixity, persistence, and access. Repositories provide services to ensure the long term archiving of and continuing access to data including backups, contingency planning, process resumption planning, hardware and network redundancy, automatic failover, and site mirroring. Repository services increase in importance as the amount of data grows.</p>
+<p>Data management, contextual metadata, formats, and preservation technologies can also be barriers that prevent preservation. For example, data management is expensive in terms of both personnel and equipment, and many scientist avoid honing their skills in this domain to focus on their studies instead, which complicates their research in the end.</p>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is metadata?</p>
+<div id="webex-d730dee206260c6d7629f551306015dd" class="webex-radiogroup" data-answer="PwcfAEhUSQJt">
+<label><input type="radio" autocomplete="off" name="d730dee206260c6d7629f551306015dd"><span>encrypted data</span></label><label><input type="radio" autocomplete="off" name="d730dee206260c6d7629f551306015dd"><span>compressed data</span></label><label><input type="radio" autocomplete="off" name="d730dee206260c6d7629f551306015dd"><span>data describing other data</span></label><label><input type="radio" autocomplete="off" name="d730dee206260c6d7629f551306015dd"><span>data summarizing the main insights from other data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Metadata helps users:</p>
+<div id="webex-8bd12ec5cdb5a116c5a118a370bf5fab" class="webex-radiogroup" data-answer="Y1JIAB5VTwU+">
+<label><input type="radio" autocomplete="off" name="8bd12ec5cdb5a116c5a118a370bf5fab"><span>reduce storage space</span></label><label><input type="radio" autocomplete="off" name="8bd12ec5cdb5a116c5a118a370bf5fab"><span>understand and reuse datasets</span></label><label><input type="radio" autocomplete="off" name="8bd12ec5cdb5a116c5a118a370bf5fab"><span>compress files</span></label><label><input type="radio" autocomplete="off" name="8bd12ec5cdb5a116c5a118a370bf5fab"><span>metadata is only used by machines, not humans</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Data maintenance includes:</p>
+<div id="webex-a1b43ac5afc1c99cea06d4781ddd04d3" class="webex-radiogroup" data-answer="OgFOBB9QTwU8">
+<label><input type="radio" autocomplete="off" name="a1b43ac5afc1c99cea06d4781ddd04d3"><span>comparing data for potential contradictions and errors</span></label><label><input type="radio" autocomplete="off" name="a1b43ac5afc1c99cea06d4781ddd04d3"><span>copying every file and storing them separately</span></label><label><input type="radio" autocomplete="off" name="a1b43ac5afc1c99cea06d4781ddd04d3"><span>regular updates and integrity checks</span></label><label><input type="radio" autocomplete="off" name="a1b43ac5afc1c99cea06d4781ddd04d3"><span>duplicating important files and transferring to the project manager</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does encryption provide?</p>
+<div id="webex-5240c630040779a7e13ac8f8298b722a" class="webex-radiogroup" data-answer="bgIYAE8GHwFt">
+<label><input type="radio" autocomplete="off" name="5240c630040779a7e13ac8f8298b722a"><span>faster processing</span></label><label><input type="radio" autocomplete="off" name="5240c630040779a7e13ac8f8298b722a"><span>reduced dimensionality</span></label><label><input type="radio" autocomplete="off" name="5240c630040779a7e13ac8f8298b722a"><span>smaller datasets</span></label><label><input type="radio" autocomplete="off" name="5240c630040779a7e13ac8f8298b722a"><span>security and confidentiality</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a repository?</p>
+<div id="webex-278267015d608cb67b79cdfcc90a9309" class="webex-radiogroup" data-answer="aQcUAhoGHAFo">
+<label><input type="radio" autocomplete="off" name="278267015d608cb67b79cdfcc90a9309"><span>compression algorithm</span></label><label><input type="radio" autocomplete="off" name="278267015d608cb67b79cdfcc90a9309"><span>encryption software</span></label><label><input type="radio" autocomplete="off" name="278267015d608cb67b79cdfcc90a9309"><span>data storage and management platform</span></label><label><input type="radio" autocomplete="off" name="278267015d608cb67b79cdfcc90a9309"><span>programming language</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which component helps understand dataset context?</p>
+<div id="webex-505ac61ca945ab7536e1987984f643d5" class="webex-radiogroup" data-answer="bgAZUE8GHVM8">
+<label><input type="radio" autocomplete="off" name="505ac61ca945ab7536e1987984f643d5"><span>only collecting data from primary sources</span></label><label><input type="radio" autocomplete="off" name="505ac61ca945ab7536e1987984f643d5"><span>metadata</span></label><label><input type="radio" autocomplete="off" name="505ac61ca945ab7536e1987984f643d5"><span>only direct communication with the authors</span></label><label><input type="radio" autocomplete="off" name="505ac61ca945ab7536e1987984f643d5"><span>DMP</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What risk occurs without backups?</p>
+<div id="webex-2a7c31a1703c088895b99bac814648fc" class="webex-radiogroup" data-answer="aVEbUx8BTQBq">
+<label><input type="radio" autocomplete="off" name="2a7c31a1703c088895b99bac814648fc"><span>anauthorized access to data</span></label><label><input type="radio" autocomplete="off" name="2a7c31a1703c088895b99bac814648fc"><span>data leakage</span></label><label><input type="radio" autocomplete="off" name="2a7c31a1703c088895b99bac814648fc"><span>reduced quality of analysis</span></label><label><input type="radio" autocomplete="off" name="2a7c31a1703c088895b99bac814648fc"><span>data loss</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which storage option gives full local control?</p>
+<div id="webex-534d7b27e85166f4055eadfba34775f1" class="webex-radiogroup" data-answer="bgMYVBtTHgc4">
+<label><input type="radio" autocomplete="off" name="534d7b27e85166f4055eadfba34775f1"><span>public repository</span></label><label><input type="radio" autocomplete="off" name="534d7b27e85166f4055eadfba34775f1"><span>cloud archive</span></label><label><input type="radio" autocomplete="off" name="534d7b27e85166f4055eadfba34775f1"><span>local storage</span></label><label><input type="radio" autocomplete="off" name="534d7b27e85166f4055eadfba34775f1"><span>institutional server</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is data integrity?</p>
+<div id="webex-d03a435e37605f9b885e886c86b5d983" class="webex-radiogroup" data-answer="PwAfURgDGVRu">
+<label><input type="radio" autocomplete="off" name="d03a435e37605f9b885e886c86b5d983"><span>transparency and sustainability of data</span></label><label><input type="radio" autocomplete="off" name="d03a435e37605f9b885e886c86b5d983"><span>accuracy and validity of data</span></label><label><input type="radio" autocomplete="off" name="d03a435e37605f9b885e886c86b5d983"><span>security and long-term preservation of data</span></label><label><input type="radio" autocomplete="off" name="d03a435e37605f9b885e886c86b5d983"><span>correctness and consistency of data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why should storage systems be monitored?</p>
+<div id="webex-53db1e03436cc86ce4d6da5216ce4fb4" class="webex-radiogroup" data-answer="bgNIUx1VHANp">
+<label><input type="radio" autocomplete="off" name="53db1e03436cc86ce4d6da5216ce4fb4"><span>to upgrade storage solutions timely</span></label><label><input type="radio" autocomplete="off" name="53db1e03436cc86ce4d6da5216ce4fb4"><span>to prevent data corruption and loss</span></label><label><input type="radio" autocomplete="off" name="53db1e03436cc86ce4d6da5216ce4fb4"><span>to change data formats regularly</span></label><label><input type="radio" autocomplete="off" name="53db1e03436cc86ce4d6da5216ce4fb4"><span>to delete outdated information</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle432" class="level4">
+<h4 class="anchored" data-anchor-id="lifecycle432">Relational Databases</h4>
+<p>A <strong>relational database</strong> is a tool that organizes data into structured tables, where each table consists of rows and columns. This model is based on the relational (describing not only the objects, but also relations between them at the same time) model, first proposed by Edgar F. Codd in 1970. Nowadays, this relational database model remains one of the most widely used approaches for storing and managing data in both research and industry [61].</p>
+<p>In a relational database, each table represents a specific entity (e.g., students, courses, experiments), and each row (tuple) represents a single record. Columns (attributes) define the properties of that entity, such as name, age, or ID. A key feature of relational databases is the use of keys to uniquely identify and link data across tables – this is how relations are precisely described in this system. A <strong>primary key</strong> uniquely identifies each record within a table, while a <strong>foreign key</strong> establishes relationships between tables by referencing a unique key in another table [62]. The difference between primary key and unique key is that the latter just has the property of uniqueness, and primary key, while being unique as well, won’t take null values.</p>
+<p>Relational databases rely on <em>Structured Query Language (SQL)</em> for data manipulation and retrieval. SQL allows users to perform operations such as querying data, inserting new records, updating existing entries, and deleting data. It also supports complex operations such as joins, which combine data from multiple tables based on their relationships [63].</p>
+<p>A central concept in relational databases is <strong>data integrity,</strong> which ensures that data remain accurate, consistent, and reliable. Integrity is maintained through constraints such as:</p>
+<ul>
+<li>primary key constraints (unique identification of records)</li>
+<li>foreign key constraints (valid relationships between tables) domain constraints (valid data types and ranges)</li>
+<li>NOT NULL constraints (mandatory values)</li>
+</ul>
+<p>These mechanisms help to prevent errors such as duplicate records, invalid references, and missing mandatory values. This significantly improves overall data quality and reduces the need for data cleansing a crucial step in data lifecycle describe previously in detail [62][64].</p>
+<p>Another important principle is <strong>normalization,</strong> which is the process of organizing data to reduce redundancy and improve consistency. Normalization divides data into multiple related tables, minimizing duplication and ensuring that updates are applied consistently. Common normal forms (e.g., First Normal Form, Second Normal Form, Third Normal Form) define rules for structuring data effectively [64].</p>
+<p>Relational databases are widely used because they provide strong consistency, structured organization, and powerful querying capabilities. They are particularly suitable for situations when data relationships are well-defined (structured data) and data integrity is critical, such as financial systems, administrative databases, and scientific research datasets [61][63]. However, relational databases may face limitations when dealing with very large volumes of unstructured data or highly flexible data models. In such cases, alternative systems such as NoSQL databases or data lakes may be more appropriate. Despite these limitations, relational databases are widely used for data management systems for a reason: compared to other existing solutions, they provide a highly reliable and structured data storage [63][64].</p>
+<p><strong>Reflection Questions</strong></p>
+<ol type="1">
+<li><em>Why are relational databases structured into tables instead of storing all data in one place?</em></li>
+<li><em>What advantages do primary and foreign keys provide?</em></li>
+<li><em>Why is normalization important for data consistency?</em></li>
+<li><em>In what situations might relational databases not be the best choice?</em></li>
+<li><em>How does SQL make working with relational databases easier?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a relational database?</p>
+<div id="webex-cd7070d1c03ffd55471ca0c60b1a020d" class="webex-radiogroup" data-answer="OFUbABsASAE+">
+<label><input type="radio" autocomplete="off" name="cd7070d1c03ffd55471ca0c60b1a020d"><span>system organizing data into tables</span></label><label><input type="radio" autocomplete="off" name="cd7070d1c03ffd55471ca0c60b1a020d"><span>long-term archiving solution</span></label><label><input type="radio" autocomplete="off" name="cd7070d1c03ffd55471ca0c60b1a020d"><span>data visualization tool</span></label><label><input type="radio" autocomplete="off" name="cd7070d1c03ffd55471ca0c60b1a020d"><span>backup system</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Who proposed the relational model?</p>
+<div id="webex-02c07ea8a4811aa94165b18db7ae51b6" class="webex-radiogroup" data-answer="awJPABtVTQk8">
+<label><input type="radio" autocomplete="off" name="02c07ea8a4811aa94165b18db7ae51b6"><span>Tim Berners-Lee</span></label><label><input type="radio" autocomplete="off" name="02c07ea8a4811aa94165b18db7ae51b6"><span>Alan Turing</span></label><label><input type="radio" autocomplete="off" name="02c07ea8a4811aa94165b18db7ae51b6"><span>Bill Gates</span></label><label><input type="radio" autocomplete="off" name="02c07ea8a4811aa94165b18db7ae51b6"><span>Edgar F. Codd</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does a primary key do?</p>
+<div id="webex-27b2dc6c32455b89e324e50f79dcdd0a" class="webex-radiogroup" data-answer="aQdOAkhTGlJu">
+<label><input type="radio" autocomplete="off" name="27b2dc6c32455b89e324e50f79dcdd0a"><span>encrypts data within a database</span></label><label><input type="radio" autocomplete="off" name="27b2dc6c32455b89e324e50f79dcdd0a"><span>connects data from multiple tables</span></label><label><input type="radio" autocomplete="off" name="27b2dc6c32455b89e324e50f79dcdd0a"><span>shows every relation between data</span></label><label><input type="radio" autocomplete="off" name="27b2dc6c32455b89e324e50f79dcdd0a"><span>uniquely identifies records</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a foreign key?</p>
+<div id="webex-095a4d8f03d620fbfbb86e74f50adf5b" class="webex-radiogroup" data-answer="awkZURhVFFZt">
+<label><input type="radio" autocomplete="off" name="095a4d8f03d620fbfbb86e74f50adf5b"><span>unique identifier</span></label><label><input type="radio" autocomplete="off" name="095a4d8f03d620fbfbb86e74f50adf5b"><span>a password protecting database</span></label><label><input type="radio" autocomplete="off" name="095a4d8f03d620fbfbb86e74f50adf5b"><span>link between tables</span></label><label><input type="radio" autocomplete="off" name="095a4d8f03d620fbfbb86e74f50adf5b"><span>versatile tool that can be both a unique identifier and reference such key in another table</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What language is typically used in relational databases?</p>
+<div id="webex-ecc2fbc7ed222ff7f43b72d502170bbc" class="webex-radiogroup" data-answer="PlNPA0pSTwc4">
+<label><input type="radio" autocomplete="off" name="ecc2fbc7ed222ff7f43b72d502170bbc"><span>Python</span></label><label><input type="radio" autocomplete="off" name="ecc2fbc7ed222ff7f43b72d502170bbc"><span>SQL</span></label><label><input type="radio" autocomplete="off" name="ecc2fbc7ed222ff7f43b72d502170bbc"><span>HTML</span></label><label><input type="radio" autocomplete="off" name="ecc2fbc7ed222ff7f43b72d502170bbc"><span>Java</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does SQL SELECT do?</p>
+<div id="webex-3bb6caf1439970512afd2d26b53259d3" class="webex-radiogroup" data-answer="aFJOB09RSgFp">
+<label><input type="radio" autocomplete="off" name="3bb6caf1439970512afd2d26b53259d3"><span>transforms data</span></label><label><input type="radio" autocomplete="off" name="3bb6caf1439970512afd2d26b53259d3"><span>retrieves data</span></label><label><input type="radio" autocomplete="off" name="3bb6caf1439970512afd2d26b53259d3"><span>encrypts data</span></label><label><input type="radio" autocomplete="off" name="3bb6caf1439970512afd2d26b53259d3"><span>compresses data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is normalization?</p>
+<div id="webex-39cf9084cb3bd371950051d7249a1c34" class="webex-radiogroup" data-answer="aAhPVhUAFAQ+">
+<label><input type="radio" autocomplete="off" name="39cf9084cb3bd371950051d7249a1c34"><span>organizing data to reduce redundancy</span></label><label><input type="radio" autocomplete="off" name="39cf9084cb3bd371950051d7249a1c34"><span>organizing data to delete unnesessary data timely</span></label><label><input type="radio" autocomplete="off" name="39cf9084cb3bd371950051d7249a1c34"><span>organizing data to minimize variance</span></label><label><input type="radio" autocomplete="off" name="39cf9084cb3bd371950051d7249a1c34"><span>organizing data into most typical formats</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which constraint ensures no null values?</p>
+<div id="webex-b1b97521b24b2bfaf62fd809d79fa482" class="webex-radiogroup" data-answer="OQFOCBsFHgE/">
+<label><input type="radio" autocomplete="off" name="b1b97521b24b2bfaf62fd809d79fa482"><span>FOREIGN KEY</span></label><label><input type="radio" autocomplete="off" name="b1b97521b24b2bfaf62fd809d79fa482"><span>NOT NULL</span></label><label><input type="radio" autocomplete="off" name="b1b97521b24b2bfaf62fd809d79fa482"><span>NON ZERO</span></label><label><input type="radio" autocomplete="off" name="b1b97521b24b2bfaf62fd809d79fa482"><span>NO NAS</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a table row called?</p>
+<div id="webex-79857f378a8926afc94ed14fa9580255" class="webex-radiogroup" data-answer="bAkUBRtXHwdl">
+<label><input type="radio" autocomplete="off" name="79857f378a8926afc94ed14fa9580255"><span>set</span></label><label><input type="radio" autocomplete="off" name="79857f378a8926afc94ed14fa9580255"><span>entity</span></label><label><input type="radio" autocomplete="off" name="79857f378a8926afc94ed14fa9580255"><span>tuple</span></label><label><input type="radio" autocomplete="off" name="79857f378a8926afc94ed14fa9580255"><span>attribute</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>When are relational databases most useful?</p>
+<div id="webex-78bbcd9aeb60d3594aed8c7d4fc661bc" class="webex-radiogroup" data-answer="bAhOUk9VFVE4">
+<label><input type="radio" autocomplete="off" name="78bbcd9aeb60d3594aed8c7d4fc661bc"><span>unstructured big data</span></label><label><input type="radio" autocomplete="off" name="78bbcd9aeb60d3594aed8c7d4fc661bc"><span>for data collected from various sources that might therefore come in different formats</span></label><label><input type="radio" autocomplete="off" name="78bbcd9aeb60d3594aed8c7d4fc661bc"><span>well-structured data with relationships</span></label><label><input type="radio" autocomplete="off" name="78bbcd9aeb60d3594aed8c7d4fc661bc"><span>for data with complex hierarchy and lots of meaningful relationships between entities</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle433" class="level4">
+<h4 class="anchored" data-anchor-id="lifecycle433">Data Lakes</h4>
+<p>A <strong>data lake</strong> is a type of storage system that allows organizations to keep large amounts of data in one place. One important difference compared to traditional databases or data warehouses is that <em>data lakes do not always require the data to have a fixed structure before storing it:</em> instead, data stored in a data lake can be more or less structured, or even have no traditional structure at all (also called natural, or raw format) [47]. Here, under structured data we assume tabular form data, like a relational database (fully structured) or, for instance, in a csv file (semi-structured) (more about structure and dimensionality of data in the Introduction chapter). Binary data, like images or audio files, can also be safely stored in a data lake. Because of this, data lakes can be truly useful in modern environments where data can come from many different sources, for example sensors, social media platforms, multimedia files, etc. [49][47].</p>
+<p>The idea of data lakes became more popular because traditional data warehouses often require data to be cleaned and transformed before it is stored. This approach is called <strong>schema-on-write,</strong> since the structure of the data has to be defined early. In data lakes, the process can be totally different. Data are usually stored first in their original format, and the schema is applied later when the data are analyzed. This approach is known as <strong>schema-on-read</strong> and gives more flexibility for different types of analysis, especially in big data analytics and machine learning applications, [50] and also when the amounts of data is exceptionally large.</p>
+<p>Data lakes are commonly built using scalable technologies such as distributed storage systems or cloud platforms. Earlier systems often used Hadoop Distributed File System (HDFS), while modern solutions frequently rely on cloud storage services like Amazon S3 or Azure Data Lake Storage. These technologies make it possible to store very large amounts of data with relatively low cost and good scalability [47][50].</p>
+<p>Another advantage of data lakes is that they can provide more opportunities for analytics. The inevitable drawback of traditional warehouses is the need to preprocess and structure data in a certain way before it can be saved. It provides consistence and robustness, but not flexibility. Instead, in datalakes original data can be preserved in a detailed form, which provides more options for analysis [50]. Therefore, in warehouses data is often suitable only for specific analytical goals, while data from datalakes can sometimes provide more insight due to its fullness.</p>
+<p>At the same time, data lakes also have some disadvantages. If they are not managed correctly, they can become what is sometimes called a <strong>“data swamp”</strong> – an unorganized “pile” of data, which is often difficult to find, and sometimes completely unreliable. Here, again, data management plans can prove to be useful, as adding and updating metadata, regular monitoring of data quality and similar procedures are especially important when working with such diverse and differently structured data [49]</p>
+<p>Security is also an important issue. Since data lakes may contain sometimes large volumes of raw and sensitive data, using suitable protection mechanisms would be crucial to prevent unauthorized access and potential abuse of the data [47].</p>
+<p><strong>Reflection Questions</strong></p>
+<ol type="1">
+<li><em>What are the main differences between a data lake and a data warehouse?</em></li>
+<li><em>Why can storing data in raw format be useful for future analysis?</em></li>
+<li><em>What problems may appear if a data lake is not managed properly?</em></li>
+<li><em>How does schema-on-read influence data analysis workflows?</em></li>
+<li><em>In which situations would a data lake be more suitable than a relational database or data warehouse?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a data lake?</p>
+<div id="webex-d378c52b5d838b78c191f73c6b46b5ea" class="webex-radiogroup" data-answer="PwMbCE8EHlJo">
+<label><input type="radio" autocomplete="off" name="d378c52b5d838b78c191f73c6b46b5ea"><span>structured database</span></label><label><input type="radio" autocomplete="off" name="d378c52b5d838b78c191f73c6b46b5ea"><span>backup system</span></label><label><input type="radio" autocomplete="off" name="d378c52b5d838b78c191f73c6b46b5ea"><span>repository storing raw data in various formats</span></label><label><input type="radio" autocomplete="off" name="d378c52b5d838b78c191f73c6b46b5ea"><span>data visualization tool</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a data lake?</p>
+<div id="webex-c25220cb6820c1e205c292db62a2131d" class="webex-radiogroup" data-answer="OAIZAh4BT1Jr">
+<label><input type="radio" autocomplete="off" name="c25220cb6820c1e205c292db62a2131d"><span>structured database</span></label><label><input type="radio" autocomplete="off" name="c25220cb6820c1e205c292db62a2131d"><span>backup system</span></label><label><input type="radio" autocomplete="off" name="c25220cb6820c1e205c292db62a2131d"><span>repository storing raw data in various formats</span></label><label><input type="radio" autocomplete="off" name="c25220cb6820c1e205c292db62a2131d"><span>data visualization tool</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is schema-on-read?</p>
+<div id="webex-407b9fc81e30d9d8d6f74d06a9b26834" class="webex-radiogroup" data-answer="bwAbUhVXTwhs">
+<label><input type="radio" autocomplete="off" name="407b9fc81e30d9d8d6f74d06a9b26834"><span>decoding data</span></label><label><input type="radio" autocomplete="off" name="407b9fc81e30d9d8d6f74d06a9b26834"><span>creating a relational hierarchy (scheme) of all stored data</span></label><label><input type="radio" autocomplete="off" name="407b9fc81e30d9d8d6f74d06a9b26834"><span>structuring data only when accessed</span></label><label><input type="radio" autocomplete="off" name="407b9fc81e30d9d8d6f74d06a9b26834"><span>defining structure before storing data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is schema-on-write?</p>
+<div id="webex-1fba78633a4bf937d989ff5e294fc1a4" class="webex-radiogroup" data-answer="alZOURsJGgNu">
+<label><input type="radio" autocomplete="off" name="1fba78633a4bf937d989ff5e294fc1a4"><span>writing schematic path of where data it stored</span></label><label><input type="radio" autocomplete="off" name="1fba78633a4bf937d989ff5e294fc1a4"><span>compressing data before storing it</span></label><label><input type="radio" autocomplete="off" name="1fba78633a4bf937d989ff5e294fc1a4"><span>structuring data before storage</span></label><label><input type="radio" autocomplete="off" name="1fba78633a4bf937d989ff5e294fc1a4"><span>structuring data after analysis</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which technology is commonly used in data lakes?</p>
+<div id="webex-2e6e19587d0b75743253596199153c00" class="webex-radiogroup" data-answer="aVUaVB0JGQhq">
+<label><input type="radio" autocomplete="off" name="2e6e19587d0b75743253596199153c00"><span>PDF</span></label><label><input type="radio" autocomplete="off" name="2e6e19587d0b75743253596199153c00"><span>HDFS</span></label><label><input type="radio" autocomplete="off" name="2e6e19587d0b75743253596199153c00"><span>HTML</span></label><label><input type="radio" autocomplete="off" name="2e6e19587d0b75743253596199153c00"><span>SMTP</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a data swamp?</p>
+<div id="webex-f87583803780f7cdbab66467ef1ff873" class="webex-radiogroup" data-answer="PQgbBBQDFABu">
+<label><input type="radio" autocomplete="off" name="f87583803780f7cdbab66467ef1ff873"><span>hybrid of a database and a data lake</span></label><label><input type="radio" autocomplete="off" name="f87583803780f7cdbab66467ef1ff873"><span>poorly managed data lake</span></label><label><input type="radio" autocomplete="off" name="f87583803780f7cdbab66467ef1ff873"><span>clean data repository</span></label><label><input type="radio" autocomplete="off" name="f87583803780f7cdbab66467ef1ff873"><span>collection of data lakes</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why are data lakes useful for machine learning?</p>
+<div id="webex-cef1cbb2bed02184da23078fee839e3f" class="webex-radiogroup" data-answer="OFVKAU9STgM/">
+<label><input type="radio" autocomplete="off" name="cef1cbb2bed02184da23078fee839e3f"><span>they use advanced algorithms for analysis</span></label><label><input type="radio" autocomplete="off" name="cef1cbb2bed02184da23078fee839e3f"><span>they store only structured data</span></label><label><input type="radio" autocomplete="off" name="cef1cbb2bed02184da23078fee839e3f"><span>they help to automate the process eliminate the need for human supervision</span></label><label><input type="radio" autocomplete="off" name="cef1cbb2bed02184da23078fee839e3f"><span>they store raw and detailed data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is a key challenge of data lakes?</p>
+<div id="webex-9227b786b1e766d8e5a6a863fec9897f" class="webex-radiogroup" data-answer="YgMeB04HFAY/">
+<label><input type="radio" autocomplete="off" name="9227b786b1e766d8e5a6a863fec9897f"><span>lack of governance</span></label><label><input type="radio" autocomplete="off" name="9227b786b1e766d8e5a6a863fec9897f"><span>high maintenance costs</span></label><label><input type="radio" autocomplete="off" name="9227b786b1e766d8e5a6a863fec9897f"><span>limited storage</span></label><label><input type="radio" autocomplete="off" name="9227b786b1e766d8e5a6a863fec9897f"><span>poor flexibility</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does a data lakehouse combine?</p>
+<div id="webex-8e279bfdcef718672915bdfad9c1ce91" class="webex-radiogroup" data-answer="Y1UeBxVSSlU+">
+<label><input type="radio" autocomplete="off" name="8e279bfdcef718672915bdfad9c1ce91"><span>multiple datalakes together</span></label><label><input type="radio" autocomplete="off" name="8e279bfdcef718672915bdfad9c1ce91"><span>databases and networks</span></label><label><input type="radio" autocomplete="off" name="8e279bfdcef718672915bdfad9c1ce91"><span>local and remote storage solutions</span></label><label><input type="radio" autocomplete="off" name="8e279bfdcef718672915bdfad9c1ce91"><span>data lakes and data warehouses</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why is metadata important in data lakes?</p>
+<div id="webex-1662e225315a35aae653a7a8b20f78c7" class="webex-radiogroup" data-answer="agYaAkkCHgRu">
+<label><input type="radio" autocomplete="off" name="1662e225315a35aae653a7a8b20f78c7"><span>it’s a myth: metadata is not commonly used in data lakes</span></label><label><input type="radio" autocomplete="off" name="1662e225315a35aae653a7a8b20f78c7"><span>saves storage space</span></label><label><input type="radio" autocomplete="off" name="1662e225315a35aae653a7a8b20f78c7"><span>safely encrypts data</span></label><label><input type="radio" autocomplete="off" name="1662e225315a35aae653a7a8b20f78c7"><span>helps locate and understand data</span></label>
+</div>
+</div>
+</div>
+</section>
+<section id="lifecycle434" class="level4">
+<h4 class="anchored" data-anchor-id="lifecycle434">Associated Challenges</h4>
+<p>Data storage becomes a more challenging task every year, as organizations generate more data than ever, and large data volumes increase storage needs. Besides, diverse data types make management harder. As the result, existing systems can become overloaded. Therefore, scalable storage solutions are oftentimes used where it is necessary to reduce pressure, while big data analytics supports handling complexity.</p>
+<p>Another challenge is complex rules govern data retention, privacy, and security (more on this topic in Data Ethics section). Organizations and researchers must manage strict requirements for storing, accessing, and disposing of data, and non-compliance leads to high fines and reputational damage. Modern technologies, though, provide new solutions for the above mentioned issues: AI and ML can automate data classification and improve organization, while blockchain ensures integrity with immutable records. Unfortunately, integrating new technologies is difficult and costly, since organizations need updated infrastructure and skilled staff to use the modern solutions properly. [1]</p>
+</section>
+</section>
+<section id="lifecycle45" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle45">Data Archiving and Retention</h3>
+<p>Long-term preservation ensures that research data remain available beyond the duration of a project. Many institutions require research data to be retained for at least 10 years to ensure reproducibility and accountability [13].</p>
+<p><strong>Retention policies</strong> define how long different categories of data should be preserved and when they may be archived or deleted. The Alliance of Science Organisations in Germany voiced its support for the long-term archiving of research data, open access to it and compliance with the conventions of individual disciplines in the “Principles for the Handling of Research Data”, adopted in 2010.</p>
+<p>The general guidelines for researchers include [22]:</p>
+<ul>
+<li><p><em>Project planning and submission of proposals</em> means to consider during the planning stage whether and how much of the research data resulting from a project could be relevant for other research contexts and how this data can be made available to other researchers for reuse. The relevant explanations must contain information about data types, discipline-specific standards (if applicable) and the choice of suitable repositories, if these are available for a given research area or particular data types. Details should also be provided on any third-party rights affected and preliminary planning for the data publication schedule.</p></li>
+<li><p><em>Accessibility.</em> Assuming that the publication of research data from your project does not conflict with the rights of third parties (in particular data protection or copyright), research data should be made available as soon as possible. Data should be made accessible at a stage of processing that allows it to be usefully reused by third parties (raw data or structured data). To make sure this is the case, it must be ensured that access to the data is still guaranteed when, through publication, the rights of use relating to research data are transferred to a third party, usually a publishing house.</p></li>
+<li><p><em>Long-term archiving</em>. In accordance with the rules of good scientific practice, research data should be archived in the researcher’s own institution or an appropriate nationwide infrastructure for at least 10 years.</p></li>
+</ul>
+<p>Retention policies must be translated into practical schedules: each data type gets a defined retention timeline:</p>
+<ol type="1">
+<li>Classify data according to categories</li>
+<li>Use automated tools to tag and organize data</li>
+<li>Define how long each category must be kept</li>
+<li>Consider legal requirements and needs of your research</li>
+</ol>
+<p>Data governance platforms support retention management, while content management systems and cloud solutions include retention feature. Many tools offer automated workflows, audit trails, and reports. <strong>Audits</strong> verify that retention policies are followed. They check if data is stored, deleted, or archived as scheduled. Audits reveal gaps, errors, and failed processes. They also ensure data is correctly classified.</p>
+<p>Retention policies themselves must be reviewed regularly, too. Regulations change and can affect retention requirements. Reviews keep policies aligned with legal and operational needs. If working on a group project, always communicate updates to the other participants</p>
+</section>
+<section id="lifecycle45" class="level3">
+<h3 class="anchored" data-anchor-id="lifecycle45">Data Destruction</h3>
+<p>It is important to remember, that <em>simple deletion of data is not enough.</em> When a file is deleted using the usual methods inherent in an operating system, these methods typically only remove the pointers to the files, not the actual files themselves. The data remains on the hard drive as unallocated space and can easily be recovered with readily available tools. Using system utilities and reformatting a hard drive will securely delete all data on the hard drive. Like rm and del, these utilities modify file system attributes but do not remove the actual data. CD-ROMs, since they are read-only, present a different challenge in that there is no way to programmatically and securely delete the contents of the CD. Inoperable hard drives are also a challenge since they cannot be connected to a system and accessed through software. Methods of secure deletion may include various techniques, that would also highly depend on the nature of data itself. For example, the so-called <strong>disk wiping</strong> is a term used to describe a method that writes a series of ones and/or zeros over the disk to securely remove the data. Since tools that do this have to overwrite the entire disk, this process can be time-consuming. On the other hand, for media that has contained highly sensitive data or for media that cannot be wiped (for example, inoperable hard drives or DVDs) or degaussed (for example, CD-ROMs), destruction of the media is the most effective means of ensuring that the data cannot be recovered. In order to be effective, the destruction has to be thorough. For example, a simple whack with a hammer leaves the majority of data on the media readable. For detailed guidelines for inoperable devices, see “About disposing of failed devices and media containing data” [81], but more important is to check on the organization’s documented policies and governmental regulations of respective country (more about some of these legal restrictions in chapter <span class="citation" data-cites="ethics">@ethics</span>).</p>
+<p>Another way to properly delete the unwanted data is called <strong>degaussing:</strong> it is a process by which magnetic storage media is subjected to a powerful magnetic field to remove data on the media. It is appropriate for magnetic tape, but is ineffective with optical media such as DVDs and CDs. Information classified as Critical data, when stored in paper form, must be properly destroyed by shredding. For low-volume paper document destruction, units may consider purchasing a small cross-cut paper shredder. For high volume needs, a document destruction vendor may be the best solution.</p>
+</section>
+</section>
+<section id="lifecycle5" class="level2">
+<h2 class="anchored" data-anchor-id="lifecycle5">Popular Data Management Software</h2>
+<p>Nowadays, many of the tasks data managers are working on can be safely delegated to reliable software. These tools support different stages of the data lifecycle and are designed for users with varying levels of technical expertise. Popular data management software can be broadly categorized into business intelligence (BI) tools, database management systems, data processing platforms, and visualization tools [49][47].</p>
+<p>One widely used category is <strong>business intelligence (BI)</strong> software, which enables users to transform raw data into meaningful insights through dashboards, reports, and visualizations. Tools such as Microsoft Power BI, Tableau, and Qlik Sense allow users to connect to multiple data sources, perform basic data transformations, and create interactive visualizations. These tools are particularly valuable for decision-making, as they allow professionals not seasoned in tech tasks to explore and interpret data “intuitively” [65].</p>
+<p>Another important category is <strong>database management systems (DBMS),</strong> which are used to store and organize structured data (see <span class="citation" data-cites="lifecycle432">@lifecycle432</span> ). Examples include MySQL, PostgreSQL, and Oracle Database. These systems support efficient data storage, retrieval, and manipulation using query languages, typically SQL. They also enforce data integrity through constraints and support multi-user environments, making them essential for enterprise applications [63].</p>
+<p>For large-scale data processing, organizations often rely on <strong>big data platforms</strong> such as Apache Hadoop and Apache Spark. These frameworks are designed to process massive datasets across distributed computing environments. They enable tasks such as batch processing, real-time analytics, and machine learning, which are not feasible with traditional database systems alone [47].</p>
+<p>Besides, many organizations use data integration and previously mentioned <strong>ETL tools</strong> to manage data workflows. Tools like Talend and Informatica PowerCenter can help to extract data from multiple sources, transform it into consistent format, and load it to storage systems such as data warehouses or data lakes (see <span class="citation" data-cites="lifecycle433">@lifecycle433</span>). These tools improve data quality and ensure that data is ready for analysis [49].</p>
+<p><strong>Cloud-based platforms</strong> are another widely used tool in data management. Services such as Google BigQuery and Amazon Redshift provide handy opportunitites for storing and analyzing large datasets without requiring highly performative hardware. These platforms offer great performance, flexibility, and integration with other cloud services [47].</p>
+<p>Overall, all of the above mentioned options have their own advantages, which make them suitable for different kinds of data management tasks. choosing the right combination of tools depends on factors such as data volume, complexity, required analytics capabilities, and user expertise [49][65], but most of the solutions mentioned in this category are confidently and successfully used also among professionals who do not have a solid background in data science.</p>
+<p><strong>Reflection Questions</strong></p>
+<ol type="1">
+<li><em>What are the main differences between BI tools and database systems?</em></li>
+<li><em>Why are visualization tools important for decision-making?</em></li>
+<li><em>What advantages do cloud-based data platforms offer compared to local systems?</em></li>
+<li><em>In what situations would you use a big data platform instead of a traditional database?</em></li>
+<li><em>How do ETL tools improve data quality?</em></li>
+</ol>
+<p><strong>Exercises</strong></p>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the main purpose of BI tools?</p>
+<div id="webex-f9d3c83b01d8998b08d581faa5018744" class="webex-radiogroup" data-answer="PQhIA08IH1Jt">
+<label><input type="radio" autocomplete="off" name="f9d3c83b01d8998b08d581faa5018744"><span>visualize and analyze data</span></label><label><input type="radio" autocomplete="off" name="f9d3c83b01d8998b08d581faa5018744"><span>teach business professionals the basics of data analysis</span></label><label><input type="radio" autocomplete="off" name="f9d3c83b01d8998b08d581faa5018744"><span>automate project management and replace human supervision of projects</span></label><label><input type="radio" autocomplete="off" name="f9d3c83b01d8998b08d581faa5018744"><span>transform data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following is a BI tool?</p>
+<div id="webex-a7373bda9538dc83d7041c9c2b2e6991" class="webex-radiogroup" data-answer="OgcfBx9TSFFk">
+<label><input type="radio" autocomplete="off" name="a7373bda9538dc83d7041c9c2b2e6991"><span>Hadoop</span></label><label><input type="radio" autocomplete="off" name="a7373bda9538dc83d7041c9c2b2e6991"><span>Google BI</span></label><label><input type="radio" autocomplete="off" name="a7373bda9538dc83d7041c9c2b2e6991"><span>Microsoft Power BI</span></label><label><input type="radio" autocomplete="off" name="a7373bda9538dc83d7041c9c2b2e6991"><span>MySQL</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does a DBMS do?</p>
+<div id="webex-80b6cba0b1d4d4f4cea8fbc3f942864d" class="webex-radiogroup" data-answer="YwBOB09STQA/">
+<label><input type="radio" autocomplete="off" name="80b6cba0b1d4d4f4cea8fbc3f942864d"><span>organizes unstructured data into same format</span></label><label><input type="radio" autocomplete="off" name="80b6cba0b1d4d4f4cea8fbc3f942864d"><span>stores and manages structured data</span></label><label><input type="radio" autocomplete="off" name="80b6cba0b1d4d4f4cea8fbc3f942864d"><span>visualizes data</span></label><label><input type="radio" autocomplete="off" name="80b6cba0b1d4d4f4cea8fbc3f942864d"><span>stores, archives data and supports backups</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which tool is a relational database system?</p>
+<div id="webex-51ccfe32f1a590c87d866f69076b844e" class="webex-radiogroup" data-answer="bgFPU0pUHwI7">
+<label><input type="radio" autocomplete="off" name="51ccfe32f1a590c87d866f69076b844e"><span>Spark</span></label><label><input type="radio" autocomplete="off" name="51ccfe32f1a590c87d866f69076b844e"><span>Tableau</span></label><label><input type="radio" autocomplete="off" name="51ccfe32f1a590c87d866f69076b844e"><span>PostgreSQL</span></label><label><input type="radio" autocomplete="off" name="51ccfe32f1a590c87d866f69076b844e"><span>Power BI</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is Apache Spark used for?</p>
+<div id="webex-ed1db21ce88225a2c39dea0646e03b30" class="webex-radiogroup" data-answer="PlQdVE4CHVI4">
+<label><input type="radio" autocomplete="off" name="ed1db21ce88225a2c39dea0646e03b30"><span>project management</span></label><label><input type="radio" autocomplete="off" name="ed1db21ce88225a2c39dea0646e03b30"><span>data encryption</span></label><label><input type="radio" autocomplete="off" name="ed1db21ce88225a2c39dea0646e03b30"><span>database storage and archiving</span></label><label><input type="radio" autocomplete="off" name="ed1db21ce88225a2c39dea0646e03b30"><span>big data processing</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What does ETL stand for?</p>
+<div id="webex-cac110df673acc932354ede9c0e8e7db" class="webex-radiogroup" data-answer="OFFPAR0BSFZr">
+<label><input type="radio" autocomplete="off" name="cac110df673acc932354ede9c0e8e7db"><span>Encrypt Transfer Link</span></label><label><input type="radio" autocomplete="off" name="cac110df673acc932354ede9c0e8e7db"><span>Evaluate Test Learn</span></label><label><input type="radio" autocomplete="off" name="cac110df673acc932354ede9c0e8e7db"><span>Extract Transform Load</span></label><label><input type="radio" autocomplete="off" name="cac110df673acc932354ede9c0e8e7db"><span>Execute Transform Load</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which tool is used for ETL processes?</p>
+<div id="webex-22a641a0a5c1d0a0e2b8ef904a316705" class="webex-radiogroup" data-answer="aQJNBhgATQA8">
+<label><input type="radio" autocomplete="off" name="22a641a0a5c1d0a0e2b8ef904a316705"><span>Power BI</span></label><label><input type="radio" autocomplete="off" name="22a641a0a5c1d0a0e2b8ef904a316705"><span>MySQL</span></label><label><input type="radio" autocomplete="off" name="22a641a0a5c1d0a0e2b8ef904a316705"><span>Talend</span></label><label><input type="radio" autocomplete="off" name="22a641a0a5c1d0a0e2b8ef904a316705"><span>Excel</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is an advantage of cloud platforms?</p>
+<div id="webex-257b6f436ae8fab6af79ddc3bca7ec7d" class="webex-radiogroup" data-answer="aQQbUhpWGANr">
+<label><input type="radio" autocomplete="off" name="257b6f436ae8fab6af79ddc3bca7ec7d"><span>scalability and flexibility</span></label><label><input type="radio" autocomplete="off" name="257b6f436ae8fab6af79ddc3bca7ec7d"><span>easier search within the cloud and free access for everyone</span></label><label><input type="radio" autocomplete="off" name="257b6f436ae8fab6af79ddc3bca7ec7d"><span>structured format of data required for storing improves data quality</span></label><label><input type="radio" autocomplete="off" name="257b6f436ae8fab6af79ddc3bca7ec7d"><span>exceptional safety of data</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which platform is cloud-based?</p>
+<div id="webex-9e36603f8b826ba1ccddb0801b2c723b" class="webex-radiogroup" data-answer="YlUfBhoAH1dl">
+<label><input type="radio" autocomplete="off" name="9e36603f8b826ba1ccddb0801b2c723b"><span>Notepad</span></label><label><input type="radio" autocomplete="off" name="9e36603f8b826ba1ccddb0801b2c723b"><span>Excel</span></label><label><input type="radio" autocomplete="off" name="9e36603f8b826ba1ccddb0801b2c723b"><span>MySQL</span></label><label><input type="radio" autocomplete="off" name="9e36603f8b826ba1ccddb0801b2c723b"><span>Google BigQuery</span></label>
+</div>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Why are dashboards useful?</p>
+<div id="webex-e4295fb698c9fdf3327bf80757854d6d" class="webex-radiogroup" data-answer="PgQeCRlXTgZk">
+<label><input type="radio" autocomplete="off" name="e4295fb698c9fdf3327bf80757854d6d"><span>they are suitable for non-insiders</span></label><label><input type="radio" autocomplete="off" name="e4295fb698c9fdf3327bf80757854d6d"><span>they are proven to be 27% more engaging than the same data presented in textual form</span></label><label><input type="radio" autocomplete="off" name="e4295fb698c9fdf3327bf80757854d6d"><span>they present insights visually</span></label><label><input type="radio" autocomplete="off" name="e4295fb698c9fdf3327bf80757854d6d"><span>they help to navigate within databases</span></label>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

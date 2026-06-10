@@ -17,6 +17,7 @@ book:
     - visualization.qmd
     - summary.qmd
     - references.qmd
+    - lifecycle_final.qmd
 
 bibliography: references.bib
 

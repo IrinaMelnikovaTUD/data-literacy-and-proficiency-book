@@ -58,11 +58,13 @@ Ingest. Never overlook this step, as timely transferring data to an archive, rep
 5.	*Reflect on the problems you have previously faced when working with data. Could some of the actions proposed in the model help to overcome any of these obstacles?*
 
 **Exercises**
+
 ```{r quiz1-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_lifecycle_model <- list(
   file.path(exercise_directory, "model-purp.Rmd"),
   file.path(exercise_directory, "why-meta.Rmd"),
   file.path(exercise_directory, "preserve-stage.Rmd"),
@@ -76,7 +78,7 @@ exm <- list(
 )
 ```
 ```{r quiz1, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_lifecycle_model, solution = FALSE)
 ```
 
 
@@ -110,8 +112,9 @@ Developing a DMP early in the research process not only helps satisfy funder req
 ```{r quiz2-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_dmp <- list(
   file.path(exercise_directory, "dmp-goal.Rmd"),
   file.path(exercise_directory, "dmp-research.Rmd"),
   file.path(exercise_directory, "state-purp-dmp.Rmd"),
@@ -124,8 +127,8 @@ exm <- list(
   file.path(exercise_directory, "dmp-sw.Rmd")
 )
 ```
-```{r quiz2, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+```{r quiz2, echo = FALSE, message = FALSE, results = "asis"}
+exams2forms(quiz_dmp, solution = FALSE)
 ```
 ## Data Lifecycle Actions {#lifecycle4}
 
@@ -157,8 +160,9 @@ Performance of data generation techniques over various dimensions (based on syst
 ```{r quiz3-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_lc_actions <- list(
   file.path(exercise_directory, "ex1-lc.Rmd"),
   file.path(exercise_directory, "quali-data.Rmd"),
   file.path(exercise_directory, "ordinal-data.Rmd"),
@@ -172,7 +176,7 @@ exm <- list(
 )
 ```
 ```{r quiz3, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_lc_actions, solution = FALSE)
 ```
 
 
@@ -204,8 +208,9 @@ Despite this stage often being time-consuming and tiresome, it is also one of th
 ```{r quiz4-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_proc_n_clean <- list(
   file.path(exercise_directory, "preproc.Rmd"),
   file.path(exercise_directory, "raw-data.Rmd"),
   file.path(exercise_directory, "data-proc.Rmd"),
@@ -219,7 +224,7 @@ exm <- list(
 )
 ```
 ```{r quiz4, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_proc_n_clean, solution = FALSE)
 ```
 
 ### Data Storage and Maintenance {#lifecycle43}
@@ -255,9 +260,10 @@ Data management, contextual metadata, formats, and preservation technologies can
 ```{r quiz5-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
-  file.path(exercise_directory, "meta-basic.Rmd"),
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_metadata <- list(
+  file.path(exercise_directory, "meta-basics.Rmd"),
   file.path(exercise_directory, "meta-help.Rmd"),
   file.path(exercise_directory, "maint.Rmd"),
   file.path(exercise_directory, "encr-sec.Rmd"),
@@ -270,7 +276,7 @@ exm <- list(
 )
 ```
 ```{r quiz5, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_metadata, solution = FALSE)
 ```
 
 
@@ -308,8 +314,9 @@ However, relational databases may face limitations when dealing with very large 
 ```{r quiz6-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_db <- list(
   file.path(exercise_directory, "rel-db.Rmd"),
   file.path(exercise_directory, "rel-mod.Rmd"),
   file.path(exercise_directory, "prim-key.Rmd"),
@@ -323,7 +330,7 @@ exm <- list(
 )
 ```
 ```{r quiz6, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_db, solution = FALSE)
 ```
 #### Data Lakes {#lifecycle433}
 
@@ -351,8 +358,9 @@ Security is also an important issue. Since data lakes may contain sometimes larg
 ```{r quiz7-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_lakes <- list(
   file.path(exercise_directory, "lake-base.Rmd"),
   file.path(exercise_directory, "lake-types.Rmd"),
   file.path(exercise_directory, "sch-read.Rmd"),
@@ -366,7 +374,7 @@ exm <- list(
 )
 ```
 ```{r quiz7, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_lakes, solution = FALSE)
 ```
 
 #### Associated Challenges {#lifecycle434}
@@ -439,8 +447,9 @@ Overall, all of the above mentioned options have their own advantages, which mak
 ```{r quiz8-setup, include = FALSE}
 library(exams)
 library(exams2forms)
-exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
-exm <- list(
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_dm_software <- list(
   file.path(exercise_directory, "bi-purp.Rmd"),
   file.path(exercise_directory, "bi-tool.Rmd"),
   file.path(exercise_directory, "dbms.Rmd"),
@@ -454,6 +463,6 @@ exm <- list(
 )
 ```
 ```{r quiz8, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(exm, n = 10)
+exams2forms(quiz_dm_software, solution = FALSE)
 ```
 

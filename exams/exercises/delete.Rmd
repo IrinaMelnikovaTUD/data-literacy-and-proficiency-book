@@ -3,11 +3,11 @@ Question
 Should one delete data that is no longer useful?
 
 Answerlist
-========
+----------
 * one should rely on the organization's protocol and legal requirements
 * data should never be deleted, only archived
 * all data should be stored for 10 years after the last usage
-* yes, but only by proper physical destrcution of the media
+* yes, but only by proper physical destruction of the media
 
 
 Solution

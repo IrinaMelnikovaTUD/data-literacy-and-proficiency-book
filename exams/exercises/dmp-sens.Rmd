@@ -7,7 +7,7 @@ Answerlist
 * Because sensitive data are never stored
 * Because legal restrictions may apply
 * Because metadata cannot be used
-* Because anonymized participants should have designated time slot to demand their personal data back
+* Because participants should have designated time slot to demand their personal data back
 
 
 Solution
