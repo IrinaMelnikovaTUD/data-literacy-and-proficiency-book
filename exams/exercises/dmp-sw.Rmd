@@ -1,0 +1,30 @@
+Question
+========
+Which platforms are commonly used to help researchers create DMPs?
+
+Answerlist
+----------
+* DMPonline
+* B2B DMP
+* Google Cloud
+* PowerBI
+
+
+Solution
+========
+DMPonline is one of the commonly used platforms that help users create DMPs.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: dmp-sw
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

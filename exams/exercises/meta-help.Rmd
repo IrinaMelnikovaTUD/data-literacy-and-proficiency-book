@@ -1,0 +1,30 @@
+Question
+========
+Metadata helps users:
+
+Answerlist
+----------
+* understand and reuse datasets
+* metadata is only used by machines, not humans
+* compress files
+* reduce storage space
+
+
+Solution
+========
+Metadata helps researchers understand and reuse datasets.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: meta-help
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

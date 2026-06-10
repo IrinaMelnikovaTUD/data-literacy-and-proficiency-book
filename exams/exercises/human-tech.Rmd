@@ -1,0 +1,30 @@
+Question
+========
+The core principles of German society named by The German Federal Government’s Data Ethics Commission emphasize which of the following approaches to digital technologies?
+
+Answerlist
+----------
+* Market-driven innovation
+* Human-centeredness
+* Profit maximization
+* Full automation of data processing
+
+
+Solution
+========
+The principles emphasize a human-centered approach to digital technologies.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+Meta-information
+================
+
+exname: human-tech
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

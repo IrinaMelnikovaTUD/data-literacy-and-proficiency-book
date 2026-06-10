@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{a4wide,graphicx,xcolor,verbatim,url,fancyvrb}
+\usepackage{amsmath,amssymb,booktabs,longtable,textcomp,eurosym,latexsym}
+
+\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl}
+\newenvironment{Schunk}{}{}
+
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+
+\begin{document}
+
+%% Exam ##ID##
+%% ##Date##
+
+\begin{enumerate}
+#-
+  \item
+#-
+  \textbf{##Questionheader##}\\
+#-
+  ##Question##
+#-
+  \begin{enumerate}[(a)]
+    \item ##Questionlist##
+  \end{enumerate}
+#-
+
+  \textbf{##Solutionheader##}\\
+#-
+  ##Solution##
+#-
+  \begin{enumerate}[(a)]
+    \item ##Solutionlist##
+  \end{enumerate}
+#-
+#-
+\end{enumerate}
+
+\end{document}

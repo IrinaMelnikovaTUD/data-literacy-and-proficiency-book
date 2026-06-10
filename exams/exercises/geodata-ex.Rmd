@@ -1,0 +1,271 @@
+---
+title: Exercise 03 (Solutions)
+instructor:
+  - Prof. Dr. Pascal Kerschke
+  - M.Sc. Sebastian Dengel
+author: Sebastian Dengel
+course: Data Analytics Fundamentals
+term: Summer semester 2025
+date: 15. May 2025
+lang: en-us
+
+
+# LaTeX options:
+geometry: left=3.5cm,right=3.5cm,top=3.5cm,bottom=3.5cm
+fontsize: 12pt
+documentclass: scrartcl
+papersize: a4
+numbers: noenddot
+graphics: true
+always_allow_html: true
+
+header-includes:
+  - \usepackage{setspace}
+  - \usepackage{multirow}
+  - \usepackage{float}
+  - \usepackage{longtable}
+  - \usepackage{booktabs}
+  - \onehalfspacing
+  - \setlength{\parindent}{0mm} %Zeilen 
+  - \setlength{\parskip}{1ex plus0.5ex minus0.2ex} % Absatzabstand etwas groesser
+  - \setlength{\itemsep}{0ex plus0.2ex} % Abstand zweier Listenelemente kleiner
+  - \setlength{\headheight}{12mm}
+  - \frenchspacing
+  - \hypersetup{colorlinks = true, linkcolor = red, urlcolor = blue, citecolor = red}
+  - \usepackage{tikz}
+
+output:
+  pdf_document:
+    # keep_tex: true
+    df_print: kable
+    number_sections: false
+    template: _template.tex
+---
+
+```{r setup, include=FALSE}
+rmarkdown::find_pandoc(version = "2.10.1")
+
+# Set default properties
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  cache = TRUE,
+  out.width = "100%",
+  fig.align = "center"
+)
+
+# Ensure that all required packages are installed
+
+packages <- c("tidyverse")
+missing_packages <- setdiff(packages, rownames(installed.packages()))
+
+if (length(missing_packages) > 0) {
+  install.packages(missing_packages)
+}
+
+```
+
+```{r include=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(mapview)
+library(leaflet)
+library(leaflet.extras)
+```
+
+With today's exercise sheet, you will create a map that will help you to get an overview of the road infrastructure and MOBI points in Dresden Plauen. The following packages are used for this.
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(sf)
+library(mapview)
+library(leaflet)
+library(leaflet.extras)
+```
+
+## Task 1: Query Openstreetmap Data via Overpass
+
+You can use the R package `osmdata` to access the geographic data of the Openstreetmap project.
+Your task is to *query* and map the streets in the Dresden district of Plauen.
+
+a) Query the data:
+
+* Define the bounding box (*bounding box*) with `getbb()`
+
+* Start an overpass query with `opq()`. Set *timeout* and the *memory size* (estimate the values)
+
+* Define the map features to be queried as *key-value pairs* with `add_osm_feature()`. A list of *key-value pairs* can be found at https://wiki.openstreetmap.org/wiki/Map_features.
+
+* Return the query in sf format with `osmdata_sf()`.
+
+b) Extract the relevant *features* from the query results.
+
+```{r, eval=FALSE}
+library(osmdata)
+roads <- getbb("Plauen, Dresden, Sachsen") %>%                   
+  opq(timeout = 100,
+      memsize = 1e9) %>%                                         
+  add_osm_feature(key = "highway", value = c("motorway",         
+                                             "trunk", 
+                                             "motorway_link", 
+                                             "trunk_link", 
+                                             "primary", 
+                                             "secondary", 
+                                             "tertiary", 
+                                             "residential")) %>%
+  osmdata_sf()                                                   
+```
+
+c) Display the roads with _leaflet_. 
+
+```{r, eval=FALSE}
+roads <- roads$osm_lines
+
+Plauen = leaflet() %>% 
+  addProviderTiles(provider = "CartoDB.Positron") %>% 
+  addPolylines(data = roads, color = "darkgrey", opacity = 0.8, weight = 2)
+```
+\pagebreak
+
+d) Visualise the data with ggplot. 
+
+```{r, eval=FALSE}
+ggplot(data = roads) +
+  geom_sf(color = "darkgrey", size = 0.5) +
+  theme_minimal()
+```
+
+## Task 2: Query remote map layers via WMS.
+
+A wide variety of geodata is made available via the Internet in the form of map services.
+Services standardised by the OGC (Open Geospatial Consortium) are a common form of provision.
+One of these is the Web Map Service (WMS), which provides maps as raster graphics.
+Its task is to obtain **construction site information**. Use the Sachsenatlas, the geoportal of Saxony.
+
+a) Go to _geoportal.sachsen.de_. Here you will find lots of geodata for Saxony. Search for *Baustelleninformationen* as a WMS service in the search bar.
+
+* Once you click one the suggested WMS service you'll find the tab *Capabilities Viewer*. 
+
+* Click on it to extract the *Link-URL*, which can be found under *Online-Quellen* and save it
+to `wms_map_url`.
+
+
+```{r, eval=FALSE}
+wms_map_url <- 
+  "https://geodienste.sachsen.de/wms_list_baustellen/guest?"
+```
+
+
+* Once you have added *Baustelleninformationen* to the map (in the geoportal), you can
+click on the tab *Inhaltsbaum* to see all available layers which you'll need for 2b).
+
+* You will also see the tab *Legende*. Click on it to view the legend. With 
+right-click *Grafikadresse kopieren* copy the url and save it to `wms_legend_url` which you'll need for 2c).
+
+```{r, eval=FALSE}
+wms_legend_url <- 
+  "https://geoportal.sachsen.de/portal/legenden/list/baustellen/legende_sperrungen.png"
+```
+
+b) Use `addWMSTiles()` to add the layer ‘Sperrungen’ to your map from task 1c). \
+*Note: Use `WMSTileOptions(format = ‘image/png’, transparent = TRUE))` as options*
+
+```{r, eval=FALSE}
+#Start with leaflet map from above
+leaflet() %>% 
+  addProviderTiles(provider = "CartoDB.Positron") %>% 
+  addPolylines(data = roads, color = "darkgrey", opacity = 1) 
+
+# Add WMS Map
+leaflet() %>% 
+  addProviderTiles(provider = "CartoDB.Positron") %>% 
+  addPolylines(data = roads, color = "darkgrey", opacity = 1) %>% 
+  addWMSTiles(wms_map_url, 
+              layers = "Sperrungen",
+              options = WMSTileOptions(format = "image/png", 
+                                       transparent = TRUE)) 
+
+```
+
+c) Add a legend for the WMS layer. To do this, use `addWMSLegend()`. \ 
+```{r, eval=FALSE}
+leaflet() %>% 
+  addProviderTiles(provider = "CartoDB.Positron") %>% 
+  addPolylines(data = roads, color = "darkgrey", opacity = 1) %>% 
+  addWMSTiles(wms_map_url, 
+              layers = "sperrungen",
+              options = WMSTileOptions(format = "image/png", 
+                                       transparent = TRUE)) %>%
+  addWMSLegend(wms_legend_url)
+
+```
+\pagebreak
+## Task 3: Turn a CSV into an sf object
+Geodata can be saved and transferred in many different formats. Your task is to collect information about MOBI points in Dresden from Dresden's open data portal and add them to your map.
+
+a) Open the website _opendata.dresden.de_.
+
+* Search for *Mobilitätspunkte - in Betrieb*
+  
+* Look at the data set *Themenstadtplan*.
+
+* Download the data set in csv format. 
+
+
+
+b) Read the csv into R and convert it into an `sf` object.
+
+* Read in the data as a tibble.
+
+* Convert the tibble into an sf object using `st_as_sf`.
+
+* Add the locations of the MOBI points to your map from task 2. Set the view of the map widget with `setView` to the extent of the road. \
+*Note: look up st_bbox in the documentation.*
+
+```{r, eval = TRUE}
+mobipunkte <- read_csv2("Mobilitätspunkte.csv")
+
+
+# This cannot be read directly by sf:
+?st_as_sf
+# According to the documentation, the coordinates must be in separate columns.
+# Use stringr to extract them from the geom column:
+mobipunkte <- mobipunkte %>% 
+  mutate(longitude = str_remove(geom, "SRID=4326;POINT\\(") 
+         %>% str_remove(" .*"),
+         latitude = str_remove(geom, ".* ") %>% str_remove("\\)")) %>% 
+  select(-geom)
+
+#Convert to sf
+mobipunkte <- st_as_sf(mobipunkte, 
+                       coords = c("longitude", "latitude"))
+
+mobipunkte <- mobipunkte %>%
+  st_set_crs(st_crs(4326))
+
+#add to the leaflet map
+leaflet() %>%
+  addProviderTiles(provider = "CartoDB.Positron") %>%
+  addPolylines(data = roads, color = "darkgrey", opacity = 1) %>%
+  addMarkers(data = mobipunkte, 
+             popup = ~name,  # Show name on click
+             label = ~name   # Show name on hover
+             ) 
+#Center the map:
+center = st_bbox(roads) #bounding box
+center
+leaflet() %>%
+  addProviderTiles(provider = "CartoDB.Positron") %>%
+  addPolylines(data = roads, color = "darkgrey", opacity = 1) %>%
+  addMarkers(data = mobipunkte, 
+             popup = ~name,  # Show name on click
+             label = ~name   # Show name on hover
+  )  %>%
+  setView(lat = (center[["ymin"]] + center[["ymax"]])/2,
+          lng = (center[["xmin"]] + center[["xmax"]])/2,
+          zoom = 13)
+
+
+```
+

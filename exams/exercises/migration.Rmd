@@ -1,0 +1,30 @@
+Question
+========
+Why may *data migration* be necessary?
+
+Answerlist
+========
+* to match the storage environment
+* to move less used data to the archive
+* to protect data from unauthorized access
+* when the police or the government ask to provide certain data
+
+
+Solution
+========
+Data migration is sometimes necessary to match the storage environment.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: migration
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

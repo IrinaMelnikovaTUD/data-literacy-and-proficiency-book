@@ -1,0 +1,30 @@
+Question
+========
+Which of the following is qualitative data?
+
+Answerlist
+----------
+* height
+* weight
+* nationality
+* temperature
+
+
+Solution
+========
+Nationality is qualitative data because it represents categories rather than numerical measurements.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: quali-data
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

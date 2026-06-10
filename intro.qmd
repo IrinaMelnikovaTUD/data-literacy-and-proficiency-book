@@ -15,7 +15,9 @@ exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first t
 exm <- list(
   file.path(exercise_directory, "swisscapital.Rmd"),
   file.path(exercise_directory, "deriv.Rmd"),
-  file.path(exercise_directory, "chinstrap.Rmd")
+  file.path(exercise_directory, "chinstrap.Rmd"),
+  file.path(exercise_directory, "ex1-lc.Rmd"),
+  file.path(exercise_directory, "contin-range.Rmd")
 )
 ```
 
@@ -25,5 +27,14 @@ Which of the following villains is not an adversary of Batman? `r forms_schoice(
 exams2forms(exm, n = 3)
 # exams2forms(list("swisscapital.Rmd", "swisscapital.Rmd"), solution = FALSE)
 ```
-
-
+**Exercises**
+```{r quiz8-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+exercise_directory <- file.path("exams", "exercises") #run exams-setup.R first to install example questions
+exm <- list(
+  file.path(exercise_directory, "bi-purp.Rmd")
+)
+```
+```{r quiz8, echo = FALSE, message = FALSE, results = "asis"}
+cat(exams2forms(exm2, n = 1))

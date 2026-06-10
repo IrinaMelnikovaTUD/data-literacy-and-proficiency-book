@@ -1,0 +1,30 @@
+Question
+========
+Which type of data has an inherent order?
+
+Answerlist
+----------
+* nominal
+* ordinal
+* discrete
+* continuous
+
+
+Solution
+========
+Ordinal data has an inherent order.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ordinal-data
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

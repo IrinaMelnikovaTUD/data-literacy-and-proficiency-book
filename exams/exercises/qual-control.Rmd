@@ -1,0 +1,30 @@
+Question
+========
+What is the role of quality control (QC)?
+
+Answerlist
+----------
+* planning data collection wisely
+* detecting and correcting errors after collection
+* deleting outliers and handling missing values that might later distort statistical analysis
+* choosing high-quality sources for data gathering
+
+
+Solution
+========
+The role of quality control is detecting and correcting errors after collection.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: qual-control
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

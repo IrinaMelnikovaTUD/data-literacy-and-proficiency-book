@@ -1,0 +1,14 @@
+"One student can enroll in many courses" - "One-to-Many relationship",
+"Many students attend many courses" - "Many-to-Many relationship",
+"ENROLLMENT table" - "Resolves Many-to-Many relationship",
+
+"COURSE.PROFESSOR_ID" - "Implements relationship between COURSE and PROFESSOR",
+
+"Primary Key" - "Uniquely identifies a record",
+"Foreign Key" - "References a primary key in another table",
+
+"Composite Key" - "Key consisting of multiple attributes",
+"(STUDENT_ID, COURSE_ID)" - "Example of composite key",
+
+"NULL" - "Represents unknown or missing data",
+"UNIQUE" - "Constraint preventing duplicate values"

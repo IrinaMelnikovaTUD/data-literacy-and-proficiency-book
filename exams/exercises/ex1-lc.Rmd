@@ -1,0 +1,30 @@
+Question
+========
+What is the main goal of data acquisition?
+
+Answerlist
+----------
+* improve interpretability of collected data
+* collect relevant data for analysis
+* dispose outdated data
+* filter only relevant and accurate data
+
+
+Solution
+========
+The main goal of data acquisition is to collect relevant data for analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ex1-lc
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

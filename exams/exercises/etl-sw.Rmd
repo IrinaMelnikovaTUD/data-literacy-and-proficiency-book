@@ -1,0 +1,30 @@
+Question
+========
+What does ETL stand for?
+
+Answerlist
+----------
+* Extract Transform Load
+* Encrypt Transfer Link
+* Evaluate Test Learn
+* Execute Transform Load
+
+
+Solution
+========
+ETL stands for Extract Transform Load.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: etl-sw
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

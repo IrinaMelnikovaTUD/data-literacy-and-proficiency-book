@@ -1,0 +1,30 @@
+Question
+========
+What is paraphrasing plagiarism?
+
+Answerlist
+----------
+* repeating more than one sentence from the source without rewording it
+* rewording without citation
+* copying exact wording with citation
+* summarizing incorrectly
+
+
+Solution
+========
+Paraphrasing plagiarism is rewording without citation.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: para-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

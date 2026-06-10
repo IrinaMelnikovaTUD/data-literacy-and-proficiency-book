@@ -1,0 +1,30 @@
+Question
+========
+What is HARKing?
+
+Answerlist
+----------
+* testing hypotheses excessively
+* forming hypotheses after seeing results
+* suggesting alternative hypothesis after getting negative results for the first one
+* Hardly Achievable Results Known
+
+
+Solution
+========
+HARKing means forming hypotheses after seeing results.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: hark
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Why is metadata important in data lakes?
+
+Answerlist
+----------
+* saves storage space
+* helps locate and understand data
+* safely encrypts data
+* it's a myth: metadata is not commonly used in data lakes
+
+
+Solution
+========
+Metadata is important in data lakes because it helps locate and understand data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: lake-meta
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

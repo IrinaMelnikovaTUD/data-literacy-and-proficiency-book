@@ -1,0 +1,30 @@
+Question
+========
+Which factor is most important when designing data collection?
+
+Answerlist
+----------
+* accordance with research proposal
+* relevance to research question
+* storage format
+* dimensionality of data
+
+
+Solution
+========
+The most important factor is relevance to the research question.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: collect-relevance
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What is the main purpose of BI tools?
+
+Answerlist
+----------
+* transform data
+* visualize and analyze data
+* teach business professionals the basics of data analysis
+* automate project management and replace human supervision of projects
+
+
+Solution
+========
+The main purpose of BI tools is to visualize and analyze data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: bi-purp
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

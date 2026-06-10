@@ -1,0 +1,30 @@
+Question
+========
+What is the main purpose of the data lifecycle model?
+
+Answerlist
+----------
+* To reduce data-related bureaucracy
+* To manage data storage devices
+* To provide a framework for managing data efficiently
+* To replace data analysis software
+
+
+Solution
+========
+The main purpose of the data lifecycle model is to provide a framework for managing data from creation to long-term preservation.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: model-purp
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

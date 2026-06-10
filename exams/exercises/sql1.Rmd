@@ -1,0 +1,26 @@
+##Exercise 1
+
+
+Question
+========
+Given a table STUDENTS: 
++------+--------+------+
+| ID   | Name   | Age  |
++======+========+======+
+| 1    | Anna   | 22   |
++------+--------+------+
+| 2    | Ben    | 21   |
++------+--------+------+
+1. Write a query to select  **all** students
+
+```{sql}
+SELECT * 
+FROM Students;
+```
+Meta-information
+================
+extype: cloze
+exsolution: `sql paste`
+exclozetype: `sql paste`
+exname: sql1
+

@@ -1,0 +1,30 @@
+Question
+========
+What is a key challenge of data lakes?
+
+Answerlist
+----------
+* limited storage
+* poor flexibility
+* lack of governance
+* high maintenance costs
+
+
+Solution
+========
+A key challenge of data lakes is lack of governance.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: lakes-prob
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

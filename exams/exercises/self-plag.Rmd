@@ -1,0 +1,30 @@
+Question
+========
+What is self-plagiarism?
+
+Answerlist
+----------
+* utilizing data that has already been used for another research to test new hypotheses
+* reusing own work without acknowledgment
+* having author's original work claimed by others as theirs
+* sourcing author's own previous publications
+
+
+Solution
+========
+Self-plagiarism is reusing own work without acknowledgment.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: self-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Pope Leo XIV is known for critisizing AI as "dehumanising". What is the major concern about AI that educators have?
+
+Answerlist
+----------
+* educators’ might be replaced from their jobs
+* decline in academic quality
+* different regulations in different institutions and countries cause unfair competition
+* its usage as “paper mills” in research
+
+
+Solution
+========
+A major concern about AI in education is decline in academic quality.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-concern
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Who proposed the relational model?
+
+Answerlist
+----------
+* Alan Turing
+* Edgar F. Codd
+* Tim Berners-Lee
+* Bill Gates
+
+
+Solution
+========
+Edgar F. Codd proposed the relational model.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: rel-mod
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Why are universities debating AI use?
+
+Answerlist
+----------
+* design of education-oriented AI tools requires sufficient funding
+* ethical and academic integrity concerns
+* legal issues
+* religious concerns 
+
+
+Solution
+========
+Universities are debating AI use because of ethical and academic integrity concerns.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-uni
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

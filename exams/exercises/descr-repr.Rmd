@@ -1,0 +1,30 @@
+Question
+========
+What is one key task in Description and Representation?
+
+Answerlist
+----------
+* Cataloguing all archived data
+* Timely creating metadata 
+* Deleting unused files
+* Submitting reports on proper data usage
+
+
+Solution
+========
+One key task in Description and Representation is creating metadata for datasets.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: descr-repr
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

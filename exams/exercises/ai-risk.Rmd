@@ -1,0 +1,30 @@
+Question
+========
+What risk is associated with AI overuse?
+
+Answerlist
+----------
+* rise of new, possibly harmful ideas
+* reduced critical thinking
+* degradation of natural language development
+* heating pollution and exhustion of fresh water resources 
+
+
+Solution
+========
+A risk associated with AI overuse is reduced critical thinking.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-risk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

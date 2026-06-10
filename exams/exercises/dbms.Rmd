@@ -1,0 +1,30 @@
+Question
+========
+What does a DBMS do?
+
+Answerlist
+----------
+* visualizes data
+* stores and manages structured data
+* stores, archives data and supports backups
+* organizes unstructured data into same format
+
+
+Solution
+========
+A DBMS stores and manages structured data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dbms
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

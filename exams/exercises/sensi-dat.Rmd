@@ -1,0 +1,30 @@
+Question
+========
+According to the text, the definition of sensitive user data may differ depending on:
+
+Answerlist
+----------
+* The type of company
+* The size of the database
+* The country or district
+* The age of the user
+
+
+Solution
+========
+The definition of sensitive user data may differ depending on the country or district.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: sensi-dat
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

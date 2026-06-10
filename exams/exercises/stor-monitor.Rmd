@@ -1,0 +1,30 @@
+Question
+========
+Why should storage systems be monitored?
+
+Answerlist
+----------
+* to prevent data corruption and loss
+* to delete outdated information
+* to upgrade storage solutions timely
+* to change data formats regularly
+
+
+Solution
+========
+Storage systems should be monitored to prevent data corruption and loss.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: stor-monitor
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

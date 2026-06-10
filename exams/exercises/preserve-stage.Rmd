@@ -1,0 +1,30 @@
+Question
+========
+Which stage of data lifecycle focuses on creating strategies for long-term data management?
+
+Answerlist
+----------
+* Description and Representation
+* Preservation Planning
+* Reappraisal
+* Data Analysis
+
+
+Solution
+========
+Preservation Planning focuses on creating strategies for long-term data management.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: preserve-stage
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What is an advantage of cloud platforms?
+
+Answerlist
+----------
+* structured format of data required for storing improves data quality
+* scalability and flexibility
+* easier search within the cloud and free access for everyone
+* exceptional safety of data
+
+
+Solution
+========
+An advantage of cloud platforms is scalability and flexibility.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: cloud-perk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

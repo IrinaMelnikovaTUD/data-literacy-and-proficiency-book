@@ -1,0 +1,30 @@
+Question
+========
+Should one delete data that is no longer useful?
+
+Answerlist
+========
+* one should rely on the organization's protocol and legal requirements
+* data should never be deleted, only archived
+* all data should be stored for 10 years after the last usage
+* yes, but only by proper physical destrcution of the media
+
+
+Solution
+========
+The main goal of data acquisition is to collect relevant data for analysis.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: delete
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

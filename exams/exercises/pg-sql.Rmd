@@ -1,0 +1,30 @@
+Question
+========
+Which tool is a relational database system?
+
+Answerlist
+----------
+* Tableau
+* PostgreSQL
+* Spark
+* Power BI
+
+
+Solution
+========
+PostgreSQL is a relational database system.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: pg-sql
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

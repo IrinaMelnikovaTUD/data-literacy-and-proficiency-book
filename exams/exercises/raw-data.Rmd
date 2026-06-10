@@ -1,0 +1,30 @@
+Question
+========
+Which of the following is a common issue found in raw datasets?
+
+Answerlist
+----------
+* Duplicate records
+* Missing metadata
+* Data irrelevant for research
+* Spelling and punctuation mistakes
+
+
+Solution
+========
+Duplicate records are a common issue found in raw datasets.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: raw-data
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

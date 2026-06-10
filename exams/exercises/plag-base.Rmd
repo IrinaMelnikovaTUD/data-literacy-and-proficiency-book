@@ -1,0 +1,30 @@
+Question
+========
+What is plagiarism?
+
+Answerlist
+----------
+* using other people's ideas
+* using others’ work without attribution
+* summarizing a text incorrectly
+* citing sources not according to APA style citation guidelines
+
+
+Solution
+========
+Plagiarism is using others’ work without attribution.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: plag-base
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

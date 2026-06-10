@@ -1,0 +1,30 @@
+Question
+========
+Which storage option gives full local control?
+
+Answerlist
+----------
+* institutional server
+* local storage
+* public repository
+* cloud archive
+
+
+Solution
+========
+Local storage gives full local control.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: local-control
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

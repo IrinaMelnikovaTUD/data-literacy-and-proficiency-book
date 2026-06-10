@@ -1,0 +1,30 @@
+Question
+========
+What improves reliability of research?
+
+Answerlist
+----------
+* as many sources as possible
+* multiple verified sources
+* data from governmental statistics
+* random selection of data points
+
+
+Solution
+========
+Multiple verified sources improve reliability of research.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: res-reli
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

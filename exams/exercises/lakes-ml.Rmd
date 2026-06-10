@@ -1,0 +1,30 @@
+Question
+========
+Why are data lakes useful for machine learning?
+
+Answerlist
+----------
+* they store only structured data
+* they store raw and detailed data
+* they use advanced algorithms for analysis
+* they help to automate the process eliminate the need for human supervision
+
+
+Solution
+========
+Data lakes are useful for machine learning because they store raw and detailed data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: lakes-ml
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What does Q1 journal ranking indicate?
+
+Answerlist
+----------
+* lowest quality
+* highest quality and impact
+* newest journal
+* small niche journal
+
+
+Solution
+========
+Q1 journal ranking indicates highest quality and impact.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: q1-rank
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

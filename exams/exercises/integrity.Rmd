@@ -1,0 +1,30 @@
+Question
+========
+What is data integrity?
+
+Answerlist
+----------
+* correctness and consistency of data
+* security and long-term preservation of data
+* accuracy and validity of data
+* transparency and sustainability of data
+
+
+Solution
+========
+Data integrity is the correctness and consistency of data.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: integrity
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

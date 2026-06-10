@@ -1,0 +1,30 @@
+Question
+========
+The principle of purpose limitation means that data must:
+
+Answerlist
+----------
+* Be deleted immediately after collection
+* Be collected for specified, explicit, and legitimate purposes
+* Be shared with authorities
+* Be processed only inside Germany
+
+
+Solution
+========
+The principle of purpose limitation means that data must be collected for specified, explicit, and legitimate purposes.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: purp-limi
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

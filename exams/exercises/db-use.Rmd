@@ -1,0 +1,30 @@
+Question
+========
+When are relational databases most useful?
+
+Answerlist
+----------
+* unstructured big data
+* well-structured data with relationships
+* for data with complex hierarchy and lots of meaningful relationships between entities
+* for data collected from various sources that might therefore come in different formats
+
+
+Solution
+========
+Relational databases are most useful for well-structured data with relationships.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: db-use
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

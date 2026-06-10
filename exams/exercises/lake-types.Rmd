@@ -1,0 +1,30 @@
+Question
+========
+What type of data can be stored in a data lake?
+
+Answerlist
+----------
+* only structured
+* only unstructured
+* structured, semi-structured, and unstructured
+* only numerical
+
+
+Solution
+========
+A data lake can store structured, semi-structured, and unstructured data.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: lake-types
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

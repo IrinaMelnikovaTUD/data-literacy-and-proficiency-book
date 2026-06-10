@@ -1,0 +1,30 @@
+Question
+========
+What should be done when using AI in publications?
+
+Answerlist
+----------
+* use for visualization and formatting only
+* disclose usage
+* limit its use to the minimum
+* using AI in research is prohibited
+
+
+Solution
+========
+When using AI in publications, usage should be disclosed.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-publi
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What is normalization?
+
+Answerlist
+----------
+* organizing data to delete unnesessary data timely
+* organizing data to reduce redundancy
+* organizing data to minimize variance
+* organizing data into most typical formats
+
+
+Solution
+========
+Normalization is organizing data to reduce redundancy.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: norm-db
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

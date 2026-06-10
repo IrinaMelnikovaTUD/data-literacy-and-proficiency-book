@@ -1,0 +1,30 @@
+Question
+========
+What is software-based text modification?
+
+Answerlist
+----------
+* using software tools to detect plagiarism
+* using software tools to disguise plagiarism
+* using AI-generated content as author's own
+* using software tools to format and proofread the text without acknowledging it
+
+
+Solution
+========
+Software-based text modification means using tools to disguise plagiarism.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: text-mod
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

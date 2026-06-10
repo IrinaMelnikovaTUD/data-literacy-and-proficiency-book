@@ -1,0 +1,30 @@
+Question
+========
+Under the BDSG, personal data may be used for archival, scientific, or statistical purposes if:
+
+Answerlist
+----------
+* The data subject gives oral and written consent
+* It is in the public interest and appropriate safeguards are implemented
+* The data are older than five years
+* The data are publicly available
+
+
+Solution
+========
+Under the BDSG, personal data may be used for archival, scientific, or statistical purposes if it is in the public interest and appropriate safeguards are implemented.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: archi-valid
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

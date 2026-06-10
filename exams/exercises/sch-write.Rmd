@@ -1,0 +1,30 @@
+Question
+========
+What is schema-on-write?
+
+Answerlist
+----------
+* structuring data before storage
+* structuring data after analysis
+* writing schematic path of where data it stored
+* compressing data before storing it
+
+
+Solution
+========
+Schema-on-write means structuring data before storage.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: sch-write
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+What is the primary purpose of a Data Management Plan (DMP)?
+
+Answerlist
+----------
+* To submit with one's research proposal
+* To describe how data will be handled throughout its lifecycle
+* To eliminate bureaucracy within the organization
+* To describe how data should contribute to the organization's goals
+
+
+Solution
+========
+The primary purpose of a Data Management Plan is to describe how data will be handled throughout its lifecycle.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dmp-goal
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

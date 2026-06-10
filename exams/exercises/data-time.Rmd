@@ -1,0 +1,30 @@
+Question
+========
+Why is timeliness important in data quality?
+
+Answerlist
+----------
+* it reduces storage space
+* outdated data can quickly lose value
+* data older than 10 years are suppoosed to be deleted according to the European law
+* it is only important for historical statistics records
+
+
+Solution
+========
+Timeliness is important because outdated data can quickly lose value.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-time
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

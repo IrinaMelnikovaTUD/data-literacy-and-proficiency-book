@@ -1,0 +1,31 @@
+Question
+========
+What is the multiple comparisons problem?
+
+
+Answerlist
+----------
+* performing too many statistical tests
+* increased false positives with many tests
+* choosing wrong data points to compare
+* unethical research practice
+
+
+Solution
+========
+The multiple comparisons problem is increased false positives with many tests.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: multi-comp
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

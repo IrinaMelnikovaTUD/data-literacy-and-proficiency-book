@@ -1,0 +1,30 @@
+Question
+========
+Which stage ensures digital objects remain usable over time?
+
+Answerlist
+----------
+* Archiving and Disposal
+* Data Processing
+* Protection and Maintenance
+* Curation and Preservation
+
+
+Solution
+========
+Curation and Preservation ensures digital objects remain usable over time.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: usable-data
+extype: schoice
+exsolution: 0001
+exshuffle: TRUE

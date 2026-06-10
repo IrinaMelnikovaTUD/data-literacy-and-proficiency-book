@@ -1,0 +1,30 @@
+Question
+========
+What is the main goal of data quality management?
+
+Answerlist
+----------
+* reducing storage costs
+* ensuring data are suitable for intended use
+* improving accuracy and validity of data
+* automating data collection
+
+
+Solution
+========
+The main goal of data quality management is ensuring data are suitable for intended use.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-quali
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

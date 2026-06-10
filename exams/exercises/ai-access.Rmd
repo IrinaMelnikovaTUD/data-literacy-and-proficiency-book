@@ -1,0 +1,31 @@
+Question
+========
+What group is not known to benefit from AI accessibility tools so far?
+
+Answerlist
+----------
+* foreigners and bilingual learners
+* students with social anxiety
+* learners with disabilities
+* learners studying online
+
+
+Solution
+========
+Socially anxious students are not specifically known to benefit from AI accessibility tools so far
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: ai-access
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
+

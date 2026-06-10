@@ -1,0 +1,30 @@
+Question
+========
+What is an example of data inconsistency?
+
+Answerlist
+----------
+* duplicate records for unique values
+* outdated measurements
+* using “1.84 m” in one dataset and “184 cm” in another
+* using an abbreviation "DE" instead of "Germany"
+
+
+Solution
+========
+Using “1.84 m” in one dataset and “184 cm" in another is an example of data inconsistency.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: data-cons
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

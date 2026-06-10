@@ -1,0 +1,31 @@
+Question
+========
+According to the BDSG principles, personal data must be processed:
+
+Answerlist
+----------
+* Quickly and automatically
+* Lawfully and fairly
+* Publicly and transparently
+* Internationally
+
+
+Solution
+========
+According to the BDSG principles, personal data must be processed lawfully and fairly.
+
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: low-fool
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

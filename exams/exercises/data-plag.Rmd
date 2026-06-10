@@ -1,0 +1,30 @@
+Question
+========
+What is data plagiarism?
+
+Answerlist
+----------
+* using data collected by another author or working group
+* using data without attribution
+* concealing some features of the dataset used
+* getting anauthorized access to data 
+
+
+Solution
+========
+Data plagiarism is using data without attribution.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: data-plag
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

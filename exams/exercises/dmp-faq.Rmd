@@ -1,0 +1,30 @@
+Question
+========
+What kind of information may appear in the Frequently Asked Questions section of a DMP?
+
+Answerlist
+----------
+* Citation preferences
+* Methods of data gathering
+* Expected revenue of the project
+* code of conduct of data usage
+
+
+Solution
+========
+The Frequently Asked Questions section may include citation preferences and backup methods.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: dmp-faq
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

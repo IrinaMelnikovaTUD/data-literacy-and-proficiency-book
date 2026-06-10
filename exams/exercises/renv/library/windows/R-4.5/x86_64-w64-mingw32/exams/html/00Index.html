@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Automatic Generation of Exams in R</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container">
+<h1> Automatic Generation of Exams in R
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]">
+</h1>
+<hr>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]"></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]"></a>
+</div><h2>Documentation for package &lsquo;exams&rsquo; version 2.4-3</h2>
+
+<ul><li><a href="../DESCRIPTION" type="text/plain">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS.md">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="add_cloze.html">add_cloze</a></td>
+<td>Functions for Managing the Meta-Information of Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="mchoice2string.html">answerlist</a></td>
+<td>Convenience Functions for Exam Formatting</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">char_with_braces</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">det2schoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">det_to_schoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="exams.html">exams</a></td>
+<td>Generation of Simple Exams</td></tr>
+<tr><td style="width: 25%;"><a href="exams_skeleton.html">exams.skeleton</a></td>
+<td>Generate Skeleton for Exams Directory/Script</td></tr>
+<tr><td style="width: 25%;"><a href="exams2ans.html">exams2ans</a></td>
+<td>Generation of Quizzes for Ans</td></tr>
+<tr><td style="width: 25%;"><a href="exams2arsnova.html">exams2arsnova</a></td>
+<td>Generation of Exam/Quiz Sessions in ARSnova Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2blackboard.html">exams2blackboard</a></td>
+<td>Generation of Exams in Blackboard Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2canvas.html">exams2canvas</a></td>
+<td>Generation of Exams for Canvas</td></tr>
+<tr><td style="width: 25%;"><a href="exams2grasple.html">exams2grasple</a></td>
+<td>Generation of Exercises in Grasple Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2html.html">exams2html</a></td>
+<td>Generation of Exams in HTML Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2ilias.html">exams2ilias</a></td>
+<td>Generation of Exams in ILIAS Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2kahoot.html">exams2kahoot</a></td>
+<td>Generation of Excel Sheets with Quiz Questions for Kahoot!</td></tr>
+<tr><td style="width: 25%;"><a href="exams2lops.html">exams2lops</a></td>
+<td>Generation of Exams in LOPS Exam Server Format (WU Wien)</td></tr>
+<tr><td style="width: 25%;"><a href="exams2moodle.html">exams2moodle</a></td>
+<td>Generation of Exams in Moodle XML Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2nops.html">exams2nops</a></td>
+<td>Generation of Written Exams for Automatic Evaluation</td></tr>
+<tr><td style="width: 25%;"><a href="exams2openolat.html">exams2openolat</a></td>
+<td>Generation of Exams for OpenOlat</td></tr>
+<tr><td style="width: 25%;"><a href="exams2pandoc.html">exams2pandoc</a></td>
+<td>Generation of Exams via Pandoc</td></tr>
+<tr><td style="width: 25%;"><a href="exams2particify.html">exams2particify</a></td>
+<td>Generation of Exam/Quiz Sessions in Particify Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2pdf.html">exams2pdf</a></td>
+<td>Generation of Exams in PDF Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti12.html">exams2qti</a></td>
+<td>Generation of Exams in QTI 1.2 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti12.html">exams2qti12</a></td>
+<td>Generation of Exams in QTI 1.2 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti21.html">exams2qti21</a></td>
+<td>Generation of Exams in QTI 2.1 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2tcexam.html">exams2tcexam</a></td>
+<td>Generation of Exams in TCExam Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2testvision.html">exams2testvision</a></td>
+<td>Generation of Exams in TestVision Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2wooclap.html">exams2wooclap</a></td>
+<td>Generation of Quizzes for Wooclap</td></tr>
+<tr><td style="width: 25%;"><a href="exams_eval.html">exams_eval</a></td>
+<td>Auxiliary Tools for Evaluating Exams</td></tr>
+<tr><td style="width: 25%;"><a href="xexams.html">exams_metainfo</a></td>
+<td>Extensible Generation of Exams</td></tr>
+<tr><td style="width: 25%;"><a href="exams_skeleton.html">exams_skeleton</a></td>
+<td>Generate Skeleton for Exams Directory/Script</td></tr>
+<tr><td style="width: 25%;"><a href="expar.html">expar</a></td>
+<td>Fix Parameters in Dynamic Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">extract_command</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">extract_environment</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">extract_extra</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">extract_items</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">fmt</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="add_cloze.html">format_metainfo</a></td>
+<td>Functions for Managing the Meta-Information of Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="include_supplement.html">include_supplement</a></td>
+<td>Copy (Static) Supplement Files for Inclusion in Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="include_tikz.html">include_tikz</a></td>
+<td>Including Figures from TikZ Code in Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="add_cloze.html">initialize_exercise</a></td>
+<td>Functions for Managing the Meta-Information of Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="exams2arsnova.html">make_exams_write_arsnova</a></td>
+<td>Generation of Exam/Quiz Sessions in ARSnova Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2grasple.html">make_exams_write_grasple</a></td>
+<td>Generation of Exercises in Grasple Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2html.html">make_exams_write_html</a></td>
+<td>Generation of Exams in HTML Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2lops.html">make_exams_write_lops</a></td>
+<td>Generation of Exams in LOPS Exam Server Format (WU Wien)</td></tr>
+<tr><td style="width: 25%;"><a href="exams2pdf.html">make_exams_write_pdf</a></td>
+<td>Generation of Exams in PDF Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2html.html">make_exercise_transform_html</a></td>
+<td>Generation of Exams in HTML Format</td></tr>
+<tr><td style="width: 25%;"><a href="make_exercise_transform_pandoc.html">make_exercise_transform_pandoc</a></td>
+<td>Transform Exercises via Pandoc</td></tr>
+<tr><td style="width: 25%;"><a href="exams2blackboard.html">make_itembody_blackboard</a></td>
+<td>Generation of Exams in Blackboard Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti12.html">make_itembody_qti</a></td>
+<td>Generation of Exams in QTI 1.2 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti12.html">make_itembody_qti12</a></td>
+<td>Generation of Exams in QTI 1.2 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2qti21.html">make_itembody_qti21</a></td>
+<td>Generation of Exams in QTI 2.1 Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2testvision.html">make_itembody_testvision</a></td>
+<td>Generation of Exams in TestVision Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2nops.html">make_nops_template</a></td>
+<td>Generation of Written Exams for Automatic Evaluation</td></tr>
+<tr><td style="width: 25%;"><a href="exams2moodle.html">make_question_moodle</a></td>
+<td>Generation of Exams in Moodle XML Format</td></tr>
+<tr><td style="width: 25%;"><a href="exams2moodle.html">make_question_moodle23</a></td>
+<td>Generation of Exams in Moodle XML Format</td></tr>
+<tr><td style="width: 25%;"><a href="match_exams_call.html">match_exams_call</a></td>
+<td>Query Information from Last xexams/exams2xyz Call</td></tr>
+<tr><td style="width: 25%;"><a href="match_exams_call.html">match_exams_device</a></td>
+<td>Query Information from Last xexams/exams2xyz Call</td></tr>
+<tr><td style="width: 25%;"><a href="match_exams_call.html">match_exams_iteration</a></td>
+<td>Query Information from Last xexams/exams2xyz Call</td></tr>
+<tr><td style="width: 25%;"><a href="match_exams_call.html">match_exams_markup</a></td>
+<td>Query Information from Last xexams/exams2xyz Call</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">matrix2mchoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">matrix2schoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">matrix_to_mchoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="matrix_to_schoice.html">matrix_to_schoice</a></td>
+<td>Generate Single- and Multiple-Choice Question Lists for Matrix Solutions</td></tr>
+<tr><td style="width: 25%;"><a href="mchoice2string.html">mchoice2string</a></td>
+<td>Convenience Functions for Exam Formatting</td></tr>
+<tr><td style="width: 25%;"><a href="mchoice2string.html">mchoice2text</a></td>
+<td>Convenience Functions for Exam Formatting</td></tr>
+<tr><td style="width: 25%;"><a href="moodle2exams.html">moodle2exams</a></td>
+<td>Convert Moodle XML Quizzes to R/exams Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="nops_eval.html">nops_eval</a></td>
+<td>Evaluate NOPS Exams</td></tr>
+<tr><td style="width: 25%;"><a href="nops_eval.html">nops_eval_write</a></td>
+<td>Evaluate NOPS Exams</td></tr>
+<tr><td style="width: 25%;"><a href="nops_fix.html">nops_fix</a></td>
+<td>Fix Data from Scanned NOPS Exams</td></tr>
+<tr><td style="width: 25%;"><a href="nops_language.html">nops_language</a></td>
+<td>Read NOPS Language Specifciation</td></tr>
+<tr><td style="width: 25%;"><a href="nops_scan.html">nops_scan</a></td>
+<td>Read Scanned NOPS Exams</td></tr>
+<tr><td style="width: 25%;"><a href="num_to_schoice.html">num2schoice</a></td>
+<td>Generate Single-Choice Question List from Numeric Solution</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">num2tol</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="num_to_schoice.html">num_to_schoice</a></td>
+<td>Generate Single-Choice Question List from Numeric Solution</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">num_to_tol</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="exams2openolat.html">openolat_config</a></td>
+<td>Generation of Exams for OpenOlat</td></tr>
+<tr><td style="width: 25%;"><a href="stresstests.html">plot.stress</a></td>
+<td>Stress Testing Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="xexams.html">print.exams_metainfo</a></td>
+<td>Extensible Generation of Exams</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">read_exercise</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="read_exercise.html">read_metainfo</a></td>
+<td>Reading LaTeX/Markdown Exercise Files</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">round2</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="stresstests.html">stresstest</a></td>
+<td>Stress Testing Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="stresstests.html">stresstest_exercise</a></td>
+<td>Stress Testing Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="mchoice2string.html">string2mchoice</a></td>
+<td>Convenience Functions for Exam Formatting</td></tr>
+<tr><td style="width: 25%;"><a href="stresstests.html">summary.stress</a></td>
+<td>Stress Testing Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="testvision2exams.html">testvision2exams</a></td>
+<td>Convert TestVision XML Questions to R/exams Exercises</td></tr>
+<tr><td style="width: 25%;"><a href="tex2image.html">tex2image</a></td>
+<td>Transforming LaTeX Code Using ImageMagick or pdf2svg</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">toLatex.data.frame</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="fmt.html">toLatex.matrix</a></td>
+<td>Auxiliary Formatting Functions</td></tr>
+<tr><td style="width: 25%;"><a href="xexams.html">xexams</a></td>
+<td>Extensible Generation of Exams</td></tr>
+<tr><td style="width: 25%;"><a href="xweave.html">xweave</a></td>
+<td>Wrapper Function for Weaving Either Rnw or Rmd Exercises</td></tr>
+</table>
+</div></body></html>

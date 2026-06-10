@@ -1,0 +1,30 @@
+Question
+========
+What does accuracy describe in data quality?
+
+Answerlist
+----------
+* how recent the data are
+* how closely data represent real-world objects or events
+* whether data comes from reliable sources
+* whether data values follow defined formats, rules, or constraints
+
+
+Solution
+========
+Accuracy describes how closely data represent real-world objects or events.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: dat-accur
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
