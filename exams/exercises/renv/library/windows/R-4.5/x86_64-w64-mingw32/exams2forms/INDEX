@@ -1,0 +1,6 @@
+exams2forms             R/exams Interface for Forms in R/Markdown or
+                        Quarto Documents
+exams2webquiz           Setting Up and Running Simple Web Quizzes with
+                        R/exams Exercises
+forms_schoice           Create Interaction Forms for Different Exercise
+                        Types

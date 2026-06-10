@@ -1,0 +1,58 @@
+add_cloze               Functions for Managing the Meta-Information of
+                        Exercises
+exams                   Generation of Simple Exams
+exams2ans               Generation of Quizzes for Ans
+exams2arsnova           Generation of Exam/Quiz Sessions in ARSnova
+                        Format
+exams2blackboard        Generation of Exams in Blackboard Format
+exams2canvas            Generation of Exams for Canvas
+exams2grasple           Generation of Exercises in Grasple Format
+exams2html              Generation of Exams in HTML Format
+exams2ilias             Generation of Exams in ILIAS Format
+exams2kahoot            Generation of Excel Sheets with Quiz Questions
+                        for Kahoot!
+exams2lops              Generation of Exams in LOPS Exam Server Format
+                        (WU Wien)
+exams2moodle            Generation of Exams in Moodle XML Format
+exams2nops              Generation of Written Exams for Automatic
+                        Evaluation
+exams2openolat          Generation of Exams for OpenOlat
+exams2pandoc            Generation of Exams via Pandoc
+exams2particify         Generation of Exam/Quiz Sessions in Particify
+                        Format
+exams2pdf               Generation of Exams in PDF Format
+exams2qti12             Generation of Exams in QTI 1.2 Format
+exams2qti21             Generation of Exams in QTI 2.1 Format
+exams2tcexam            Generation of Exams in TCExam Format
+exams2testvision        Generation of Exams in TestVision Format
+exams2wooclap           Generation of Quizzes for Wooclap
+exams_eval              Auxiliary Tools for Evaluating Exams
+exams_skeleton          Generate Skeleton for Exams Directory/Script
+expar                   Fix Parameters in Dynamic Exercises
+fmt                     Auxiliary Formatting Functions
+include_supplement      Copy (Static) Supplement Files for Inclusion in
+                        Exercises
+include_tikz            Including Figures from TikZ Code in Exercises
+make_exercise_transform_pandoc
+                        Transform Exercises via Pandoc
+match_exams_call        Query Information from Last xexams/exams2xyz
+                        Call
+matrix_to_schoice       Generate Single- and Multiple-Choice Question
+                        Lists for Matrix Solutions
+mchoice2string          Convenience Functions for Exam Formatting
+moodle2exams            Convert Moodle XML Quizzes to R/exams Exercises
+nops_eval               Evaluate NOPS Exams
+nops_fix                Fix Data from Scanned NOPS Exams
+nops_language           Read NOPS Language Specifciation
+nops_scan               Read Scanned NOPS Exams
+num_to_schoice          Generate Single-Choice Question List from
+                        Numeric Solution
+read_exercise           Reading LaTeX/Markdown Exercise Files
+stresstest_exercise     Stress Testing Exercises
+testvision2exams        Convert TestVision XML Questions to R/exams
+                        Exercises
+tex2image               Transforming LaTeX Code Using ImageMagick or
+                        pdf2svg
+xexams                  Extensible Generation of Exams
+xweave                  Wrapper Function for Weaving Either Rnw or Rmd
+                        Exercises

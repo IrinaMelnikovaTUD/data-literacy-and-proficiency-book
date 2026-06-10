@@ -1,0 +1,7 @@
+exams2forms	exams2forms
+exams2webquiz	exams2webquiz
+forms_mchoice	forms_schoice
+forms_num	forms_schoice
+forms_schoice	forms_schoice
+forms_string	forms_schoice
+webquiz	exams2webquiz
