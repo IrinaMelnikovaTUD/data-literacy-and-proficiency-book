@@ -18,6 +18,7 @@ book:
     - summary.qmd
     - references.qmd
     - lifecycle_final.qmd
+    - ethics-final.qmd
 
 bibliography: references.bib
 
