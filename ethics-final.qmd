@@ -7,7 +7,7 @@
 
 *Plagiarism* refers to the use of someone else’s work, ideas, or expressions without proper acknowledgment, presenting them as one’s own. According to the Turnitin Plagiarism Spectrum 2.0, plagiarism is not a single act but a range of practices that vary in intent and severity. Understanding these types helps students develop academic integrity and proper research practices [66].
 
-![](figures/plag-ethics){width="60%" fig-align="center"}
+![](figures/plagiarism.jpg){width="80%" height="120%" fig-align="center"}
 
 At one end of the spectrum is original thinking, which represents authentic work based on one’s own ideas, properly supported by sources. This is the expected standard in academic writing and emphasizes independent analysis and correct citation [66][67].
 
@@ -55,7 +55,7 @@ quiz_plagiarism <- list(
 ```
 
 ```{r quiz11, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_plagiarism, solution = FALSE)
+exams2forms(quiz_plagiarism, solution = TRUE)
 ```
 
 **Practical Exercise**
@@ -82,7 +82,7 @@ test_plagiarism <- list(
 
 ```{r test, echo = FALSE, message = FALSE, results = "asis"} 
 #exams2forms(exm, n = 3)
-exams2forms(test_plagiarism, solution = FALSE)
+exams2forms(test_plagiarism, solution = TRUE)
 ```
 
 
@@ -133,7 +133,7 @@ quiz_ai <- list(
 ```
 
 ```{r quiz22, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_ai, solution = FALSE)
+exams2forms(quiz_ai, solution = TRUE)
 ```
 
 
@@ -206,7 +206,7 @@ quiz_misconduct <- list(
 ```
 
 ```{r quiz33, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_misconduct, solution = FALSE)
+exams2forms(quiz_misconduct, solution = TRUE)
 ```
 
 
@@ -263,7 +263,7 @@ quiz_sources <- list(
 ```
 
 ```{r quiz44, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_sources, solution = FALSE)
+exams2forms(quiz_sources, solution = TRUE)
 ```
 	
 
@@ -306,6 +306,43 @@ The principles refer to three types of entities: data (or any digital object), m
 For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).
 
 Besides from FAIR, there are more guidelines and regulations prescribing suitable ways of storing and sharing data safely. Many countries and organizations advocate for data ethics principles that unanimously emphasize the importance of data security and privacy protection, demonstrating that data security and privacy protection are key components of data ethics governance.
+
+**FAIR Principles: application**
+
+*Consider the fragment of a file below. Can you tell what the data is about? Could someone else understand it?*
+
+![](figures/bad-table.png)
+
+*Suggest improvements:*
+
+The name should be `r forms_schoice(c("shorter", "more comprehensible", "never IN CAPS", "in different format"), c(FALSE, TRUE, FALSE, FALSE), display = "dropdown")`.
+
+`r forms_schoice(c("ID", "Transportation mode", "Metadata", "Column names"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")` could be less ambiguous.
+
+How would you standardize the values?  `r forms_schoice(c("no missing values", "time in hours", "3,00 instead of 300", "sunny instead of sun"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")`.
+
+Question marks ? must be replaced with  `r forms_schoice(c("NAs", "NANs", "proper missing values", "they should all be deleted"), c(FALSE, FALSE, TRUE, FALSE), display = "dropdown")`.
+
+`r forms_schoice(c("Qualitative descriptions", "Vague abbreviations", "Underscores", "Non-SI units"), c(FALSE, TRUE, FALSE, FALSE), display = "dropdown")` should be avoided.
+
+
+
+```{r testb-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+
+ex_directory <- file.path("exams", "exercises")
+test_tables <- list(
+  file.path(exercise_directory, "FAIR.Rmd")
+)
+
+```
+
+```{r testb, echo = FALSE, message = FALSE, results = "asis"} 
+#exams2forms(exm, n = 3)
+exams2forms(test_tables, solution = TRUE)
+```
+
 
 ### Policies and Frameworks Regarding Safe Data Usage
 
@@ -384,7 +421,7 @@ quiz_sensitive <- list(
 ```
 
 ```{r quiz55, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_sensitive, solution = FALSE)
+exams2forms(quiz_sensitive, solution = TRUE)
 ```
 
 
@@ -443,5 +480,5 @@ quiz_quality <- list(
 ```
 
 ```{r quiz66, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_quality, solution = FALSE)
+exams2forms(quiz_quality, solution = TRUE)
 ```

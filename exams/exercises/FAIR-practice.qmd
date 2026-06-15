@@ -1,16 +1,8 @@
----
-title: "Practical Exercise"
-format: html
-execute:
-  freeze: auto
-
----
-
 # FAIR Principles: application
 
 *Consider the fragment of a file below. Can you tell what the data is about? Could someone else understand it?*
 
-![](figures/bad-table.png)
+![](figures/bad-table.png){width="80%" height="120%" fig-align="center"}
 
 *Suggest improvements:*
 
@@ -22,21 +14,22 @@ How would you standardize the values?  `r forms_schoice(c("no missing values", "
 
 Question marks ? must be replaced with  `r forms_schoice(c("NAs", "NANs", "proper missing values", "they should all be deleted"), c(FALSE, FALSE, TRUE, FALSE), display = "dropdown")`.
 
-`r forms_schoice(c("Qualitative descriptions", "Vague abbreviations", "Underscores", "Non-SI units"), c(FALSE, FALSE, FALSE, TRUE), display = "dropdown")` should be avoided.
+`r forms_schoice(c("Qualitative descriptions", "Vague abbreviations", "Underscores", "Non-SI units"), c(FALSE, TRUE, FALSE, FALSE), display = "dropdown")` should be avoided.
 
 
 
-```{r test-setup, include = FALSE}
+```{r testb-setup, include = FALSE}
 library(exams)
 library(exams2forms)
 
-exm <- list(
-  "FAIR.Rmd"
+ex_directory <- file.path("exams", "exercises")
+test_tables <- list(
+  file.path(exercise_directory, "FAIR.Rmd")
 )
 
 ```
 
-```{r test, echo = FALSE, message = FALSE, results = "asis"} 
+```{r testb, echo = FALSE, message = FALSE, results = "asis"} 
 #exams2forms(exm, n = 3)
-exams2forms(list("FAIR.Rmd"), solution = FALSE)
+exams2forms(test_tables, solution = TRUE)
 ```

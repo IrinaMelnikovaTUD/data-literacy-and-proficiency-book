@@ -1,0 +1,240 @@
+**Practical Exercise**
+
+Suppose we have two variables:
+
+* Milk consumption
+* Divorce rate in Colorado
+
+We would like to investigate whether these variables are correlated.
+
+---
+
+**Step 1: Create the Data**
+
+Run the following code.
+
+```{r}
+#| echo: true
+
+library(exams)
+library(exams2forms)
+
+array_1 <- c(
+  197, 196, 192, 191, 188, 185, 185, 185,
+  183, 181, 181, 177, 173, 169, 164, 158,
+  155, 153
+)
+
+array_2 <- c(
+  4.8, 4.7, 4.7, 4.7, 4.3, 4.4, 4.4, 4.4,
+  4.5, 4.4, 4.3, 4.3, 4.3, 4.4, 4.3,
+  4.07356, 3.8666, 3.7
+)
+```
+
+
+*Exercise 1: Compute the Correlation*
+
+Use the `cor()` function to calculate the Pearson correlation coefficient.
+
+**Task**
+
+Insert missing variables into the code:
+
+correlation <- cor(`r forms_schoice(c("array_1", "array_2", "milk_consumption", "divorce_rate"), c(TRUE, FALSE, FALSE, FALSE), display = "dropdown")`, `r forms_schoice(c("array_2", "divorce_rate", "array_1", "milk_consumption"), c(TRUE, FALSE, FALSE, FALSE), display = "dropdown")`, method = "`r forms_schoice(c("pearson", "spearman", "kendall"), c(TRUE, FALSE, FALSE), display = "dropdown")`")
+ 
+
+
+Question
+========
+What is the value of the correlation coefficient?
+
+Solution
+========
+0.9653682
+
+Meta-information
+================
+extype: num
+exsolution: 0.9653682
+exname: corr-coeff-divorce
+extol: 0.1
+
+
+**Exercise 2: Calculate R-Squared**
+
+The coefficient of determination is simply the square of the correlation coefficient.
+
+*Formula:*
+$$
+\begin{align*}
+\ R^2 = r^2\
+\end{align*}
+$$
+
+**Task**
+
+Complete the code below.
+
+
+r_squared <- `r add_cloze("correlation", c("r", "correlation"))`^2
+
+
+**Question**
+
+Question
+========
+What percentage of variation is explained by the relationship?
+
+Solution
+========
+93.2%
+
+Meta-information
+================
+extype: num
+exsolution: 93.2
+exname: r2-divorce
+extol: 0.1
+
+
+**Exercise 3: Perform a Correlation Test**
+
+The function `cor.test()` performs a hypothesis test and provides a p-value.
+
+**Task**
+
+Store the result of the correlation test in an object named `test_result`.
+
+```{r}
+#| echo: true
+
+
+test_result <- cor.test(array_1, array_2, method = "pearson")
+
+
+
+test_result
+```
+
+
+
+**Exercise 4: Extract the Correlation Coefficient**
+
+The result returned by `cor.test()` is a list-like object.
+
+Explore its contents:
+
+```{r}
+#| echo: true
+
+names(test_result)
+```
+
+Now extract the correlation coefficient:
+
+
+correlation <- test_result$`r add_cloze("estimate", c("correlation", "estimate"))`
+
+
+
+**Exercise 5: Extract the *P*-value**
+
+Extract the *p*-value from the test result.
+
+
+p_value <- test_result$`r add_cloze("p.value", c("p_value", "p.value"))`
+
+
+
+**Question**
+
+Is the relationship statistically significant at the 5% significance level? `r forms_schoice(c("Yes", "No", "Yes, if the significance level set before the study is = 0.05 or higher", "No, if the significance level set before the study is = 0.05 or higher"), c(FALSE, FALSE, TRUE, FALSE), display = "dropdown")`.
+
+
+**Exercise 6: Write Your Own Function**
+
+Create a function called `calculate_correlation()`.
+
+Requirements:
+
+1. Accept two arguments: `array_1` and `array_2`.
+2. Perform a Pearson correlation test.
+3. Extract:
+
+   * correlation coefficient
+   * R-squared
+   * p-value
+4. Return all three values as a list.
+
+*Skeleton:*
+
+calculate_correlation <- function(array_1, array_2) {
+
+  test_result <- ___
+
+  correlation <- ___
+
+  r_squared <- ___
+
+  p_value <- ___
+
+  return(list(
+    correlation = correlation,
+    r_squared = r_squared,
+    p_value = p_value
+  ))
+}
+
+
+
+**Exercise 7: Use Your Function**
+
+Call your function using the provided data:
+
+results <- calculate_correlation(array_1, array_2)
+
+results
+
+
+Print each component separately.
+
+
+
+**Challenge Exercise**
+
+Modify your function so that the user can choose the correlation method:
+
+* `"pearson"`
+* `"spearman"`
+* `"kendall"`
+
+Suggested function header:
+
+```{r}
+#| echo: true
+
+
+calculate_correlation <- function(array_1, array_2, method = "pearson") {
+
+}
+```
+
+Test your function using:
+
+```{r}
+#| echo: true
+
+
+calculate_correlation(array_1, array_2, method = "spearman")
+```
+
+
+
+*Reflection Questions*
+
+1. *What does a correlation coefficient measure?*
+2. *What does the p-value tell us?*
+3. *Why does a high correlation not imply causation?*
+4. *In which situations might Spearman correlation be preferable to Pearson correlation?*
+

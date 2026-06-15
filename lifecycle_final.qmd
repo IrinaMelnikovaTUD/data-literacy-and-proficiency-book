@@ -227,6 +227,8 @@ quiz_proc_n_clean <- list(
 exams2forms(quiz_proc_n_clean, solution = FALSE)
 ```
 
+
+
 ### Data Storage and Maintenance {#lifecycle43}
 
 Once the data has been created and cleaned, it then has to be stored and maintained. Data can be stored in databases, data warehouses, or cloud storage systems. Choosing the right option for a particular case depends on balance performance, cost, and scalability [1]. Regular maintenance activities, such as data cleansing and updating, ensure that data remains accurate and relevant. Security measures, including encryption and access controls, are normally implemented to protect data from unauthorized access and breaches. Proper data storage starts with creating contextual metadata.

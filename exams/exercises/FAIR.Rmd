@@ -1,6 +1,5 @@
 Question
 ========
-
 Would you like to see a solution example?
 
 Answerlist
@@ -11,8 +10,7 @@ Answerlist
 
 Solution
 ========
-![](figures/bad-table.png)
-
+![](figures/good-table.png)
 Answerlist
 ----------
 * True

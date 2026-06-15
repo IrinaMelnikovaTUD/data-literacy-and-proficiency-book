@@ -1,6 +1,6 @@
 Question
 ========
-Why are **p*-values criticized?
+Why are *p*-values criticized?
 
 Answerlist
 ----------

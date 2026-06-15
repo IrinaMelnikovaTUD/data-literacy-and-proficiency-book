@@ -1,0 +1,13 @@
+```{r quiz00-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_00 <- list(
+  file.path(exercise_directory, "penguins.Rmd")
+)
+```
+
+```{r quiz00, echo = FALSE, message = FALSE, results = "asis"}
+exams2forms(quiz_00, solution = TRUE)
+```
