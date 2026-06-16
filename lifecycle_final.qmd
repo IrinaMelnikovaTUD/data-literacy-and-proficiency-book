@@ -8,7 +8,7 @@ Today, data is collected from many different sources, and is used to improve und
 ## Data Lifecycle Model {#lifecycle2}
 
 
-![](figures/dcc-lc-model){width="60%" fig-align="center"}
+![](figures/dcc.jpg){width="40%" fig-align="center"}
 
 
 One of the most widely used data lifecycle models was developed by Digital Curation Centre (DCC) [@misc{DCCDMP]. The **DCC Curation Lifecycle Model** explains how data is managed, preserved, and reused over time. This model primarily targets employees of various organizations -- from research institutes to private business and governmental companies, but we are sure its main concepts can be as useful for professionals regardless of their field, including those working individually. Its proposed stages are described below.
@@ -78,13 +78,13 @@ quiz_lifecycle_model <- list(
 )
 ```
 ```{r quiz1, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_lifecycle_model, solution = FALSE)
+exams2forms(quiz_lifecycle_model, solution = TRUE)
 ```
 
 
 ## Data Management Plans {#lifecycle3}
 
-A **Data Management Plan (DMP*)** is a structured document that describes how research data will be handled throughout the entire data lifecycle - from the moment data are created or collected until they are archived, shared, or destroyed. This term is closely related to the concept of data lifecycle, since the purpose of a DMP is to ensure that data are properly organized, documented, stored, preserved, and made accessible in accordance with scientific, legal, and ethical standards – or, in other words, that the data is appropriately used at each stage of its lifecycle [39][80].
+A **Data Management Plan (DMP)** is a structured document that describes how research data will be handled throughout the entire data lifecycle - from the moment data are created or collected until they are archived, shared, or destroyed. This term is closely related to the concept of data lifecycle, since the purpose of a DMP is to ensure that data are properly organized, documented, stored, preserved, and made accessible in accordance with scientific, legal, and ethical standards – or, in other words, that the data is appropriately used at each stage of its lifecycle [39][80].
 
 In recent years, DMPs have become a standard requirement for many research funders and institutions. Funding organizations such as the European Commission and the National Science Foundation require researchers to submit a DMP when applying for grants [41][42][40]. These policies are meant to ensure transparency, reproducibility, and responsible data stewardship in modern research. A well-prepared DMP helps researchers foresee potential issues related to every stage of the data lifecycle before the project begins [40].
 
@@ -128,11 +128,15 @@ quiz_dmp <- list(
 )
 ```
 ```{r quiz2, echo = FALSE, message = FALSE, results = "asis"}
-exams2forms(quiz_dmp, solution = FALSE)
+exams2forms(quiz_dmp, solution = TRUE)
 ```
 ## Data Lifecycle Actions {#lifecycle4}
 
-As has been mentioned in the previous chapter, there is a plethora of data lifecycle models developed by various organizations for different fields.  
+As has been mentioned in the previous chapter, there is a plethora of data lifecycle models developed by various organizations for different fields.
+
+
+![](figures/lc-models.jpg){width="60%" fig-align="center"}
+
 
 Instead of trying to name one universally good model that would be a ready-to-use blueprint for every business, field of study and research task, one should aim at developing a customized model that would suit their organization or project goals best, using any, or all of the described pipelines rather as a checklist for the measures to implement in their particular case. However, as many of the data-related actions are described consistently in most popular models, we are going to provide a more detailed clarification of these proposed processes, most of which will likely be useful for professionals working with data at some stage of their projects.
 
@@ -176,7 +180,7 @@ quiz_lc_actions <- list(
 )
 ```
 ```{r quiz3, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_lc_actions, solution = FALSE)
+exams2forms(quiz_lc_actions, solution = TRUE)
 ```
 
 
@@ -224,7 +228,7 @@ quiz_proc_n_clean <- list(
 )
 ```
 ```{r quiz4, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_proc_n_clean, solution = FALSE)
+exams2forms(quiz_proc_n_clean, solution = TRUE)
 ```
 
 
@@ -278,7 +282,7 @@ quiz_metadata <- list(
 )
 ```
 ```{r quiz5, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_metadata, solution = FALSE)
+exams2forms(quiz_metadata, solution = TRUE)
 ```
 
 
@@ -332,7 +336,7 @@ quiz_db <- list(
 )
 ```
 ```{r quiz6, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_db, solution = FALSE)
+exams2forms(quiz_db, solution = TRUE)
 ```
 #### Data Lakes {#lifecycle433}
 
@@ -376,7 +380,7 @@ quiz_lakes <- list(
 )
 ```
 ```{r quiz7, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_lakes, solution = FALSE)
+exams2forms(quiz_lakes, solution = TRUE)
 ```
 
 #### Associated Challenges {#lifecycle434}
@@ -465,6 +469,6 @@ quiz_dm_software <- list(
 )
 ```
 ```{r quiz8, echo = FALSE, message = FALSE, results = "asis"} 
-exams2forms(quiz_dm_software, solution = FALSE)
+exams2forms(quiz_dm_software, solution = TRUE)
 ```
 

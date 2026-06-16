@@ -1,8 +1,6 @@
-# Ethics 
+# Ethics {#ethics}
 
-## Plagiarism
-
-### Types of Plagiarism
+##  Plagiarism  {#ethics1}
 
 
 *Plagiarism* refers to the use of someone else’s work, ideas, or expressions without proper acknowledgment, presenting them as one’s own. According to the Turnitin Plagiarism Spectrum 2.0, plagiarism is not a single act but a range of practices that vary in intent and severity. Understanding these types helps students develop academic integrity and proper research practices [66].
@@ -25,7 +23,7 @@ In technical and digital contexts, plagiarism can take additional forms. **Compu
 
 Overall, plagiarism ranges from unintentional mistakes to deliberate academic misconduct. Recognizing these different forms is essential for maintaining academic honesty, credibility, and ethical research practices [67].
 
-Reflection Questions
+**Reflection Questions**
 
 1. *Why is plagiarism considered unethical in academic work?*
 2. *What is the difference between paraphrasing and paraphrasing plagiarism?*
@@ -86,7 +84,7 @@ exams2forms(test_plagiarism, solution = TRUE)
 ```
 
 
-## AI Tools in Education 
+## AI Tools in Education  {#ethics2}
 
 The rapid adoption of artificial intelligence (AI), particularly large language models (LLMs), has significantly transformed higher education. Recent studies estimate that between 43% and over 70% of U.S. college students have used AI tools in their academic work [24][25]. This widespread usage reflects the growing accessibility of tools such as ChatGPT and similar systems, which can assist with writing, coding, and data analysis.
 
@@ -104,7 +102,7 @@ Finally, broader concerns relate to the future of education itself. Critics high
 
 In conclusion, AI tools in education offer powerful opportunities to improve efficiency, accessibility, and innovation. However, they also require careful regulation, ethical awareness, and critical use to ensure that they support rather than undermine learning.
 
-Reflection Questions
+**Reflection Questions**
 
 1. *What are the main benefits of AI tools for students and educators?*
 2. *Why might universities hesitate to fully allow or fully ban AI tools?*
@@ -138,7 +136,7 @@ exams2forms(quiz_ai, solution = TRUE)
 
 
 
-## Unethical Research Practices
+## Unethical Research Practices  {#ethics3}
 
 Sound scientific research relies on rigorous methodology, transparency, and correct statistical reasoning. As discussed in earlier lessons, statistical significance cannot be established by applying a single test in isolation; instead, proper hypothesis testing must be conducted using appropriate methods such as t-tests, ANOVA, or regression analysis [69][70].
 
@@ -177,7 +175,8 @@ Modern research ethics emphasize open science practices, including:
 - 	clearly documenting methods
 Failure to do so can make results difficult to verify and may hide questionable practices [73].
 
-Reflection Questions
+**Reflection Questions**
+
 1.	*Why is p-hacking dangerous for scientific research?*
 2.	*What is the difference between legitimate data cleaning and unethical data trimming?*
 3.	*How does multiple testing increase the risk of false positives?*
@@ -211,7 +210,7 @@ exams2forms(quiz_misconduct, solution = TRUE)
 
 
 
-## Finding Reliable Sources 
+## Finding Reliable Sources  {#ethics4}
 
 Quality of any research highly depends on the quality of used data. Unless primary data is used, data sources should be critically assessed before retrieving any information. 
 
@@ -234,7 +233,7 @@ Another important factor is *publication quality and status:* when in doubt, giv
 - 	the purpose and potential bias of the source.
 
 
-Reflection Questions
+**Reflection Questions**
 
 1.	*Why is peer review important for research quality?*
 2.	*What are the risks of using preprints without verification?*
@@ -267,7 +266,7 @@ exams2forms(quiz_sources, solution = TRUE)
 ```
 	
 
-## FAIR
+## FAIR  {#ethics5}
 
 “**FAIR Guiding Principles** for scientific data management and stewardship“ were first published in 2016 and remain a comprehensive guide on how to keep digital assets Findable, Accessible, Interoperable, and Reusable.
 
@@ -344,7 +343,7 @@ exams2forms(test_tables, solution = TRUE)
 ```
 
 
-### Policies and Frameworks Regarding Safe Data Usage
+### Policies and Frameworks Regarding Safe Data Usage  {#ethics51}
 
 The German Federal Government’s Data Ethics Commission (2019) outlined seven core **ethical and legal principles** that form the foundation of German society: *human dignity, self-determination, privacy, security, democracy, justice and solidarity, and sustainability.*
 
@@ -450,7 +449,7 @@ Nowadays, data quality management is often supported by various automated tools.
 Instead of checking for errors post-factum, quality checks should be integrated throughout the entire data lifecycle, including sequential actions, as early attention to quality of the data appears to be more efficient approach [45][47].
 
 
-Reflection Questions
+**Reflection Questions**
 
 1.	*Why is high data quality important for scientific research and decision-making?*
 2.	*Can a dataset be accurate but still have poor quality? Give an example.*
