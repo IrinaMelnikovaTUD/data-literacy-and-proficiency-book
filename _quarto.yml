@@ -15,6 +15,7 @@ book:
     - 07_ml.qmd
     - 08_visualization.qmd
     - 09_geodata.qmd
+    - 10_data_generation.qmd
     # - intro.qmd
     # - visualization.qmd
     # - summary.qmd
