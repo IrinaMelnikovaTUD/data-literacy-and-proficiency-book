@@ -1,0 +1,30 @@
+Question
+========
+What is the biggest advantage of secondary data?
+
+Answerlist
+----------
+* complete absence of bias
+* low collection effort
+* perfect measurement quality
+* guaranteed representativeness
+
+
+Solution
+========
+Low collection effort is one undoubtable advantage of secondary data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: sec-data-perk
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

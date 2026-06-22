@@ -1,0 +1,30 @@
+Question
+========
+Which advantage does scripted data acquisition provide?
+
+Answerlist
+----------
+* reproducibility
+* larger sample size
+* less missing data
+* automatic causal inference
+
+
+Solution
+========
+Reproducibility of the process is one obvious advantage of automated data acquisition.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: script-acqi
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Why is metadata important?
+
+Answerlist
+----------
+* it increases sample size
+* it explains how data was collected
+* it removes measurement error
+* it guarantees data quality
+
+
+Solution
+========
+Metadata is important and useful as it shows how the data was collected.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: metadata-gen
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

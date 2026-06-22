@@ -35,13 +35,18 @@
 
 **Interactive question**
 
-Two studies report different average incomes.
+```{r quizdatagen1-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-Which explanation could be responsible?
-
-- different analysis methods
-- different populations sampled
-- different measurement procedures
+exercise_directory <- file.path("exams", "exercises")
+quiz_income <- list(
+  file.path(exercise_directory, "different-income-causes.Rmd")
+)
+```
+```{r quizdatagen1, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_income, solution = TRUE)  
+```
 
 ## From real-world phenomena to data
 
@@ -63,13 +68,20 @@ Example:
 - -> information is lost at every step
 - data is always a simplification of reality (like a model: also talk about model theory somewhere? -> yes, Stachowiak 1973)
 
-**Interactive question**
+**Interactive Question**
+```{r quizdatagen2-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-At which step can bias be introduced?
+exercise_directory <- file.path("exams", "exercises")
+quiz_bias <- list(
+  file.path(exercise_directory, "bias.Rmd")
+)
+```
+```{r quizdatagen2, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_bias, solution = TRUE)  
+```
 
-- measurement
-- recording
-- sampling
 
 ## Types of data generation
 
@@ -107,13 +119,18 @@ At which step can bias be introduced?
 
 **Interactive question**
 
-Which of the following is simulated data?
+```{r quizdatagen3-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-- census records
-- GPS trajectories
-- weather forecast model output
-- tax records
-
+exercise_directory <- file.path("exams", "exercises")
+quiz_simudat <- list(
+  file.path(exercise_directory, "simu-data.Rmd")
+)
+```
+```{r quizdatagen3, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_simudat, solution = TRUE)  
+```
 ## Primary and secondary data
 
 ### Primary data
@@ -139,13 +156,19 @@ Which of the following is simulated data?
 - researcher has little influence on collection process
 
 **Interactive question**
+```{r quizdatagen4-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-What is the biggest advantage of secondary data?
+exercise_directory <- file.path("exams", "exercises")
+quiz_secdata <- list(
+  file.path(exercise_directory, "sec-data-perk.Rmd")
+)
+```
+```{r quizdatagen4, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_secdata, solution = TRUE)  
+```
 
-- complete absence of bias
-- low collection effort
-- perfect measurement quality
-- guaranteed representativeness
 
 ## Common sources of data
 
@@ -275,15 +298,19 @@ Examples:
 - undercoverage
 
 **Interactive question**
+```{r quizdatagen5-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-A survey conducted only on university students is used to estimate average income in Germany.
+exercise_directory <- file.path("exams", "exercises")
+quiz_studinc <- list(
+  file.path(exercise_directory, "stud-income.Rmd")
+)
+```
+```{r quizdatagen5, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_studinc, solution = TRUE)  
+```
 
-What is the main problem?
-
-- measurement error
-- sampling bias
-- storage error
-- coding error
 
 ## Measurement and measurement scales
 
@@ -317,19 +344,34 @@ Sources:
 - data entry
 
 **Interactive question**
+```{r quizdatagen6-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-A scale always shows 2 kg too much.
+exercise_directory <- file.path("exams", "exercises")
+quiz_syserror <- list(
+  file.path(exercise_directory, "scale-error.Rmd")
+)
+```
+```{r quizdatagen6, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_syserror, solution = TRUE)  
+```
 
-This is:
-
-- random error
-- systematic error
-- sampling error
-- missing data
 
 **Interactive question**
-Choose between two watches...
 
+```{r quizdatagen7-setup, include = FALSE}
+library(exams)
+library(exams2forms)
+
+exercise_directory <- file.path("exams", "exercises")
+quiz_clockerror <- list(
+  file.path(exercise_directory, "two-clocks.Rmd")
+)
+```
+```{r quizdatagen7, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_clockerror, solution = TRUE)  
+```
 
 
 ## Data quality
@@ -375,13 +417,19 @@ Examples:
 - social media data
 
 **Interactive question**
+```{r quizdatagen8-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-Why is metadata important?
+exercise_directory <- file.path("exams", "exercises")
+quiz_metdat <- list(
+  file.path(exercise_directory, "metadata-gen.Rmd")
+)
+```
+```{r quizdatagen8, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_metdat, solution = TRUE)  
+```
 
-- it increases sample size
-- it explains how data was collected
-- it removes measurement error
-- it guarantees data quality
 
 ## Data collection in R
 ::: {.data-proficiency}
@@ -421,12 +469,18 @@ Why is metadata important?
 
 **Interactive question**
 
-Which advantage does scripted data acquisition provide?
+```{r quizdatagen9-setup, include = FALSE}
+library(exams)
+library(exams2forms)
 
-- reproducibility
-- larger sample size
-- less missing data
-- automatic causal inference
+exercise_directory <- file.path("exams", "exercises")
+quiz_scriptac <- list(
+  file.path(exercise_directory, "script-acqui.Rmd")
+)
+```
+```{r quizdatagen9, echo = FALSE, message = FALSE, results = "asis"} 
+exams2forms(quiz_scriptac, solution = TRUE)  
+```
 
 :::
 

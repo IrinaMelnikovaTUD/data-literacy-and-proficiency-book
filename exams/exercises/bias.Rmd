@@ -1,0 +1,30 @@
+Question
+========
+At which step can bias be introduced?
+
+Answerlist
+----------
+* measurement
+* recording
+* sampling
+* any of the above 
+
+
+Solution
+========
+Bias can be introduced at any of the above mentioned stages of data gathering.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: bias
+extype: schoice
+exsolution: 0001
+exshuffle: FALSE

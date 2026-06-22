@@ -1,0 +1,31 @@
+Question
+========
+A survey conducted only on university students is used to estimate average income in Germany.
+What is the main problem?
+
+Answerlist
+----------
+* measurement error
+* sampling bias
+* storage error
+* coding error
+
+
+Solution
+========
+Sampling bias is the main problem of the study: an average income of unemployed (or working part-time) people with no education and often no family is likely to differ from that of the general population, especially given the number of students compared to the whole demographics of the country.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: stud-income 
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

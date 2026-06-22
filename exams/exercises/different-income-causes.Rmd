@@ -1,0 +1,34 @@
+Question
+========
+Two studies report different average incomes. Which explanation is responsible?
+
+Answerlist
+----------
+* different analysis methods
+* different populations sampled
+* different measurement procedures
+* any of the above
+
+
+Solution
+========
+Any of three reasons mentioned could explain why two studies report different average incomes.
+*Different analysis methods* – e.g., one study uses the mean (average) while another uses the median, or they treat outliers differently. 
+*Different populations sampled* – e.g., one study surveys university graduates while another surveys the entire population. 
+*Different measurement procedures* – e.g., one asks for monthly income, another uses annual income, or they collect data in different ways.
+It can also be a combination of two of three factors.
+
+Answerlist
+----------
+* False
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: different-income-causes
+extype: schoice
+exsolution: 0001
+exshuffle: FALSE
