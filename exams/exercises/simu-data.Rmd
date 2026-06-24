@@ -1,0 +1,30 @@
+Question
+========
+Which of the following is simulated data?
+
+Answerlist
+----------
+* GPS trajectories
+* tax records
+* census records
+* weather forecast model output
+
+
+Solution
+========
+Any kind of data can be simulated by demand, but usually under simulated data we understand "microdata that have been produced artificially from one or more statistical or computational models" (Elliot, 2005). Therefore, GPS trajectories and weather forecast model outputs fall into this classic definition - also when simulated data are combined with real data in them (same source).
+
+Answerlist
+----------
+* True
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: simu-data
+extype: mchoice
+exsolution: 1001
+exshuffle: TRUE

@@ -1,0 +1,26 @@
+Question
+========
+Choose between two clocks: one is stopped (and predicatably, shows true time twice a day), and the other is always one hour ahead.
+
+Answerlist
+----------
+* stopped one
+* the one that's an hour ahead
+
+
+Solution
+========
+As the whole purpose of a clock is to provide information on the passage of time, the clock that is always ahead is still a valuable instrument of time measurement. On the other hand, a stopped clock fails to give any valuable uinformation on the subject, and therefore is useless for its intended purpose.
+
+Answerlist
+----------
+* False
+* True
+
+
+Meta-information
+================
+exname: two-clocks
+extype: schoice
+exsolution: 01
+exshuffle: TRUE

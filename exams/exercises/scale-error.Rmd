@@ -1,0 +1,32 @@
+Question
+========
+A scale always shows 2 kg too much.
+
+This is:
+
+Answerlist
+----------
+* random error
+* systematic error
+* sampling error
+* missing data
+
+
+Solution
+========
+This is an example of a systematic error. 
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: scale-error
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE
