@@ -1,0 +1,32 @@
+Question
+========
+For which of the following purposes is XML typically used?
+
+Answerlist
+----------
+* Exchanging data between different systems, for example through an API.
+* Making remote procedure calls, such as with SOAP web services.
+* Storing configuration and settings for an application.
+* Saving a complex object, like an R list, as a text file (object serialization).
+* Defining how a webpage should visually look, similar to CSS.
+
+
+Solution
+========
+XML shows up in all sorts of places where data needs to move between systems or be saved in a structured, text-based way: APIs often exchange XML, SOAP web services use it to make remote procedure calls, many applications store their configuration and settings in XML files, and it is also a common way to serialize complex objects such as an R list into plain text. What XML is not typically used for is defining the visual appearance of a webpage - that is the role of a stylesheet language like CSS, not of XML itself.
+
+Answerlist
+----------
+* True
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: typical uses of XML
+extype: mchoice
+exsolution: 11110
+exshuffle: TRUE

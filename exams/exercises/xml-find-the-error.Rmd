@@ -1,0 +1,38 @@
+Question
+========
+Take a look at the following XML snippet:
+
+```
+<Bike number=190416>
+  <state>ok</state>
+</bike>
+```
+
+What is wrong with it?
+
+Answerlist
+----------
+* Nothing - this is valid, well-formed XML.
+* The attribute value `190416` is not enclosed in quotes, and the start tag `<Bike>` does not match its end tag `</bike>`, since element names are case sensitive.
+* The element `<state>` is not allowed to contain text content.
+* The attribute name `number` is a reserved keyword and cannot be used in XML.
+
+
+Solution
+========
+Two separate mistakes make this snippet invalid. First, attribute values always need to be quoted, so `number=190416` should be written as `number="190416"`. Second, since element names are case sensitive, `<Bike>` and `</bike>` are treated as different element names entirely, so the start and end tag never actually match - it should either open with `<Bike>` and close with `</Bike>`, or use lower case consistently throughout.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: find the XML error
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

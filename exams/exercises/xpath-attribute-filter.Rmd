@@ -1,0 +1,40 @@
+Question
+========
+Consider the following XML document:
+
+```
+<location>
+  <bike number="190301" state="ok"><battery_pack/></bike>
+  <bike number="190302" state="ok"><battery_pack/></bike>
+  <bike number="190303" state="error"><battery_pack/></bike>
+</location>
+```
+
+What does the XPath expression `//bike[@state="error"]` select here?
+
+Answerlist
+----------
+* Only the very first `bike` element in the document, no matter what its state is.
+* All `bike` elements anywhere in the document whose `state` attribute equals `"error"` - in this case, the bike with number `"190303"`.
+* Every element in the document that contains the word "error" somewhere in its text.
+* Nothing, since XPath expressions cannot filter elements by their attribute values.
+
+
+Solution
+========
+The `//` at the start means "search anywhere in the document", `bike` selects elements with that name, and `[@state="error"]` keeps only those where the `state` attribute has the value `"error"`. Applied to the document above, this matches exactly one element: the third `bike`, with `number="190303"`.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: XPath attribute filter
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

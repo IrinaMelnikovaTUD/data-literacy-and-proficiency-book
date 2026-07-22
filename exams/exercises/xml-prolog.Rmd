@@ -1,0 +1,32 @@
+Question
+========
+An XML document can begin with a line such as `<?xml version="1.0" encoding="UTF-8"?>`. Which of the following statements about this line, the XML prolog, are correct?
+
+Answerlist
+----------
+* Including a prolog is optional; a document can be well-formed without one.
+* If a prolog is included, it has to be placed right at the top of the file.
+* The prolog can be used to specify the character encoding of the document.
+* Every XML document is required to contain a prolog.
+* The prolog defines the hierarchical structure of the elements that come after it.
+
+
+Solution
+========
+The prolog is optional - an XML document can be perfectly valid without it. If it is included, though, it must appear right at the beginning of the file, before anything else. One common reason to add it is to declare the character encoding, for example UTF-8. The prolog itself does not describe or define the elements of the document; it only provides some general information about the file, such as the XML version and encoding used.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: XML prolog
+extype: mchoice
+exsolution: 11100
+exshuffle: TRUE

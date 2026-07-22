@@ -1,0 +1,15 @@
+Question
+========
+XML is one of the most widely used formats for semi-structured data. What does the abbreviation "XML" stand for?
+
+
+Solution
+========
+XML stands for eXtensible Markup Language. It is a plain text, tag-based format that is both human and machine readable, and unlike HTML it does not by itself define what the tagged content actually means.
+
+
+Meta-information
+================
+exname: what XML stands for
+extype: string
+exsolution: eXtensible Markup Language

@@ -1,0 +1,32 @@
+Question
+========
+Which of the following statements about XML element names are correct?
+
+Answerlist
+----------
+* Element names are case sensitive, so `<Bike>` and `<bike>` count as two different elements.
+* An element name is allowed to start with a digit, for example `<1bike>`.
+* An element name may not start with the letters "xml", in any combination of upper and lower case.
+* Element names are allowed to contain spaces, as long as the name is written in quotes.
+* The same element name can appear more than once within one document.
+
+
+Solution
+========
+Element names in XML are case sensitive, which means `<Bike>` and `<bike>` are treated as entirely different elements - mixing them up is a common source of "invalid document" errors. A name must start with a letter or an underscore, never with a digit, and it may not begin with any variant of "xml" (such as XML, Xml, xML), since that prefix is reserved. Spaces are never allowed inside element names, regardless of quoting - quotes are used for attribute values, not for element names. There is nothing stopping the same element name from being reused at different points in the document, for example several `<bike>` elements inside one `<location>` element.
+
+Answerlist
+----------
+* True
+* False
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: XML element naming rules
+extype: mchoice
+exsolution: 10101
+exshuffle: TRUE

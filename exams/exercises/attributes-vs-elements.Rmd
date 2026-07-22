@@ -1,0 +1,38 @@
+Question
+========
+Consider the following piece of XML describing a shared bike:
+
+```
+<bike number="190301" bike_type="196" state="ok">
+  <battery_pack/>
+</bike>
+```
+
+Here, `number`, `bike_type` and `state` are attributes of the `bike` element, while `battery_pack` is a child element. Which statement correctly describes a key difference between attributes and elements?
+
+Answerlist
+----------
+* Attributes can contain nested child elements, while elements cannot.
+* Attributes are written inside an element's start tag and must be quoted, while elements have their own start and end tags and can contain further content.
+* Attributes and elements are really the same thing, just written with a different syntax.
+* Only elements can carry information about a tag; attributes are purely decorative and get ignored when a document is parsed.
+
+
+Solution
+========
+An attribute is placed inside the start tag of an element, follows the pattern `attrname="attrvalue"`, and its value always has to be quoted, using either single or double quotes. An element, on the other hand, is delimited by its own start and end tag and can hold text, attributes, other elements, or any combination of these - or be left empty. So while both attributes and elements carry information about the data, they are structured quite differently and neither one is optional decoration.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: attributes vs elements
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

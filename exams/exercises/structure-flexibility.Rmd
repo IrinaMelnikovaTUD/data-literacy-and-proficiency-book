@@ -1,0 +1,30 @@
+Question
+========
+Data can be structured, semi-structured or unstructured, depending on how strictly it is organized. Which statement correctly describes how the degree of structure relates to the degree of flexibility?
+
+Answerlist
+----------
+* The stricter the format of a dataset, the more flexible it becomes to work with.
+* The stricter the format of a dataset, the less flexible it becomes, since every entry must fit a fixed layout.
+* Structure and flexibility always increase together.
+* How structured a dataset is has nothing to do with how flexible it is.
+
+
+Solution
+========
+The degree of structure and the degree of flexibility work against each other. A strictly structured format, such as a relational database table, leaves very little room for exceptions, missing values or nested information, since every row has to follow the same predefined columns. Semi-structured and unstructured formats give up some of that strictness in exchange for more flexibility.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: structure and flexibility
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

@@ -1,0 +1,30 @@
+Question
+========
+Plain tabular data (rows and columns) tends to struggle with repeated information, nested details and one-to-many relationships. Why do semi-structured formats often represent this kind of data as a tree instead?
+
+Answerlist
+----------
+* A tree simply looks cleaner when printed on paper.
+* A tree can directly express nested details and one-to-many relationships through parent, child and sibling elements, without the extra overhead a relational database would need.
+* A tree always takes up less storage space than any table, no matter what the data looks like.
+* A tree can only store numbers, so it avoids the formatting issues text causes in tables.
+
+
+Solution
+========
+Relational databases can handle one-to-many relationships too, but only by splitting the information across several linked tables, which adds organizational overhead. A tree structure avoids this by letting each element simply contain its child elements directly - for example, a university organigram can nest faculties, institutes and staff underneath each other exactly as they are related, without needing separate lookup tables.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: from tables to trees
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

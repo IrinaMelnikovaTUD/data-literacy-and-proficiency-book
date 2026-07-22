@@ -1,0 +1,32 @@
+Question
+========
+Which of the following statements about semi-structured data are correct?
+
+Answerlist
+----------
+* It is self-describing, meaning its structure can be understood without a separate schema.
+* It can accommodate new fields fairly easily, without breaking the existing dataset.
+* It is meant only for machines to parse and cannot reasonably be read by a person.
+* It always follows a fixed row-and-column layout, just like a relational database.
+* It is commonly organized as a hierarchical structure of parent, child and sibling elements.
+
+
+Solution
+========
+Semi-structured data describes its own structure directly, so no separate schema is required to make sense of it. It is also flexible and extensible: new fields or relations can usually be added without breaking what is already there. At the same time, it is normally designed to be both machine-parseable and human-readable, not just one or the other. It does not require a fixed row-and-column layout - that is a property of structured, tabular data instead. Because tabular formats struggle with nested or repeated information, semi-structured data is typically organized as a tree of parent, child and sibling elements.
+
+Answerlist
+----------
+* True
+* True
+* False
+* False
+* True
+
+
+Meta-information
+================
+exname: semi-structured data properties
+extype: mchoice
+exsolution: 11001
+exshuffle: TRUE

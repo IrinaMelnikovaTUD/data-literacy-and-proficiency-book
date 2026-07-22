@@ -1,0 +1,33 @@
+Question
+========
+For each of the following, decide whether it is best described as structured, semi-structured or unstructured data. Type one of the three words for each item.
+
+Answerlist
+----------
+* A folder containing hundreds of audio files.
+* The `stops.txt` file from a GTFS feed.
+* A Wikipedia article.
+* The configuration file of a video game.
+
+
+Solution
+========
+* A folder of audio files has no shared organizational scheme beyond the file system itself, so it counts as unstructured data.
+* The `stops.txt` file from a GTFS feed is a plain table with fixed columns (stop ID, name, coordinates, ...), which makes it structured data.
+* A Wikipedia article has some organizational properties, such as headings, an infobox and links, but it does not follow a rigid row-and-column format, so it counts as semi-structured data.
+* A game's configuration file (for example in JSON or XML) also has organizational properties without being strictly tabular, so it is semi-structured data as well.
+
+Answerlist
+----------
+* unstructured
+* structured
+* semi-structured
+* semi-structured
+
+
+Meta-information
+================
+exname: classifying data
+extype: cloze
+exclozetype: string|string|string|string
+exsolution: unstructured|structured|semi-structured|semi-structured
