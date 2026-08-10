@@ -12,7 +12,7 @@ Answerlist
 
 Solution
 ========
-JSON is a lightweight, text-based syntax designed for exchanging semi-structured data, and it is formally standardized in IETF RFC 8259 as well as ECMA-404. Even though its name comes from JavaScript, it is a language-independent format - it is used from R, Python, Java and many other languages just as easily. It also shares a lot of common ground with XML: both are text-based, hierarchical, and human as well as machine readable.
+JSON is a lightweight, text-based syntax designed for exchanging semi-structured data, and it is formally standardized in IETF RFC 8259 as well as ECMA-404 (these are almost identical when it comes to JSON). Even though its name comes from JavaScript, it is a language-independent format - it is used from R, Python, Java and many other languages just as easily. It also shares a lot of common ground with XML: both are text-based, hierarchical, and human as well as machine readable.
 
 Answerlist
 ----------
@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: JSON basic characteristics
+exname: json-basics
 extype: mchoice
 exsolution: 1101
 exshuffle: TRUE

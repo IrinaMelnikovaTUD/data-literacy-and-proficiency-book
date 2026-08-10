@@ -1,6 +1,6 @@
 Question
 ========
-ggplot2 uses a specific set of terms to describe the parts of a plot. Which statement correctly matches one of these terms with its meaning?
+ggplot2 uses a specific set of terms to describe the components of a plot. Which statement correctly matches one of these terms with its meaning?
 
 Answerlist
 ----------
@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: ggplot2 terminology
+exname: ggplot2-terminology
 extype: schoice
 exsolution: 0010
 exshuffle: TRUE

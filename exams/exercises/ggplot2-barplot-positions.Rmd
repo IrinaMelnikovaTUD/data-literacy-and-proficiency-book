@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: geom_bar position adjustments
+exname: ggplot2-barplot-positions
 extype: mchoice
 exsolution: 1110
 exshuffle: TRUE

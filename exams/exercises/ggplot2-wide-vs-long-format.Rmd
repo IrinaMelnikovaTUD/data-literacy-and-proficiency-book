@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: wide vs long format
+exname: ggplot2-wide-vs-long-format
 extype: mchoice
 exsolution: 1101
 exshuffle: TRUE

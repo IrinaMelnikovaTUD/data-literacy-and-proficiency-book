@@ -34,7 +34,7 @@ Answerlist
 
 Meta-information
 ================
-exname: JSON object syntax
+exname: json-objects
 extype: schoice
 exsolution: 0100
 exshuffle: TRUE

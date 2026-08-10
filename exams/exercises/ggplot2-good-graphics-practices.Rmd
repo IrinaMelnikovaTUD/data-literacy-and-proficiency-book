@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: good graphics practices
+exname: ggplot2-good-graphics-practices
 extype: mchoice
 exsolution: 1110
 exshuffle: TRUE

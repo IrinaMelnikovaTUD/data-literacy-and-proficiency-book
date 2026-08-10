@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: JSON limitations
+exname: json-limitations
 extype: schoice
 exsolution: 0100
 exshuffle: TRUE

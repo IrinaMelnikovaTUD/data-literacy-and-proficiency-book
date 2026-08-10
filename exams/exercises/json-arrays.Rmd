@@ -34,7 +34,7 @@ Answerlist
 
 Meta-information
 ================
-exname: JSON array syntax
+exname: json-arrays
 extype: schoice
 exsolution: 1000
 exshuffle: TRUE

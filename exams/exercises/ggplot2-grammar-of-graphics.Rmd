@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: grammar of graphics
+exname: ggplot2-grammar-of-graphics
 extype: schoice
 exsolution: 1000
 exshuffle: TRUE

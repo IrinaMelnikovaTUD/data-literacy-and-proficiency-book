@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: facet_grid vs facet_wrap
+exname: ggplot2-facet-grid-vs-wrap
 extype: mchoice
 exsolution: 1100
 exshuffle: TRUE

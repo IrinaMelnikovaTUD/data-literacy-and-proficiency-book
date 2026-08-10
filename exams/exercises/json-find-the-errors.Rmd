@@ -45,7 +45,7 @@ Answerlist
 
 Meta-information
 ================
-exname: find the JSON errors
+exname: json-find-the-errors
 extype: mchoice
 exsolution: 1110
 exshuffle: TRUE

@@ -10,6 +10,6 @@ JSON stands for JavaScript Object Notation. Despite the name, it is not tied to 
 
 Meta-information
 ================
-exname: what JSON stands for
+exname: json-fullname
 extype: string
 exsolution: JavaScript Object Notation

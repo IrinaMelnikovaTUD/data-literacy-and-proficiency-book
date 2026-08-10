@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: JSON number syntax
+exname: json-numbers
 extype: mchoice
 exsolution: 1010
 exshuffle: TRUE

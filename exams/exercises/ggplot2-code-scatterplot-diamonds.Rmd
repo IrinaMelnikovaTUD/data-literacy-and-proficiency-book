@@ -19,7 +19,7 @@ Meta-information
 ================
 extype: string
 exsolution: nil
-exname: scatterplot of diamonds by cut
+exname: ggplot2-code-scatterplot-diamonds
 exstringtype: essay|file
 exextra[essay,logical]: TRUE
 exextra[essay_format,character]: editor

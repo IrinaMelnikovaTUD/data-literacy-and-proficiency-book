@@ -24,7 +24,7 @@ Answerlist
 
 Meta-information
 ================
-exname: ggplot2 advantages and disadvantages
+exname: ggplot2-pros-cons
 extype: mchoice
 exsolution: 1101
 exshuffle: TRUE

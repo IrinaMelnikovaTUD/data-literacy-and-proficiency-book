@@ -18,7 +18,7 @@ Meta-information
 ================
 extype: string
 exsolution: nil
-exname: faceted scatterplot of diamonds
+exname: ggplot2-code-facet-diamonds
 exstringtype: essay|file
 exextra[essay,logical]: TRUE
 exextra[essay_format,character]: editor

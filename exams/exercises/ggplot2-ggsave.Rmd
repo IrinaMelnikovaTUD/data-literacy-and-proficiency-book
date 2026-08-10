@@ -10,6 +10,6 @@ The file name. `ggsave()` makes reasonable guesses for almost everything else - 
 
 Meta-information
 ================
-exname: mandatory argument of ggsave
+exname: ggplot2-ggsave
 extype: string
 exsolution: filename

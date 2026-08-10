@@ -17,7 +17,7 @@ Meta-information
 ================
 extype: string
 exsolution: nil
-exname: boxplot of diamonds price by cut
+exname: ggplot2-code-boxplot-diamonds
 exstringtype: essay|file
 exextra[essay,logical]: TRUE
 exextra[essay_format,character]: editor
