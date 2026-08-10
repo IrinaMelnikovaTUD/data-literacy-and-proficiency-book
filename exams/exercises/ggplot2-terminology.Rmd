@@ -1,0 +1,30 @@
+Question
+========
+ggplot2 uses a specific set of terms to describe the parts of a plot. Which statement correctly matches one of these terms with its meaning?
+
+Answerlist
+----------
+* "aesthetics" refers to the actual geometric objects displayed on the plot, such as points or bars.
+* "geoms" refers to the mapping of visual properties, such as colour, to columns of the data frame.
+* "facets" refers to splitting the data into multiple panels based on one or two categorical variables.
+* "data" can be any R object, not necessarily a data frame.
+
+
+Solution
+========
+In ggplot2, "facets" is the term for splitting the data into subsets based on one or two categorical variables and rendering a separate panel for each subset. The other terms are commonly mixed up: "aesthetics" describes how visual properties are mapped to columns of the data (not the objects themselves), "geoms" (short for geometric objects) refers to the actual type of object displayed, such as points or bars, and "data" always has to be an R data frame, not just any R object.
+
+Answerlist
+----------
+* False
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: ggplot2 terminology
+extype: schoice
+exsolution: 0010
+exshuffle: TRUE

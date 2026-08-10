@@ -1,0 +1,15 @@
+Question
+========
+JSON is one of the most common formats for exchanging semi-structured data on the web. What does the abbreviation "JSON" stand for?
+
+
+Solution
+========
+JSON stands for JavaScript Object Notation. Despite the name, it is not tied to the JavaScript language - it is a lightweight, text-based format that many programming languages, including R, can read and write.
+
+
+Meta-information
+================
+exname: what JSON stands for
+extype: string
+exsolution: JavaScript Object Notation

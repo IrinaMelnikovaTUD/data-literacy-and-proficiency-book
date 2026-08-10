@@ -1,0 +1,30 @@
+Question
+========
+ggplot2 offers both `facet_grid()` and `facet_wrap()` to split a plot into multiple panels. Which of the following statements about them are correct?
+
+Answerlist
+----------
+* Both `facet_grid()` and `facet_wrap()` split the data into separate panels based on one or two categorical variables.
+* Unlike `facet_wrap()`, `facet_grid()` lets you explicitly control which variable defines the rows and which defines the columns of the panel grid.
+* `facet_wrap()` always arranges all panels in a single row, never wrapping onto multiple rows.
+* If you facet by two categorical variables with n and m factor levels respectively, you need to display a total of n + m panels.
+
+
+Solution
+========
+Both functions split the data into subsets and render one panel per subset. The real difference is control over layout: `facet_grid(rows ~ columns)` lets you explicitly assign one variable to the rows and another to the columns of the resulting grid, while `facet_wrap()` cannot align variables to rows in the same way and instead wraps the panels into a rectangular layout - which is exactly why it can span multiple rows rather than being restricted to one. Finally, faceting by two categorical variables with n and m factor levels produces n times m panels, one for every combination of levels, not n + m.
+
+Answerlist
+----------
+* True
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: facet_grid vs facet_wrap
+extype: mchoice
+exsolution: 1100
+exshuffle: TRUE

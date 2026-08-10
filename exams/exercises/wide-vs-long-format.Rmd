@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about wide vs. long data format, in the context of preparing data for ggplot2, are correct?
+
+Answerlist
+----------
+* ggplot2 generally expects data in long format rather than wide format.
+* In long format, each row corresponds to exactly one observation of one variable, with separate columns identifying which variable and which group it belongs to.
+* The `tidyr` function `pivot_longer()` converts data from long format into wide format.
+* Data collected from repeated measurements, such as several runs of an experiment, is often naturally stored in wide format, for example with one column per run.
+
+
+Solution
+========
+ggplot2 works best with long-format data, where every row is a single observation and separate columns identify what is being measured and which group or run it belongs to - that is exactly the shape needed to map a variable to an aesthetic like colour or linetype. Data often does not start out that way, though: results from repeated experiments, for instance, are frequently recorded in wide format, with one column per run. To bring such data into the long shape ggplot2 needs, `pivot_longer()` from the `tidyr` package is used - and it does the opposite of what the third statement claims: it converts data from wide format into long format, not the other way around.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: wide vs long format
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

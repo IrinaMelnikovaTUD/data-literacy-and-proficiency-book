@@ -1,0 +1,29 @@
+Question
+========
+The `diamonds` dataset is built into ggplot2 and contains information on about 54,000 diamonds, including their `carat`, `price` and `cut`.
+
+Write R code that creates a scatterplot of `price` (y-axis) against `carat` (x-axis) using the `diamonds` dataset, where the points are coloured according to `cut`.
+
+
+Solution
+========
+```
+ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = cut)) +
+  geom_point()
+```
+
+The call to `ggplot()` sets up the plot object, passing `diamonds` as the data and mapping `carat` to the x-axis, `price` to the y-axis, and `cut` to the colour aesthetic. Adding `geom_point()` as a layer is what actually renders the points - without at least one layer, nothing would be drawn.
+
+
+Meta-information
+================
+extype: string
+exsolution: nil
+exname: scatterplot of diamonds by cut
+exstringtype: essay|file
+exextra[essay,logical]: TRUE
+exextra[essay_format,character]: editor
+exextra[essay_required,logical]: TRUE
+exextra[essay_fieldlines,numeric]: 6
+exextra[essay_attachments,numeric]: 1
+exextra[essay_attachmentsrequired,logical]: FALSE

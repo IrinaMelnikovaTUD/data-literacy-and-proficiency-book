@@ -1,0 +1,40 @@
+Question
+========
+Consider the following piece of JSON:
+
+```
+{
+  "Operator": "DVB",
+  "Vehicle": "Stadtbus",
+  "LineNr": "85"
+}
+```
+
+Which statement correctly describes the syntax of a JSON object such as this one?
+
+Answerlist
+----------
+* An object is wrapped in square brackets and contains a list of values separated by colons.
+* An object is wrapped in curly brackets and contains zero or more name-value pairs; each name is a string, name and value are separated by a colon, and the pairs are separated by commas.
+* An object is wrapped in curly brackets, but unlike an array it cannot contain more than three name-value pairs.
+* An object never contains other objects or arrays as values, only plain strings and numbers.
+
+
+Solution
+========
+A JSON object is delimited by a pair of curly brackets `{ }` and holds zero or more name-value pairs. Each name has to be a string, a single colon separates a name from its value, and consecutive pairs are separated by commas - exactly as shown in the example above. There is no limit on how many pairs an object may contain, and a value is free to be another object or an array, which is exactly what makes JSON suitable for nested, semi-structured data.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: JSON object syntax
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

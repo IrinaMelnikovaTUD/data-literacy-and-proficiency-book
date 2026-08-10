@@ -1,0 +1,30 @@
+Question
+========
+ggplot2 is based on the (layered) Grammar of Graphics. Which statement best describes the core idea behind this concept?
+
+Answerlist
+----------
+* A graphic is built up from separate layers, where in each layer data is mapped to aesthetic attributes (such as colour or shape) of geometric objects (such as points or bars).
+* A graphic must always be built using one single, named function for each chart type, such as `scatterplot()` or `barchart()`.
+* A graphic can only be produced once the underlying data has already been converted into an image file.
+* A graphic is defined purely by its colour scheme, independent of the data structure behind it.
+
+
+Solution
+========
+The core idea of the (layered) Grammar of Graphics is that a graphic is composed of different layers. In each layer, data is mapped to aesthetic attributes (like colour, shape or size) of geometric objects, or "geoms" (like points, bars or lines). That is also why ggplot2 has no named standalone functions like `plot()`, `hist()` or `scatterplot()` for specific chart types - instead, any type of plot is built by combining data, aesthetic mappings and one or more geoms.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: grammar of graphics
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

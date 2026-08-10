@@ -1,0 +1,27 @@
+Question
+========
+Using the `diamonds` dataset, write R code that creates a boxplot showing the distribution of `price` for each level of `cut`.
+
+
+Solution
+========
+```
+ggplot(data = diamonds, mapping = aes(x = cut, y = price)) +
+  geom_boxplot()
+```
+
+`cut` is mapped to the x-axis and `price` to the y-axis, and `geom_boxplot()` draws one boxplot per level of `cut`, since `cut` is a categorical (ordered factor) variable. Each box shows the median, the interquartile range, and any outlying prices for that cut category.
+
+
+Meta-information
+================
+extype: string
+exsolution: nil
+exname: boxplot of diamonds price by cut
+exstringtype: essay|file
+exextra[essay,logical]: TRUE
+exextra[essay_format,character]: editor
+exextra[essay_required,logical]: TRUE
+exextra[essay_fieldlines,numeric]: 6
+exextra[essay_attachments,numeric]: 1
+exextra[essay_attachmentsrequired,logical]: FALSE

@@ -1,0 +1,28 @@
+Question
+========
+Using the `diamonds` dataset, write R code that creates a scatterplot of `price` (y-axis) against `carat` (x-axis), and splits the plot into separate panels for each level of `cut` using `facet_wrap()`.
+
+
+Solution
+========
+```
+ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +
+  geom_point() +
+  facet_wrap(~ cut)
+```
+
+The base plot maps `carat` to x and `price` to y, and `geom_point()` renders it as a scatterplot. Adding `facet_wrap(~ cut)` then splits the single scatterplot into one panel per level of `cut`, each panel showing only the diamonds of that cut, but using the same x- and y-axis scales by default so the panels remain directly comparable.
+
+
+Meta-information
+================
+extype: string
+exsolution: nil
+exname: faceted scatterplot of diamonds
+exstringtype: essay|file
+exextra[essay,logical]: TRUE
+exextra[essay_format,character]: editor
+exextra[essay_required,logical]: TRUE
+exextra[essay_fieldlines,numeric]: 6
+exextra[essay_attachments,numeric]: 1
+exextra[essay_attachmentsrequired,logical]: FALSE

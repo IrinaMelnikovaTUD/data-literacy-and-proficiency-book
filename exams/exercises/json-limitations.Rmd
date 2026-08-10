@@ -1,0 +1,30 @@
+Question
+========
+Like any format, JSON has some limitations. Which of the following is an actual limitation of JSON?
+
+Answerlist
+----------
+* JSON cannot represent nested or hierarchical data.
+* JSON has no built-in way to represent infinity or "not a number" (NaN).
+* A JSON text is not valid unless a schema for it has been defined beforehand.
+* JSON documents cannot be read by a person without specialized software.
+
+
+Solution
+========
+JSON numbers have no representation for special values such as infinity or NaN - if a computation produces one of these, it has to be encoded some other way, for example as a string, before it can be stored in JSON. The other statements are not accurate: JSON handles nested and hierarchical data very naturally, through objects and arrays containing further objects and arrays; a schema is entirely optional and is only used for validation, not for basic validity; and JSON is explicitly designed to be human-readable plain text, no special software required.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: JSON limitations
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

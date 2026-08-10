@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about JSON are correct?
+
+Answerlist
+----------
+* JSON is a text syntax that is suitable for the interchange of semi-structured data.
+* JSON is standardized, among others, in IETF RFC 8259.
+* JSON can only be used together with the JavaScript programming language.
+* JSON has many parallels to XML.
+
+
+Solution
+========
+JSON is a lightweight, text-based syntax designed for exchanging semi-structured data, and it is formally standardized in IETF RFC 8259 as well as ECMA-404. Even though its name comes from JavaScript, it is a language-independent format - it is used from R, Python, Java and many other languages just as easily. It also shares a lot of common ground with XML: both are text-based, hierarchical, and human as well as machine readable.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: JSON basic characteristics
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

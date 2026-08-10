@@ -1,0 +1,30 @@
+Question
+========
+`geom_bar()` (and `geom_col()`) in ggplot2 accept a `position` argument that controls how overlapping bars are arranged. Which of the following statements about its possible values are correct?
+
+Answerlist
+----------
+* `position = "stack"` (the default) stacks the bars for each group on top of one another.
+* `position = "dodge"` places the bars for each group side by side instead of stacking them.
+* `position = "fill"` stacks the bars and additionally rescales each stack to the same total height, so the bars show proportions instead of absolute counts.
+* `position = "jitter"` is the recommended way to prevent bars in a bar chart from overlapping.
+
+
+Solution
+========
+`"stack"`, `"dodge"` and `"fill"` are indeed three of the standard position adjustments for `geom_bar()`: stacking bars on top of each other, placing them side by side, or stacking and rescaling them to show proportions instead of counts. `"jitter"`, however, is not really relevant for bar charts - it adds small random noise to point positions to prevent overplotting in scatterplots, which is not the kind of overlap bars have in the first place.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: geom_bar position adjustments
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

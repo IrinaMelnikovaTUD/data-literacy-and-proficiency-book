@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about the advantages and disadvantages of ggplot2 are correct?
+
+Answerlist
+----------
+* ggplot2 produces high-quality images and sticks to sensible graphic design rules by default.
+* The basics of ggplot2 are not too difficult to learn, even though building complex visualizations still takes some effort.
+* ggplot2 fully supports interactive 3D visualizations out of the box.
+* Fine-tuning a ggplot2 visualization to perfection requires some effort and familiarity with the available tools.
+
+
+Solution
+========
+ggplot2 is popular precisely because it produces high-quality graphics while sticking to sensible design defaults, and its basic usage is fairly approachable even for beginners - though building more complex, polished visualizations does take some practice and effort. One real limitation, though, is that ggplot2 has no support for 3D data, and there are no plans to add it. Getting a visualization exactly right, down to the last detail, also requires some effort and a working knowledge of the available tools, such as themes and scales.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: ggplot2 advantages and disadvantages
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

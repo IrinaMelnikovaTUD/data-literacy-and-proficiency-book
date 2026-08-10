@@ -1,0 +1,30 @@
+Question
+========
+The JSON standard defines a fixed set of value types that can appear in a JSON text. Which of the following is *not* one of them?
+
+Answerlist
+----------
+* number
+* date
+* string
+* object
+
+
+Solution
+========
+According to the JSON standard, a value is always one of the following: an object, an array, a number, a string, or one of the three literal names `true`, `false` and `null`. There is no separate "date" type - dates are simply represented as strings, and it is up to the application reading the JSON text to interpret them accordingly.
+
+Answerlist
+----------
+* False
+* True
+* False
+* False
+
+
+Meta-information
+================
+exname: JSON value types
+extype: schoice
+exsolution: 0100
+exshuffle: TRUE

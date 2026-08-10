@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about the differences and similarities between JSON and XML are correct?
+
+Answerlist
+----------
+* Both JSON and XML are human-readable, hierarchical text formats with similar applications.
+* In JSON, values are unnamed unless they appear inside an object, while every element in XML has a name.
+* Representing the same information in XML typically requires less storage space than in JSON.
+* XML is easily extensible, while JSON's grammar is intentionally kept simple and limited.
+
+
+Solution
+========
+JSON and XML have a lot in common: both are plain-text, hierarchical formats, both are readable by humans and machines, and both are used for similar purposes such as data exchange and configuration files. One real difference is naming: a JSON array simply holds a sequence of values with no names attached, whereas every element in an XML document has an explicit tag name. Storage size works the other way around from what the third statement claims - because of all the repeated opening and closing tags, XML documents usually take up more space than the equivalent JSON for the same information. Finally, XML was designed to be easily extensible (for example through namespaces and schemas), while JSON deliberately keeps its grammar small and simple.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: JSON vs XML
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

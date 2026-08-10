@@ -1,0 +1,40 @@
+Question
+========
+Consider the following piece of JSON:
+
+```
+[
+  "Striesen Niederwaldplatz",
+  "Löbtau Süd",
+  "Mohorner Str."
+]
+```
+
+Which statement correctly describes the syntax of a JSON array such as this one?
+
+Answerlist
+----------
+* An array is wrapped in square brackets and contains zero or more values, separated by commas.
+* An array is wrapped in curly brackets and contains name-value pairs, just like an object.
+* An array must contain values of exactly the same type, so mixing strings and numbers is invalid.
+* An array is only allowed to appear as the outermost structure of a JSON text, never nested inside an object.
+
+
+Solution
+========
+An array is delimited by a pair of square brackets `[ ]` and simply holds zero or more values, one after another, separated by commas - there are no names involved, unlike in an object. JSON does not require the values inside an array to share the same type; a single array can freely mix strings, numbers, objects, or even other arrays. Arrays can also appear anywhere a value is expected, including nested inside an object as the value of some name.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: JSON array syntax
+extype: schoice
+exsolution: 1000
+exshuffle: TRUE

@@ -1,0 +1,51 @@
+Question
+========
+Look at the following JSON text, which is meant to describe two bus trips:
+
+```
+[
+  {
+    "Operator": "DVB",
+    "Route": "Striesen Niederwaldplatz - Löbtau Süd Mohorner Str.",
+    "Vehicle": Stadtbus,
+    "TripID": "voe:21085: :H:j23",
+    "LineNr": "85",
+  }
+  {
+    "Operator": "DVB",
+    "Route": "Löbtau Süd Mohorner Str. - Striesen Niederwaldplatz",
+    "Vehicle": "Stadtbus",
+    "TripID": "voe:21085: :R:j23",
+    "LineNr": 85
+  }
+]
+```
+
+Which of the following statements about this JSON text are correct?
+
+Answerlist
+----------
+* The value of `"Vehicle"` in the first object, `Stadtbus`, is missing its quotation marks and should be written as `"Stadtbus"`.
+* The comma right after `"LineNr": "85"` in the first object is a trailing comma and needs to be removed, since no name-value pair follows it before the closing brace.
+* There is a comma missing between the first and the second object inside the array.
+* Writing `"LineNr": 85` as a plain number instead of a quoted string in the second object is a syntax error on its own.
+
+
+Solution
+========
+Three real problems make this text invalid. First, `Stadtbus` is written without quotation marks, so a parser would try to interpret it as a literal name like `true` or `null` rather than a string, and fail. Second, the comma directly before the closing `}` of the first object is a trailing comma - JSON does not allow a comma after the last name-value pair. Third, the two objects inside the array are simply placed one after another without a separating comma, which is required between elements of an array. The last statement is not correct, though: numbers in JSON are never quoted, so `"LineNr": 85` is perfectly valid syntax on its own - it is only inconsistent with the first object, which stores the same field as a string, `"85"`.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: find the JSON errors
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

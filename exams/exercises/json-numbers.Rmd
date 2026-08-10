@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about the syntax of numbers in JSON are correct?
+
+Answerlist
+----------
+* A number may start with a preceding minus sign.
+* A number may have a fractional part, introduced by a comma, for example `4,5`.
+* A number may have an exponent, prefixed by `e` or `E`.
+* A number is allowed to have leading zeros, so `007` is a valid JSON number.
+
+
+Solution
+========
+A JSON number may be preceded by a minus sign to indicate a negative value, and it may include an exponent introduced by `e` or `E`, optionally followed by a plus or minus sign - for example `-4.5E-3`. A fractional part is allowed as well, but it has to be separated from the integer part by a dot, not a comma, so `4.5` is valid while `4,5` is not. Leading zeros are not permitted either: `007` is invalid JSON, since a number is only allowed to start with a zero if that zero stands alone right before the decimal point, as in `0.5`.
+
+Answerlist
+----------
+* True
+* False
+* True
+* False
+
+
+Meta-information
+================
+exname: JSON number syntax
+extype: mchoice
+exsolution: 1010
+exshuffle: TRUE

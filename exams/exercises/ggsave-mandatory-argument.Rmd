@@ -1,0 +1,15 @@
+Question
+========
+The `ggsave()` function is a convenient way to save a ggplot2 plot to a file - it is essentially a wrapper around the underlying graphic device driver. Besides the plot itself (which defaults to the last plot generated), what is the only other argument you always have to supply to `ggsave()`?
+
+
+Solution
+========
+The file name. `ggsave()` makes reasonable guesses for almost everything else - the plot to save (it defaults to `last_plot()`), the image size, and even the graphic device, which is inferred from the file extension you use (for example `.pdf`, `.png` or `.eps`). The one thing it cannot guess is what the file should be called, so the file name always has to be provided.
+
+
+Meta-information
+================
+exname: mandatory argument of ggsave
+extype: string
+exsolution: filename

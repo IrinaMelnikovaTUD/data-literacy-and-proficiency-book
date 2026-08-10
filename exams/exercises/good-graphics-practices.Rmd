@@ -1,0 +1,30 @@
+Question
+========
+Which of the following are considered good practices when designing a graphic, for example with ggplot2?
+
+Answerlist
+----------
+* Focus on actually visualizing the data, rather than on decorative elements.
+* Get rid of "chart junk", i.e., non-data elements that obscure the data.
+* Choose colour palettes that remain distinguishable for colour-blind viewers.
+* As long as a plot looks good in colour, it does not matter whether it stays readable when printed in black and white.
+
+
+Solution
+========
+Good graphics keep the focus on the data itself: unnecessary decoration, or "chart junk", should be removed rather than added, and the overall design should stay minimalistic so the data can speak for itself. Choosing colour-blind-friendly palettes is another important practical habit, since a meaningful share of viewers cannot reliably distinguish certain colour combinations. Readability in grayscale matters too - a plot that only works in colour is not something to aim for, since it may end up printed or reproduced without colour, and should stay interpretable either way.
+
+Answerlist
+----------
+* True
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: good graphics practices
+extype: mchoice
+exsolution: 1110
+exshuffle: TRUE

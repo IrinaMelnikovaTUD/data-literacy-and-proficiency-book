@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about JSON Schema, validation, and related formats are correct?
+
+Answerlist
+----------
+* A JSON Schema can be used to define the expected structure of a JSON text, for example which fields are required.
+* Validating a JSON text against a schema, using a package like `jsonvalidate`, returns either `TRUE` or `FALSE`.
+* YAML is a more restrictive subset of JSON, meaning every valid YAML file is automatically also valid JSON.
+* GeoJSON is a JSON-based format for representing geographical features and can be read directly with `sf::st_read()`.
+
+
+Solution
+========
+A JSON Schema describes what a valid JSON text of a certain kind should look like - which properties it must contain, what type each one should have, and so on - which is especially useful for standardized data exchange such as APIs. Checking a JSON text against such a schema, for instance with the `jsonvalidate` package, simply returns `TRUE` or `FALSE`. YAML, though, is not a subset of JSON but a superset: every valid JSON text is also valid YAML, not the other way around. GeoJSON, finally, is a JSON-based format designed for simple geographical features, and since it is supported by GDAL, it can be opened directly with `sf::st_read()`.
+
+Answerlist
+----------
+* True
+* True
+* False
+* True
+
+
+Meta-information
+================
+exname: JSON Schema and related formats
+extype: mchoice
+exsolution: 1101
+exshuffle: TRUE

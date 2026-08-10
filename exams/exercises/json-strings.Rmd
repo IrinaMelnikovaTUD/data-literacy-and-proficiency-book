@@ -1,0 +1,30 @@
+Question
+========
+Which of the following statements about the syntax of strings in JSON are correct?
+
+Answerlist
+----------
+* A string can be wrapped in either single or double quotation marks, whichever the author prefers.
+* Certain characters, such as the quotation mark itself or the backslash, must be escaped using a reverse solidus (backslash).
+* A Unicode code point can be represented using a hexadecimal escape sequence, such as `\u0041`.
+* A JSON string is only allowed to contain plain ASCII characters, so accented letters like "ü" can never appear directly in a string.
+
+
+Solution
+========
+A JSON string always has to be wrapped in double quotation marks - single quotes are not valid JSON, unlike in some other languages. Certain characters, including the double quote and the backslash itself, need to be escaped with a reverse solidus so they are not mistaken for part of the syntax. Any Unicode code point can also be written out as a hexadecimal escape sequence, for example `\u0041` for the letter "A". Beyond that, JSON strings are not limited to ASCII at all - since JSON text is Unicode by nature, characters like "ü" or "ö" can be written directly in a string without any escaping.
+
+Answerlist
+----------
+* False
+* True
+* True
+* False
+
+
+Meta-information
+================
+exname: JSON string syntax
+extype: mchoice
+exsolution: 0110
+exshuffle: TRUE

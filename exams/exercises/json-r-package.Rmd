@@ -1,0 +1,15 @@
+Question
+========
+Several R packages can read and write JSON texts. Which one offers a bidirectional mapping between JSON and many R data types, and is the one used in the course examples for reading, writing and validating JSON?
+
+
+Solution
+========
+That package is `jsonlite`. It provides functions such as `read_json()` and `toJSON()` to convert between JSON texts and R objects, and it also supports validating JSON texts, for example through the `validate()` function.
+
+
+Meta-information
+================
+exname: R package for JSON
+extype: string
+exsolution: jsonlite
