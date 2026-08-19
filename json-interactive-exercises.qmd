@@ -1,0 +1,519 @@
+---
+title: "Semi-structured Data: JSON — Interactive Exercises"
+engine: knitr
+webr:
+  packages: ['jsonlite']
+  cell-options:
+    editor-font-scale: 0.9
+    out-width: 70%
+filters:
+  - webr
+---
+
+## Before you start
+
+::: {.callout-note}
+Hit the **Run Code** button to run the code in a cell. To run only part of a cell, highlight the lines you want and press **Cmd + Return** (Mac) or **Ctrl + Enter** (Windows). All code cells on this page share the same R session, so an object you create in one cell is still available in the next one.
+:::
+
+```{webr-r}
+#| autorun: true
+
+library(jsonlite)
+```
+
+This page revisits the JSON lecture topic by topic. For the conceptual points, try to answer the question yourself before opening the *Solution* tab. For the coding points, first write something in the *Try it* tab, then compare it with the *Solution* tab — the code there is folded by default, so you are not spoiled unless you click to open it.
+
+## 1. What does "JSON" stand for?
+
+JSON stands for *JavaScript Object Notation*. Even though the name references JavaScript, JSON itself is a language-independent, plain-text format.
+
+::: {.callout-tip collapse="true"}
+## Solution
+JSON = **J**ava**S**cript **O**bject **N**otation. It is standardized in IETF RFC 8259 and ECMA-404, and can be read and written from R, Python, JavaScript, and many other languages.
+:::
+
+Try it yourself: use `jsonlite::fromJSON()` to parse a tiny JSON object and see what kind of R object comes out of it.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+json_text <- '{"language": "JavaScript Object Notation"}'
+
+# parse json_text with fromJSON() and inspect the result
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+json_text <- '{"language": "JavaScript Object Notation"}'
+
+parsed <- jsonlite::fromJSON(json_text)
+parsed
+class(parsed)
+```
+
+:::
+
+## 2. Basic characteristics of JSON
+
+Which of the following statements are correct?
+
+- JSON is a text syntax suitable for the interchange of semi-structured data.
+- JSON is standardized, among others, in IETF RFC 8259.
+- JSON can only be used together with the JavaScript programming language.
+- JSON has many parallels to XML.
+
+::: {.callout-tip collapse="true"}
+## Solution
+The first, second and fourth statements are **true**. The third is **false**: JSON is language-independent, despite the name.
+:::
+
+Try it yourself: use `jsonlite::validate()` to check whether a piece of text is actually valid JSON.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+candidate <- '{"Operator": "DVB", "LineNr": "85"}'
+
+# check whether candidate is valid JSON
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+candidate <- '{"Operator": "DVB", "LineNr": "85"}'
+
+jsonlite::validate(candidate)
+```
+
+:::
+
+## 3. JSON value types
+
+The JSON standard defines exactly five kinds of values: object, array, number, string, and the three literal names `true`, `false`, `null`. There is no separate "date" type — dates are simply stored as strings.
+
+::: {.callout-tip collapse="true"}
+## Solution
+Object, array, number, string, and the literals `true`/`false`/`null`. "Date" is *not* a JSON value type.
+:::
+
+Try it yourself: build an R list mixing several of these value types and convert it to JSON with `toJSON()`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+my_list <- list(
+  # add elements of different types here, e.g. a number, a string, a boolean, NULL
+)
+
+# convert my_list to JSON
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+my_list <- list(
+  line_nr  = 85,
+  operator = "DVB",
+  active   = TRUE,
+  reason   = NA
+)
+
+jsonlite::toJSON(my_list, auto_unbox = TRUE, null = "null", na = "null", pretty = TRUE)
+```
+
+:::
+
+## 4. Object syntax
+
+An object is wrapped in curly brackets `{ }` and holds zero or more name-value pairs, each name being a string, with a colon between name and value and a comma between pairs.
+
+::: {.callout-tip collapse="true"}
+## Solution
+Curly brackets, string names, `:` between name and value, `,` between pairs — and a value can itself be another object or an array.
+:::
+
+Try it yourself: turn a named R list into a JSON object and check that the result starts with `{` and ends with `}`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+stop_info <- list(name = "Helmholtzstraße", place = "Dresden", id = "33000742")
+
+# convert stop_info into a JSON object
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+stop_info <- list(name = "Helmholtzstraße", place = "Dresden", id = "33000742")
+
+jsonlite::toJSON(stop_info, auto_unbox = TRUE, pretty = TRUE)
+```
+
+:::
+
+## 5. Array syntax
+
+An array is wrapped in square brackets `[ ]` and holds zero or more values, separated by commas — no names involved, and the values do not have to share the same type.
+
+::: {.callout-tip collapse="true"}
+## Solution
+Square brackets, comma-separated values, no names, and mixed types are allowed.
+:::
+
+Try it yourself: convert a plain R vector into a JSON array.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+route_stops <- c("Striesen Niederwaldplatz", "Löbtau Süd", "Mohorner Str.")
+
+# convert route_stops into a JSON array
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+route_stops <- c("Striesen Niederwaldplatz", "Löbtau Süd", "Mohorner Str.")
+
+jsonlite::toJSON(route_stops, pretty = TRUE)
+```
+
+:::
+
+## 6. Number syntax
+
+A JSON number may start with a minus sign and may include an exponent (`e`/`E`). Its fractional part is separated by a **dot**, not a comma, and it may not have leading zeros (except the single zero right before a decimal point).
+
+::: {.callout-tip collapse="true"}
+## Solution
+`-4.5E-3` is valid. `4,5` (comma as decimal separator) and `007` (leading zeros) are **not** valid JSON numbers.
+:::
+
+Try it yourself: use `validate()` to check a JSON array that contains a number with a leading zero.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+with_leading_zero <- "[007, 1.5, -4.5E-3]"
+
+# check whether this is valid JSON, then try fixing it
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+with_leading_zero <- "[007, 1.5, -4.5E-3]"
+jsonlite::validate(with_leading_zero)
+
+fixed <- "[7, 1.5, -4.5E-3]"
+jsonlite::validate(fixed)
+```
+
+:::
+
+## 7. String syntax
+
+A JSON string always uses **double** quotation marks. Certain characters (like `"` and `\`) must be escaped with a backslash, and any Unicode code point can be written as a hexadecimal escape sequence such as `\u0041`.
+
+::: {.callout-tip collapse="true"}
+## Solution
+Double quotes only; `\"` and `\\` are escaped characters; `\u0041` decodes to the letter `A`.
+:::
+
+Try it yourself: decode a string containing a Unicode escape sequence.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+escaped <- '["\\u0041", "Hello Dresden!"]'
+
+# parse escaped and see what the first element turns into
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+escaped <- '["\\u0041", "Hello Dresden!"]'
+jsonlite::fromJSON(escaped)
+```
+
+:::
+
+## 8. Find the errors
+
+Look at this JSON text describing two bus trips:
+
+```
+[
+  {
+    "Operator": "DVB",
+    "Vehicle": Stadtbus,
+    "LineNr": "85",
+  }
+  {
+    "Operator": "DVB",
+    "Vehicle": "Stadtbus",
+    "LineNr": 85
+  }
+]
+```
+
+::: {.callout-tip collapse="true"}
+## Solution
+Three real problems: `Stadtbus` is missing quotation marks, there is a trailing comma after `"LineNr": "85"`, and there is no comma between the two objects inside the array. `"LineNr": 85` without quotes in the second object is *not* an error — numbers are never quoted in JSON.
+:::
+
+Try it yourself: confirm with `validate()` that the broken text is invalid, then fix it.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+broken <- '[
+  {
+    "Operator": "DVB",
+    "Vehicle": Stadtbus,
+    "LineNr": "85",
+  }
+  {
+    "Operator": "DVB",
+    "Vehicle": "Stadtbus",
+    "LineNr": 85
+  }
+]'
+
+# check broken with validate(), then write a corrected version
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+broken <- '[
+  {
+    "Operator": "DVB",
+    "Vehicle": Stadtbus,
+    "LineNr": "85",
+  }
+  {
+    "Operator": "DVB",
+    "Vehicle": "Stadtbus",
+    "LineNr": 85
+  }
+]'
+jsonlite::validate(broken)
+
+fixed <- '[
+  {
+    "Operator": "DVB",
+    "Vehicle": "Stadtbus",
+    "LineNr": "85"
+  },
+  {
+    "Operator": "DVB",
+    "Vehicle": "Stadtbus",
+    "LineNr": 85
+  }
+]'
+jsonlite::validate(fixed)
+jsonlite::fromJSON(fixed)
+```
+
+:::
+
+## 9. A genuine limitation of JSON
+
+JSON has no built-in way to represent infinity or "not a number" (NaN) — unlike, say, nested/hierarchical data, which it handles just fine through objects and arrays.
+
+::: {.callout-tip collapse="true"}
+## Solution
+No representation for `Inf`/`NaN` is a real limitation. Nested data, optional schemas, and human readability are *not* limitations of JSON.
+:::
+
+Try it yourself: see what happens when you try to convert `NaN` and `Inf` to JSON with `toJSON()`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+values <- c(1, NaN, Inf, -Inf)
+
+# convert values to JSON and see how NaN/Inf are handled
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+values <- c(1, NaN, Inf, -Inf)
+
+jsonlite::toJSON(values)
+```
+
+Notice that `jsonlite` falls back to representing `NaN` and `Inf` as the strings `"NaN"`/`"Inf"` — a workaround, since JSON itself has no native concept for them.
+
+:::
+
+## 10. JSON vs. XML
+
+Both formats are human-readable, hierarchical, and text-based, and are used for similar purposes. The main differences: JSON values are unnamed unless inside an object (every XML element has a name), the same data is usually smaller in JSON than in XML, and XML is designed to be extensible while JSON's grammar is deliberately minimal.
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: readability/hierarchy, naming difference, XML extensibility vs. JSON simplicity. False: XML is *not* typically more compact than JSON for the same data.
+:::
+
+## 11. The R package used for JSON
+
+`jsonlite` offers a bidirectional mapping between JSON and many R data types, and is what we use for reading, writing, and validating JSON in R.
+
+::: {.callout-tip collapse="true"}
+## Solution
+`jsonlite`, with functions like `read_json()`, `toJSON()`, `fromJSON()`, and `validate()`.
+:::
+
+Try it yourself: check which version of `jsonlite` is loaded in this session.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+# print the installed version of jsonlite
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+packageVersion("jsonlite")
+```
+
+:::
+
+## 12. JSON Schema and related formats
+
+A JSON Schema describes the expected structure of a JSON text (required fields, types, ...) and validating against it returns `TRUE`/`FALSE`. YAML is a **superset** of JSON (every valid JSON text is valid YAML, not the other way around), and GeoJSON is a JSON-based format for geographic features that can be read directly with `sf::st_read()`.
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: schema defines structure, validation returns TRUE/FALSE, GeoJSON + `sf::st_read()`. False: YAML is a superset, not a subset, of JSON.
+:::
+
+Try it yourself: parse a tiny GeoJSON snippet and see how many features it contains.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+geojson_text <- '{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"name": "Dresdner Heide"}},
+    {"type": "Feature", "properties": {"name": "Großer Garten"}}
+  ]
+}'
+
+# parse geojson_text and find out how many features it has
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+geojson_text <- '{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"name": "Dresdner Heide"}},
+    {"type": "Feature", "properties": {"name": "Großer Garten"}}
+  ]
+}'
+
+parsed <- jsonlite::fromJSON(geojson_text)
+nrow(parsed$features)
+parsed$features$properties
+```
+
+:::

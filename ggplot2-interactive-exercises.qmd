@@ -1,0 +1,464 @@
+---
+title: "Data Visualization Using ggplot2 — Interactive Exercises"
+engine: knitr
+webr:
+  packages: ['ggplot2', 'tidyr']
+  cell-options:
+    editor-font-scale: 0.9
+    out-width: 70%
+filters:
+  - webr
+---
+
+## Before you start
+
+::: {.callout-note}
+Hit the **Run Code** button to run the code in a cell. To run only part of a cell, highlight the lines you want and press **Cmd + Return** (Mac) or **Ctrl + Enter** (Windows). All code cells on this page share the same R session, so a plot or object you build in one cell is still available in the next one. The `diamonds` dataset used throughout ships with `ggplot2`, so there is nothing to load or download.
+:::
+
+```{webr-r}
+#| autorun: true
+
+library(ggplot2)
+library(tidyr)
+```
+
+## 1. The Grammar of Graphics
+
+ggplot2 is based on the (layered) *Grammar of Graphics*: a graphic is built up from separate layers, and in each layer data is mapped to aesthetic attributes (colour, shape, ...) of geometric objects ("geoms", like points or bars). That is why ggplot2 has no named function like `scatterplot()` for a specific chart type — any plot is assembled from the same building blocks.
+
+::: {.callout-tip collapse="true"}
+## Solution
+A graphic = data + aesthetic mappings + one or more geoms, stacked as layers. Nothing is drawn until at least one geom layer is added.
+:::
+
+Try it yourself: build the most basic possible scatterplot of `price` against `carat` from `diamonds`, one layer at a time.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+# 1) create a ggplot object mapping carat to x and price to y
+# 2) add a geom layer so that something is actually drawn
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +
+  geom_point()
+```
+
+:::
+
+## 2. Advantages and disadvantages of ggplot2
+
+ggplot2 produces high-quality images with sensible design defaults, and its basics are approachable — but fine-tuning takes effort, and it has **no support for 3D data** (and none is planned).
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: high-quality defaults, approachable basics, effort needed for fine-tuning. False: ggplot2 does *not* support interactive 3D visualizations.
+:::
+
+Try it yourself: see what happens when you ask ggplot2 for a "3D" geom that does not exist.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+# try calling a made-up function like geom_point3d() on a ggplot object
+# and see what error R gives you
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+#| error: true
+
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point3d()
+```
+
+R has no `geom_point3d()` — that confirms 3D plotting is simply outside what ggplot2 offers.
+
+:::
+
+## 3. Terminology: data, aesthetics, geoms, facets
+
+- `data` always has to be an R **data frame**.
+- `aesthetics` map visual properties (colour, shape, size, ...) to columns of the data.
+- `geoms` are the actual geometric objects drawn (points, bars, boxplots, ...).
+- `facets` split the data into panels based on one or two categorical variables.
+
+::: {.callout-tip collapse="true"}
+## Solution
+"facets" = splitting into panels by category. The others are commonly mixed up: aesthetics map properties (they are not the objects themselves), geoms are the objects, and data must be a data frame.
+:::
+
+Try it yourself: fill in the blanks so that `cut` controls the colour aesthetic and the panels are split by `cut` as well.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = ____)) +
+  geom_point() +
+  facet_wrap(~ ____)
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = cut)) +
+  geom_point() +
+  facet_wrap(~ cut)
+```
+
+:::
+
+## 4. `facet_grid()` vs. `facet_wrap()`
+
+Both split data into panels by one or two categorical variables. Unlike `facet_wrap()`, `facet_grid(rows ~ cols)` lets you explicitly assign one variable to rows and another to columns. `facet_wrap()` is not restricted to a single row — it wraps panels into a rectangular layout. Faceting by two variables with *n* and *m* levels produces *n* × *m* panels (not *n* + *m*).
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: both facet by category; `facet_grid()` gives explicit row/column control. False: `facet_wrap()` can span multiple rows; the panel count is a product, not a sum.
+:::
+
+Try it yourself: compare `facet_wrap()` and `facet_grid()` on the same plot.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+p <- ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
+
+# add facet_wrap(~ cut) to p, then separately try facet_grid(. ~ cut)
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+p <- ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
+
+p + facet_wrap(~ cut)
+p + facet_grid(. ~ cut)
+```
+
+:::
+
+## 5. `geom_bar()` position adjustments
+
+`position = "stack"` (the default) stacks bars, `"dodge"` places them side by side, and `"fill"` stacks and rescales to show proportions. `"jitter"` is not a meaningful position for bars — it is meant for scatterplots.
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: `"stack"`, `"dodge"`, `"fill"` are real position adjustments for bars. False: `"jitter"` is not the right tool for bar charts.
+:::
+
+Try it yourself: cycle a bar chart of `cut`, filled by `color`, through the three position adjustments.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+ggplot(diamonds, aes(x = cut, fill = color)) +
+  geom_bar(position = "____")   # try "stack", "dodge", and "fill"
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(diamonds, aes(x = cut, fill = color)) + geom_bar(position = "stack")
+ggplot(diamonds, aes(x = cut, fill = color)) + geom_bar(position = "dodge")
+ggplot(diamonds, aes(x = cut, fill = color)) + geom_bar(position = "fill")
+```
+
+:::
+
+## 6. Wide vs. long format
+
+ggplot2 expects **long** format: one row per observation, with columns identifying what is measured and which group it belongs to. `pivot_longer()` converts data **from wide to long** (not the other way around).
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: ggplot2 wants long format; long format has one row per observation; repeated-measurement data is often collected in wide format. False: `pivot_longer()` does *not* turn long data into wide data — that is `pivot_wider()`.
+:::
+
+Try it yourself: reshape a small wide-format data frame (one column per run) into long format.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+df <- data.frame(
+  Iter = 1:5,
+  Run1 = c(0.45, 1.24, 1.94, 2.33, 2.96),
+  Run2 = c(0.03, 0.87, 1.47, 2.04, 2.86)
+)
+
+# use pivot_longer() to turn Run1/Run2 into a "Run" column and a "Quality" column
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+df <- data.frame(
+  Iter = 1:5,
+  Run1 = c(0.45, 1.24, 1.94, 2.33, 2.96),
+  Run2 = c(0.03, 0.87, 1.47, 2.04, 2.86)
+)
+
+df_long <- pivot_longer(df, cols = Run1:Run2, names_to = "Run", values_to = "Quality")
+df_long
+
+ggplot(df_long, aes(x = Iter, y = Quality, linetype = Run)) +
+  geom_line()
+```
+
+:::
+
+## 7. Good graphics practices
+
+Focus on the data, remove "chart junk", use colour-blind-friendly palettes, and make sure a plot stays readable in grayscale — it is *not* fine for a plot to only work in colour.
+
+::: {.callout-tip collapse="true"}
+## Solution
+True: focus on data, remove chart junk, colour-blind palettes. False: readability should not depend on colour alone.
+:::
+
+Try it yourself: start from a deliberately over-decorated plot and clean it up.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+# start from this "bad" plot and simplify it: remove the pink legend
+# background and the oversized red title
+
+pl <- ggplot(diamonds, aes(x = color, fill = cut)) +
+  geom_bar(colour = "black") +
+  theme(
+    legend.background = element_rect(colour = "pink", fill = "pink"),
+    plot.title = element_text(colour = "red", size = 20)
+  ) +
+  ggtitle("Color vs. Cut")
+pl
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(diamonds, aes(x = color, fill = cut)) +
+  geom_bar(width = 0.7, position = "dodge") +
+  theme(
+    legend.background = element_rect(colour = NA, fill = NA),
+    plot.title = element_text(hjust = 0.5)
+  ) +
+  ggtitle("Color vs. Cut")
+```
+
+:::
+
+## 8. The mandatory argument of `ggsave()`
+
+Besides the plot itself (which defaults to `last_plot()`), the **file name** is the only argument you always have to supply — `ggsave()` guesses everything else, including the graphic device, from the file extension.
+
+::: {.callout-tip collapse="true"}
+## Solution
+`filename` — e.g. `ggsave("figure.pdf")`. Size and device are inferred automatically.
+:::
+
+Try it yourself: save a plot to a temporary PDF file and confirm the file was created.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+pl <- ggplot(diamonds, aes(x = cut, y = price)) + geom_boxplot()
+
+# save pl as a pdf using ggsave(), then check file.exists() on the path
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+pl <- ggplot(diamonds, aes(x = cut, y = price)) + geom_boxplot()
+
+out_file <- file.path(tempdir(), "diamonds_plot.pdf")
+ggsave(out_file, plot = pl)
+file.exists(out_file)
+```
+
+:::
+
+## 9. Coding task: scatterplot coloured by `cut`
+
+Create a scatterplot of `price` (y-axis) against `carat` (x-axis) from `diamonds`, with points coloured by `cut`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(data = diamonds, mapping = aes(x = carat, y = price, colour = cut)) +
+  geom_point()
+```
+
+:::
+
+## 10. Coding task: boxplot of price by cut
+
+Create a boxplot showing the distribution of `price` for each level of `cut`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(data = diamonds, mapping = aes(x = cut, y = price)) +
+  geom_boxplot()
+```
+
+:::
+
+## 11. Coding task: faceted scatterplot
+
+Create a scatterplot of `price` against `carat`, split into one panel per level of `cut` using `facet_wrap()`.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +
+  geom_point() +
+  facet_wrap(~ cut)
+```
+
+:::
+
+## 12. Coding task: reshaping `diamonds` dimensions with `pivot_longer()`
+
+The `x`, `y` and `z` columns in `diamonds` store a diamond's length, width and depth (mm) in wide format. Reshape `diamonds` so that a `Dimension` column holds `"x"`/`"y"`/`"z"` and a `Length_mm` column holds the corresponding value.
+
+::: {.panel-tabset}
+
+## Try it
+
+```{webr-r}
+#| autorun: false
+
+
+
+```
+
+## Solution
+
+```{webr-r}
+#| autorun: false
+#| code-fold: true
+
+diamonds_long <- pivot_longer(
+  diamonds,
+  cols = x:z,
+  names_to = "Dimension",
+  values_to = "Length_mm"
+)
+
+head(diamonds_long)
+
+ggplot(diamonds_long, aes(x = Length_mm)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ Dimension)
+```
+
+:::
